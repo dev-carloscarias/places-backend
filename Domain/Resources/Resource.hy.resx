@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>ID չի գտնվել</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Սխալ Էլեկտրոնային փոստի հասցե</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Անվավեր անուն</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Անվավեր ազգանուն</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Անվավեր գաղտնաբառ</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Սխալ դերի տեսակը</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Անվավեր օգտվողի տեսակը</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Մուտք</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Մուտք գործեք ձեր հաշվին</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Մտնել Ֆեյսբուքով</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Մուտք գործեք Google- ի հետ</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Էլ</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Գաղտնաբառ</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Մոռացել եք գաղտնաբառը?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Մուտք</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Հաշիվ չունեք:</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Էլ</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Գաղտնաբառ</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Դուք արդեն ունեք հաշիվ:</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Մուտք գործեք</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Անուն</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Ազգանուն</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Հեռախոս</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Բարի գալուստ տեղ</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Վստահ ենք, որ ձեր փորձը զարմանալի կլինի</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Անվավեր երկիր</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Ձեր ստուգման ծածկագիրը {0} է.</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Կոդի ստուգման հարցում</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Էլ.փոստի կոդերի ստուգում</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Խնդրում ենք մուտքագրել այս կոդը {0}, ձեր էլ. Փոստի հաշիվը վավերացնելու համար:</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Շնորհակալ եմ ձեզ միանալու համար {0</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Դուք պետք է ունենաք ավելի քան 18 տարեկան</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Տվյալ էլ. Փոստով օգտագործված օգտագործողն արդեն գոյություն ունի:</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Ծածկագիրը չկարողացավ հաստատել:.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Անվավեր գաղտնաբառի առավելագույն երկարությունը</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Գաղտնաբառի անվավեր նվազագույն երկարությունը</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Գաղտնաբառը պետք է պարունակի առնվազն մեկ վերին գործի տառ</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Գաղտնաբառը պետք է պարունակի առնվազն մեկ ստորին տառ</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Գաղտնաբառը պետք է պարունակի առնվազն մեկ նիշ</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Գաղտնաբառը պետք է պարունակի առնվազն մեկ հատուկ բնույթ</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Անվավեր օգտվող</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Գրանցվել</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Համաձայն եք մեր գաղտնիության քաղաքականության հետ:</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Գրանցվել</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Գրանցվել</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Հաստատել գաղտնաբառը</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Գրանցվել</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Օգտագործողը չի հաստատել իր հաշիվը:</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Անվավեր անվանում:</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Անվավեր նկարագրություն</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Անվավեր արժույթ</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Մուտքագրեք ծածկագիր</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Միավորի բանալի</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Մուտքագրեք ուղարկված կոդը:</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>ba erb es galu hayastan sirem qez</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>եղել է:</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>Գրանցվել</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Սեղմեք Մուտք կոճակը:</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Մուտք</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Մուտքագրեք ծածկագիր</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Միավորի բանալի</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Մուտքագրեք ձեզ ուղարկված կոդը</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>ba erb es galu hayastan sirem qez</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>եղել է:</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>հաջողությամբ գրանցվել է</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Կտտացրեք մուտքի կոճակը</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Մուտք</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Ստուգում</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Էլ.փոստի հասցե</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Խնդրում ենք ստուգել ձեր էլփոստի հաշիվը</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Ընդունել</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Էլ.փոստը գրանցված չէ</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Էլ.փոստի հասցե</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Ընդունել</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Էլ.փոստը գրանցված չէ</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Մուտքագրեք ծածկագիր</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Միավորի բանալի</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Ընդունել</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Ընդունել</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Վերականգնել գաղտնաբառը</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Ձեր ծածկագիրը կուղարկվի ձեր էլ. Փոստով, խնդրում ենք ստուգել</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Մուտքագրեք այն կոդը, որը եղել է</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>ուղարկվել է ձեզ</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Կոդը սխալ է: Կրկին փորձեք:</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Նոր գաղտնաբառ</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Հաստատեք ձեր գաղտնաբառը</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Խնդրում ենք մուտքագրել եւ հաստատել ձեր</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>Նոր գաղտնաբառ</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Գաղտնաբառի վերափոխումը ձախողվեց: Խնդրում ենք փորձել ավելի ուշ:</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Պրոֆիլ</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Անուն</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Մուտքագրեք ձեր անունը</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Ազգանուն</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Մուտքագրեք ձեր ազգանունը</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Էլ.փոստի հասցե</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Մուտքագրեք վավեր էլփոստի հասցե</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Հեռախոսահամար</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Մուտքագրեք ձեր հեռախոսի համարը</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Ծննդյան ամսաթիվը</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Մուտքագրեք ձեր ծննդյան ամսաթիվը</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Խմբագրել պրոֆիլը</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Հաջողություն:</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Պրոֆիլը հաջողությամբ թարմացվում է</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Ընդունել</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Սխալ է տեղի ունեցել, փորձեք ավելի ուշ:</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Փոխել գաղտնաբառը</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Ընթացիկ գաղտնաբառ</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Մուտքագրեք ձեր ընթացիկ գաղտնաբառը</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Նոր գաղտնաբառ</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Մուտքագրեք ձեր նոր գաղտնաբառը</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Հաստատեք գաղտնաբառը</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Հաստատեք ձեր նոր գաղտնաբառը</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Գաղտնաբառերը չեն համընկնում</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Սխալ</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Գաղտնաբառը փոխելու սխալ տեղի ունեցավ</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Ընդունել</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>ba erb es galu hayastan sirem qez</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Ձեր գաղտնաբառը եղել է</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>Հաջողությամբ վերագործարկեք</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Կտտացրեք մուտքի կոճակը</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Մուտք</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Կայքի գրանցում</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Մեր թիմը կվերանայի ձեր տեղեկատվությունը</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Այս գործընթացը կարող է տեւել մի քանի օր</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Ստուգումն ավարտվելուց հետո դուք կստանաք ծանուցում, եւ ձեր գույքը գրանցված է:</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Հաջորդ</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Հատկություններ</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Անունը,</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Վերնագիր</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Մեծահասակների գին</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Երեխայի գին</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Տրանսպորտի գինը</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Նկարագրություն</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Կատեգորիա</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Երկիր</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Արժեթղթեր</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Ետեվ</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Հաջորդ</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Խնդրում ենք լրացնել բոլոր դաշտերը:</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Առկայություն</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Օր</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Դեպի</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Դեպի</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Ետեվ</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Հաջորդ</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Կիրակի</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Երկուշաբթի</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Երեքշաբթի</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Չորեքշաբթի</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Հինգշաբթի</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Ուրբաթ</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Շաբաթ</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Խնդրում ենք լրացնել ժամանակացույցը առնվազն մեկ օր:</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Վերբեռնեք պատկերներ</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Վերբեռնեք ձեր լուսանկարները `ձեր կայքը խթանելու համար կամ կտտացրեք ընտրելու համար</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Կարող եք վերբեռնել մինչեւ 100 պատկեր</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Ետեվ</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Հաջորդ</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Խնդրում ենք վերբեռնել առնվազն մեկ պատկեր</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Գտնվելու վայր</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Համոզվեք, որ ճշգրիտ եւ ամբողջական տեղեկատվություն տրամադրեք</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Սա ներառում է հասցեն, տունը, բնակարանը, հողը եւ այլն:</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Ետեվ</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Հաջորդ</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Հարմարություններ</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Ետեվ</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Հաջորդ</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Խնդրում ենք ընտրել առնվազն մեկ հարմարություն</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Հաստատում</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Մենք պատրաստ ենք ձեր կայքը ցուցադրել աշխարհին: Մեր թիմը կվավերացնի ձեր տեղեկատվությունը եւ կօգնի ձեզ շատ այցելուներ ստանալու հարցում:</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Վերջնականելու համար կտտացրեք ընդունման կոճակը:</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Ետեվ</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Ընդունել</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Գրանցումը հաջող է</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Կայքը գրանցելու սխալ: Խնդրում ենք կրկին փորձել:</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Ձեր կայքը հաջողությամբ գրանցվել է եւ սպասվում է հաստատմանը:</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Աֆրիկա</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Ասիա</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Եվրոպան</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Ամերիկա</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Օվկիանոս</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Ավելացնել նոր</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Անուն</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Փոխարժեքի փոխարժեքը</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Ավելացված</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Ավելացվել է արտարժույթ</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Սխալ</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Արժույթի գրանցման սխալ տեղի ունեցավ</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Ընդունել</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Համոզված եք, որ ցանկանում եք ջնջել այս արժույթը:</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Այս գործողությունը չի կարող վերացնել:</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Այո, ջնջել</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Չեղարկել</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Ջնջված</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Արժույթը ջնջվել է</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Արժույթներ</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Անուն</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Մուտքագրեք անունը</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Միավորի բանալի</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Մուտքագրեք ծածկագիր</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Սիմվոլ</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Մուտքագրեք խորհրդանիշ</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Փոխարժեքի փոխարժեքը</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Մուտքագրեք փոխարժեքը</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Չեղարկել</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Խնայել</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Ավելացնել նոր</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Անուն</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Համոզված եք, որ ցանկանում եք ջնջել այս կատեգորիան:</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Այս գործողությունը չի կարող վերացնել:</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Այո, ջնջել</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Չեղարկել</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Ջնջված</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Կատեգորիա ջնջվել է</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Կատեգորիա</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Անուն</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Մուտքագրեք անունը</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Չեղարկել</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Խնայել</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Վերնագիր</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Օգտագործողի անուն</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Ստեղծման ամսաթիվը</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Վերնագիր</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Անուն</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Նկարագրություն</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Մեծահասակների գին</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Երեխայի գին</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Տրանսպորտի գինը</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Կատեգորիա</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Երկիր</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Արժեթղթեր</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Օր</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Դեպի</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Դեպի</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Հաստատել</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Մերժել</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Հաստատեք մերժումը</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Մերժման պատճառ</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Հաստատված կայք.</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Հաստատված</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Սխալ</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Կայքը հաստատելու սխալ</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Մերժված</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Կայքը մերժվեց</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Պրոֆիլ</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Փոխել գաղտնաբառը</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Գրանցվել որպես սեփականատեր</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Հրապարակել կայքերը</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Հրապարակված կայքերի ցուցակ</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Արժույթներ</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Կատեգորիաներ</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Սեփականատիրոջ թույլտվություն</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Կայքի թույլտվություն</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Դուրս գալ</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Մուտք</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Ռեստ</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Որոնել ըստ տիպի</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Ընտրեք կատեգորիա</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Կայքի կառավարում</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Մուտքի գինը</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Ընդհանուր գինը</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Հատուկ փաթեթ</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Փաթեթի անվանումը</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Փաթեթի իրեր</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Լրացուցիչ արժեք</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Մուտքի գինը</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Դուք ունեք որեւէ հատուկ փաթեթ</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Այո</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Ոչ</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Ներառում է</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Ավելացնել</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Ընդհանուր</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Ձեր կայքը լրացուցիչ ծախսեր ունի:</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Գինը ավելացնել</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Հաջորդ</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Նախորդ</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Խնդրում ենք մուտքագրել մուտքի վավեր գին:</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Կայքի կառավարում</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Հանրակացարան</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Մասնավոր</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Կարողություն</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Մեծահասակների գին</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Երեխայի գին</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Տրանսպորտի գինը</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Ընտրեք տրանսպորտի թույլատրելի միջոցները</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Ավտոմեքենա</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Մոտոցիկլ</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Հեծանիվ</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Ավտոբուս</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Բեռնատար</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Ավելացնել</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Հանրակացարան</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Մասնավոր</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Առկա գրաֆիկ</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Տեղի համառոտ նկարագրությունը</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Հարմարություններ</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Գներ</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Մեծահասակներ</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Երեխաներ</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Փոխադրել</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Թույլատրված տրանսպորտային միջոցներ</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Ավտոմեքենա</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Մոտոցիկլ</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Հեծանիվ</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Ավտոբուս</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Բեռնատար</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Լրացուցիչ ծախսեր</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Հատուկ փաթեթ</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Հրատարակել</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Հաջողություն</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Սխալ</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Կայքը հաստատված է</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Սխալ է տեղի ունեցել</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Կիրակի</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Երկուշաբթի</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Երեքշաբթի</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Չորեքշաբթի</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Հինգշաբթի</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Ուրբաթ</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Շաբաթ</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Անսահմանափակ</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Սահմանափակ</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Որոնման վայրը</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Փաթեթի անվանումը</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Փաթեթի գինը</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Նյութի գին</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Արժեքի անվանումը</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Ավելացնել նոր</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Անուն</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Համոզված եք, որ ցանկանում եք ջնջել այս կատեգորիան:</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Այս գործողությունը չի կարող վերացնել:</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Այո, ջնջել</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Չեղարկել</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Ջնջված</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Հարմարությունը ջնջվել է</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Հարմարավետություն</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Անուն</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Մուտքագրեք անունը</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Չեղարկել</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Լավ</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Նյութի անվանումը</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Նյութի անվանումը</value>
+  </data>
+</root>

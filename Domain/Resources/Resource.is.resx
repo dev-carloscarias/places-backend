@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>ID fannst ekki</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Ógilt netfang</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Ógilt fornafn</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Ógilt eftirnafn</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>ógilt lykilorð</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Ógild hlutverk gerð</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Ógild tegund notenda</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Skrá inn</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Skráðu þig inn með reikningnum þínum</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Skráðu þig inn með Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Skráðu þig inn með Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Netfang</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Lykilorð</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Gleymt lykilorð?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Skrá inn</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Ertu ekki með reikning?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Netfang</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Lykilorð</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Ertu þegar með reikning?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Skrá inn</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Fyrsta nafn</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Eftirnafn</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Sími</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Verið velkomin að setja</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Við erum viss um að reynsla þín á sínum stað verður æðisleg</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Ógilt land</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Staðfestingarkóðinn þinn fyrir {0} er:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Staðfestingarbeiðni kóða</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Staðfesting tölvupóstkóða</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Vinsamlegast sláðu inn þennan kóða í {0} til að staðfesta tölvupóstreikninginn þinn.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Takk fyrir að vera með {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Þú verður að hafa meira en 18 ára</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Notandi með gefinn tölvupóst er þegar til.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Kóði gat ekki staðfest.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Ógild hámarkslengd lykilorðs</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Ógilt lágmarkslengd lykilorðs</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Lykilorð verður að innihalda að minnsta kosti einn hástafi</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Lykilorð verður að innihalda að minnsta kosti einn lægri mál</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Lykilorð verður að innihalda að minnsta kosti einn stafa</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Lykilorð verður að innihalda að minnsta kosti einn sérstaka staf</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Ógildur notandi</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Skráðu þig</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Ertu sammála persónuverndarstefnu okkar?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Skráðu þig</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Skráðu þig</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Staðfesta lykilorð</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Skráðu þig</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Notandi hefur ekki staðfest reikning sinn.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Rangt!</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Ógild lýsing!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Ógildur gjaldmiðilskóði</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Sláðu inn PIN-númer</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Kóði</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Sláðu inn kóðann sem var sendur!</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>kæri</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>hefur verið!</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>Skráðu þig</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Smelltu á innskráningarhnappinn!</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Skrá inn</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Sláðu inn PIN-númer</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Kóði</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Sláðu inn kóðann sem var sendur til þín</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>kæri</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>hefur verið!</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>Með góðum árangri skráð</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Smelltu á innskráningarhnappinn</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Skrá inn</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Staðfesting</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Netfang</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Vinsamlegast athugaðu tölvupóstreikninginn þinn</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Samþykkja</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Tölvupósturinn er ekki skráður</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Netfang</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Samþykkja</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Tölvupósturinn er ekki skráður</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Sláðu inn PIN-númer</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Kóði</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Samþykkja</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Samþykkja</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Endurheimta lykilorð</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Kóðinn þinn verður sendur á tölvupóstinn þinn, vinsamlegast athugaðu</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Sláðu inn kóðann sem var</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>sent til þín</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Kóðinn er rangur. Reyndu aftur.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Nýtt lykilorð</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Staðfestu lykilorðið þitt</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Vinsamlegast sláðu inn og staðfestu þinn</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>nýtt lykilorð</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Endurstilla lykilorð mistókst. Vinsamlegast reyndu aftur seinna.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Prófíl</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Fornafn</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Sláðu inn fornafn þitt</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Eftirnafn</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Sláðu inn eftirnafnið þitt</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Netfang</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Sláðu inn gilt netfang</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Símanúmer</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Sláðu inn símanúmerið þitt</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Fæðingardag</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Sláðu inn fæðingardag þinn</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Breyta prófíl</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Árangur!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Prófíllinn uppfærður með góðum árangri</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Samþykkja</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Villa kom upp, reyndu aftur seinna.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Breyttu lykilorði</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Núverandi lykilorð</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Sláðu inn núverandi lykilorð þitt</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Nýtt lykilorð</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Sláðu inn nýja lykilorðið þitt</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Staðfestu lykilorð</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Staðfestu nýja lykilorðið þitt</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Lykilorð passa ekki</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Villa</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Það var villa að breyta lykilorðinu</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Samþykkja</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>kæri</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Lykilorðið þitt hefur verið</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>Endurstilla með góðum árangri</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Smelltu á innskráningarhnappinn</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Skrá inn</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Síður skráning</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Lið okkar mun fara yfir upplýsingar þínar</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Þetta ferli getur tekið nokkra daga</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Þú færð tilkynningu þegar staðfestingin er lokið og eign þín er skráð.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Næst</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Eiginleikar</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Nafn:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Titill</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Fullorðinsverð</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Barnaverð</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Flutningsverð</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Lýsing</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Flokkur</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Gjaldmiðill</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Aftur</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Næst</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Vinsamlegast fylltu út alla reiti.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Framboð</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Dagur</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Frá</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Til</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Aftur</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Næst</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Sunnudagur</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Mánudagur</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Þriðjudagur</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Miðvikudag</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Fimmtudag</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Föstudag</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Laugardag</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Vinsamlegast kláraðu áætlunina í að minnsta kosti einn dag.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Hladdu upp myndum</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Settu myndirnar inn til að kynna síðuna þína eða smelltu til að velja</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Þú getur hlaðið upp í 100 myndir</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Aftur</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Næst</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Vinsamlegast hlaðið upp að minnsta kosti einni mynd</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Staðsetning</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Vertu viss um að veita nákvæmar og fullkomnar upplýsingar</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Þetta felur í sér heimilisfang, hús, íbúð, land osfrv.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Aftur</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Næst</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Þægindi</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Aftur</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Næst</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Vinsamlegast veldu að minnsta kosti eitt þægindi</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Staðfesting</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Við erum tilbúin að sýna síðuna þína fyrir heiminum. Lið okkar mun staðfesta upplýsingar þínar og aðstoða þig við að taka á móti mörgum gestum.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Til að ganga frá, smelltu á Accept hnappinn.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Aftur</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Samþykkja</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Skráning vel heppnuð</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Villa við að skrá síðuna. Vinsamlegast reyndu aftur.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Vefsíðan þín hefur verið skráð og er í bið.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Afríku</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Asía</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Evrópa</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Ameríka</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Eyjaálfa</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Bæta við nýju</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Nafn</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Gengi</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Bætt við</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Gjaldmiðill hefur verið bætt við</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Villa</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Það var villa sem skráði gjaldmiðilinn</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Samþykkja</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Ertu viss um að þú viljir eyða þessum gjaldmiðli?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Ekki er hægt að afturkalla þessa aðgerð.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Já, eyða</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Hætta við</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Eytt</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Gjaldmiðli hefur verið eytt</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Gjaldmiðlar</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Nafn</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Sláðu inn nafn</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Kóði</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Sláðu inn PIN-númer</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Tákn</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Sláðu inn tákn</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Gengi</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Sláðu inn gengi</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Hætta við</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Bæta við nýju</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Nafn</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Ertu viss um að þú viljir eyða þessum flokki?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Ekki er hægt að afturkalla þessa aðgerð.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Já, eyða</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Hætta við</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Eytt</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Flokki hefur verið eytt</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Flokkur</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Nafn</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Sláðu inn nafn</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Hætta við</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Titill</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Notandanafn</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Sköpunardagsetning</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Titill</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Nafn</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Lýsing</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Fullorðinsverð</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Barnaverð</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Flutningsverð</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Flokkur</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Gjaldmiðill</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Dagur</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Frá</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Til</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Samþykkja</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Hafna</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Staðfestu höfnun</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Ástæða höfnunar</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Samþykkt síða:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Samþykkt</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Villa</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Villa við að samþykkja síðuna</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Hafnað</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Síða hafnað</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Prófíl</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Breyttu lykilorði</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Skráðu þig sem eiganda</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Birta síður</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Listi yfir útgefnar síður</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Gjaldmiðlar</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Flokkar</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Heimild eigenda</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Heimildarheimild</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Skráðu þig út</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Aðgangur</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Skráðu þig</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Leitaðu eftir tegund</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Veldu flokk</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Stjórnun á vefnum</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Aðgangsverð</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Heildarverð</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Sérstakur pakki</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Pakkanafn</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Pakkningar</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Aukakostnaður</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Aðgangsverð</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Ertu með einhvern sérstakan pakka?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Já</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Nei</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Innifalið</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Bæta við</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Alls</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Hefur vefsvæðið þitt viðbótarkostnað?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Bæta við verði við</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Næst</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Fyrri</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Vinsamlegast sláðu inn gilt inngangsverð.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Stjórnun á vefnum</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Einkamál</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Getu</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Fullorðinsverð</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Barnaverð</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Flutningsverð</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Veldu leyfilegan flutningatæki</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Bíll</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Mótorhjól</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Reiðhjól</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Strætó</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Vörubíll</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Bæta við</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Einkamál</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Fyrirliggjandi áætlanir</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Stutt lýsing á staðnum</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Þægindi</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Verð</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Fullorðnir</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Börn</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Flutningur</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Leyfileg farartæki</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Bíll</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Mótorhjól</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Reiðhjól</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Strætó</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Vörubíll</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Viðbótarkostnaður</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Sérstakur pakki</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Birta</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Árangur</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Villa</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Síða samþykkt</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Villa kom upp</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Sunnudagur</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Mánudagur</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Þriðjudagur</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Miðvikudag</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Fimmtudag</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Föstudag</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Laugardag</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Ótakmarkað</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Takmarkað</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Leitarstaðsetning</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Pakkanafn</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Pakkarverð</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Verð á hlut</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Kostnaðarheiti</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Bæta við nýju</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Nafn</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Ertu viss um að þú viljir eyða þessum flokki?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Ekki er hægt að afturkalla þessa aðgerð.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Já, eyða</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Hætta við</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Eytt</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Þægindum hefur verið eytt</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Þægindi</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Nafn</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Sláðu inn nafn</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Hætta við</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Heiti hlutar</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Heiti hlutar</value>
+  </data>
+</root>

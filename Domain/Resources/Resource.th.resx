@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>ไม่พบ id</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>อีเมลไม่ถูกต้อง</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>ชื่อแรกไม่ถูกต้อง</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>นามสกุลที่ไม่ถูกต้อง</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>รหัสผ่านไม่ถูกต้อง</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>ประเภทบทบาทที่ไม่ถูกต้อง</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>ประเภทผู้ใช้ที่ไม่ถูกต้อง</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>เข้าสู่ระบบ</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>เข้าสู่ระบบด้วยบัญชีของคุณ</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>เข้าสู่ระบบด้วย Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>เข้าสู่ระบบด้วย Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>อีเมล</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>รหัสผ่าน</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>ลืมรหัสผ่าน?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>เข้าสู่ระบบ</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>ไม่มีบัญชี?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>อีเมล</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>รหัสผ่าน</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>คุณมีบัญชีอยู่แล้วหรือยัง?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>เข้าสู่ระบบ</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>ชื่อจริง</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>นามสกุล</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>โทรศัพท์</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>ยินดีต้อนรับสู่สถานที่</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>เรามั่นใจว่าประสบการณ์ของคุณในสถานที่จะยอดเยี่ยม</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>ประเทศที่ไม่ถูกต้อง</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>รหัสยืนยันของคุณสำหรับ {0} คือ:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>คำขอยืนยันรหัส!</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>การยืนยันรหัสอีเมล!</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>โปรดป้อนรหัสนี้ลงใน {0} เพื่อตรวจสอบบัญชีอีเมลของคุณ!</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>ขอขอบคุณที่เข้าร่วม {0}!</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>คุณต้องมีอายุมากกว่า 18 ปี!</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>ผู้ใช้ที่มีอีเมลที่กำหนดมีอยู่แล้ว</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>รหัสไม่สามารถยืนยันได้</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>ความยาวรหัสผ่านสูงสุดไม่ถูกต้อง</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>ความยาวรหัสผ่านขั้นต่ำที่ไม่ถูกต้อง</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>รหัสผ่านจะต้องมีตัวอักษรตัวพิมพ์เล็กอย่างน้อยหนึ่งตัว</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>รหัสผ่านต้องมีตัวอักษรตัวพิมพ์เล็กอย่างน้อยหนึ่งตัว</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>รหัสผ่านต้องมีอย่างน้อยหนึ่งหลัก</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>รหัสผ่านต้องมีอักขระพิเศษอย่างน้อยหนึ่งตัว</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>ผู้ใช้ที่ไม่ถูกต้อง</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>ลงชื่อ</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>คุณเห็นด้วยกับนโยบายความเป็นส่วนตัวของเราหรือไม่?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>ลงชื่อ</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>ลงชื่อ</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>ยืนยันรหัสผ่าน</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>ลงชื่อ</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>ผู้ใช้ยังไม่ได้ยืนยันบัญชีของเขา</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>เข้าสู่ระบบ</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>ชื่อไม่ถูกต้อง</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>คำอธิบายไม่ถูกต้อง!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>สกุลเงินไม่ถูกต้อง</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>ใส่รหัส</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>ใส่รหัส</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>เรียน</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>ศ.</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>ลงทะเบียน</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>2. คลิกที่ปุ่ม "เข้าสู่ระบบ"</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>ใส่รหัส</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>ป้อนรหัสที่ส่งถึงคุณ</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>เรียน</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>ศ.</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>ลงทะเบียนสำเร็จ</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>คลิกที่ปุ่มเข้าสู่ระบบ</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>เข้าสู่ระบบ</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>การตรวจสอบ</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>ที่อยู่อีเมล</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>โปรดตรวจสอบบัญชีอีเมลของคุณ</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>ยอมรับ</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>อีเมลไม่ได้ลงทะเบียน</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>ที่อยู่อีเมล</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>ยอมรับ</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>อีเมลไม่ได้ลงทะเบียน</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>ใส่รหัส</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>ยอมรับ</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>ยอมรับ</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>กู้คืนรหัสผ่าน</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>รหัสของคุณจะถูกส่งไปยังอีเมลของคุณโปรดตรวจสอบ</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>ป้อนรหัสที่เป็น</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>ส่งถึงคุณ</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>รหัสไม่ถูกต้อง ลองอีกครั้ง</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>รหัสผ่านใหม่</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>ยืนยันรหัสผ่านของคุณ</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>กรุณาป้อนและยืนยันไฟล์</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>รหัสผ่านใหม่</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>การรีเซ็ตรหัสผ่านล้มเหลว โปรดลองอีกครั้งในภายหลัง</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>ประวัติโดยย่อ</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>ชื่อแรก</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>ป้อนชื่อของคุณ</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>นามสกุล</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>ป้อนนามสกุลของคุณ</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>ที่อยู่อีเมล</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>ป้อนที่อยู่อีเมลที่ถูกต้อง</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>ป้อนหมายเลขโทรศัพท์ของคุณ</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>วันเกิด</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>ป้อนวันเดือนปีเกิดของคุณ</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>แก้ไขโปรไฟล์</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>ความสำเร็จ!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>อัปเดตโปรไฟล์เรียบร้อยแล้ว</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>ยอมรับ</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>เกิดข้อผิดพลาดลองอีกครั้งในภายหลัง</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>เปลี่ยนรหัสผ่าน</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>รหัสผ่านปัจจุบัน</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>ป้อนรหัสผ่านปัจจุบันของคุณ</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>รหัสผ่านใหม่</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>ป้อนรหัสผ่านใหม่ของคุณ</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>ยืนยันรหัสผ่าน</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>ยืนยันรหัสผ่านใหม่ของคุณ</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>รหัสผ่านไม่ตรงกัน</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>ข้อผิดพลาด</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>มีข้อผิดพลาดในการเปลี่ยนรหัสผ่าน</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>ยอมรับ</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>เรียน</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>รหัสผ่านของคุณได้รับ</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>รีเซ็ตสำเร็จ</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>คลิกที่ปุ่มเข้าสู่ระบบ</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>เข้าสู่ระบบ</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>การลงทะเบียนไซต์</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>ทีมงานของเราจะตรวจสอบข้อมูลของคุณ</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>กระบวนการนี้อาจใช้เวลาสองสามวัน</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>คุณจะได้รับการแจ้งเตือนเมื่อการตรวจสอบเสร็จสมบูรณ์และทรัพย์สินของคุณได้รับการลงทะเบียน</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>ต่อไป</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>คุณสมบัติ</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>ชื่อ:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>ราคาผู้ใหญ่</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>ราคาเด็ก</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>ราคาขนส่ง</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>คำอธิบาย</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>หมวดหมู่</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>ประเทศ</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>สกุลเงิน</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>กลับ</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>ต่อไป</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>กรุณากรอกข้อมูลทั้งหมด</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>ความพร้อม</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>วัน</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>จาก</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>ถึง</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>กลับ</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>ต่อไป</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>วันอาทิตย์</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>วันจันทร์</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>วันอังคาร</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>วันพุธ</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>วันพฤหัสบดี</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>วันศุกร์</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>วันเสาร์</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>กรุณากรอกตารางเวลาอย่างน้อยหนึ่งวัน</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>อัปโหลดรูปภาพ</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>อัปโหลดรูปภาพของคุณเพื่อโปรโมตเว็บไซต์ของคุณหรือคลิกเพื่อเลือก</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>คุณสามารถอัปโหลดภาพได้สูงสุด 100 ภาพ</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>กลับ</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>ต่อไป</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>กรุณาอัปโหลดภาพอย่างน้อยหนึ่งภาพ</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>ที่ตั้ง</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>ตรวจสอบให้แน่ใจว่าได้ให้ข้อมูลที่ถูกต้องและสมบูรณ์</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>ซึ่งรวมถึงที่อยู่บ้านอพาร์ทเมนท์ที่ดิน ฯลฯ</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>กลับ</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>ต่อไป</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>สิ่งอำนวยความสะดวก</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>กลับ</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>ต่อไป</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>โปรดเลือกสิ่งอำนวยความสะดวกอย่างน้อยหนึ่งสิ่ง</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>การยืนยัน</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>เราพร้อมที่จะแสดงเว็บไซต์ของคุณไปทั่วโลก ทีมงานของเราจะตรวจสอบข้อมูลของคุณและช่วยเหลือคุณในการรับผู้เยี่ยมชมจำนวนมาก</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>หากต้องการจบลงให้คลิกปุ่มยอมรับ</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>กลับ</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>ยอมรับ</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>การลงทะเบียนสำเร็จ</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>ข้อผิดพลาดในการลงทะเบียนไซต์ โปรดลองอีกครั้ง</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>เว็บไซต์ของคุณได้รับการลงทะเบียนเรียบร้อยแล้วและอยู่ระหว่างการอนุมัติ</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>แอฟริกา</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>เอเชีย</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>ยุโรป</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>อเมริกา</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>มหาสมุทร</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>เพิ่มใหม่</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>อัตราแลกเปลี่ยน</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>ที่เพิ่มเข้ามา</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>มีการเพิ่มสกุลเงิน</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>ข้อผิดพลาด</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>มีข้อผิดพลาดในการลงทะเบียนสกุลเงิน</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>ยอมรับ</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>แน่ใจหรือว่าต้องการลบสกุลเงินนี้?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>การกระทำนี้ไม่สามารถยกเลิกได้</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>ใช่ลบ</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>ถูกลบออก</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>สกุลเงินถูกลบ</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>สกุลเงิน</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>ใส่ชื่อ</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>ใส่รหัส</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>เครื่องหมาย</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>ป้อนสัญลักษณ์</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>อัตราแลกเปลี่ยน</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>ป้อนอัตราแลกเปลี่ยน</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>บันทึก</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>เพิ่มใหม่</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>แน่ใจหรือว่าต้องการลบหมวดหมู่นี้?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>การกระทำนี้ไม่สามารถยกเลิกได้</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>ใช่ลบ</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>ถูกลบออก</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>หมวดหมู่ถูกลบ</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>หมวดหมู่</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>ใส่ชื่อ</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>บันทึก</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>ชื่อผู้ใช้</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>วันที่สร้าง</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>คำอธิบาย</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>ราคาผู้ใหญ่</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>ราคาเด็ก</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>ราคาขนส่ง</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>หมวดหมู่</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>ประเทศ</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>สกุลเงิน</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>วัน</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>จาก</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>ถึง</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>อนุมัติ</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>ปฏิเสธ</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>ยืนยันการปฏิเสธ</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>เหตุผลในการปฏิเสธ</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>ไซต์ที่ได้รับอนุมัติ:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>ที่ได้รับการอนุมัติ</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>ข้อผิดพลาด</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>ข้อผิดพลาดอนุมัติเว็บไซต์</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>ถูกปฏิเสธ</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>ไซต์ถูกปฏิเสธ</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>ประวัติโดยย่อ</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>เปลี่ยนรหัสผ่าน</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>ลงทะเบียนเป็นเจ้าของ</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>เผยแพร่ไซต์</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>รายชื่อเว็บไซต์ที่เผยแพร่</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>สกุลเงิน</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>หมวดหมู่</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>การอนุญาตของเจ้าของ</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>การอนุญาตเว็บไซต์</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>ออกจากระบบ</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>เข้าถึง</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>ลงทะเบียน</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>ค้นหาตามประเภท</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>เลือกหมวดหมู่</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>การจัดการเว็บไซต์</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>ราคาเข้า</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>ราคารวม</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>แพ็คเกจพิเศษ</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>ชื่อแพ็คเกจ</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>รายการบรรจุภัณฑ์</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>ค่าใช้จ่ายเพิ่มเติม</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>ราคาเข้า</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>คุณมีแพ็คเกจพิเศษหรือไม่?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>ใช่</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>เลขที่</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>รวมถึง</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>เพิ่ม</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>ทั้งหมด</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>เว็บไซต์ของคุณมีค่าใช้จ่ายเพิ่มเติมหรือไม่?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>เพิ่มราคาลงไป</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>ต่อไป</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>ก่อนหน้า</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>กรุณากรอกราคาเข้าที่ถูกต้อง</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>การจัดการเว็บไซต์</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>สาธารณะ</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>ส่วนตัว</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>ความจุ</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>ราคาผู้ใหญ่</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>ราคาเด็ก</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>ราคาขนส่ง</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>เลือกวิธีการขนส่งที่อนุญาต</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>รถ</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>รถจักรยานยนต์</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>จักรยาน</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>รสบัส</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>รถบรรทุก</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>เพิ่ม</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>สาธารณะ</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>ส่วนตัว</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>กำหนดการที่มีอยู่</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>คำอธิบายสั้น ๆ ของสถานที่</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>สิ่งอำนวยความสะดวก</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>ราคา</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>ผู้ใหญ่</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>เด็ก</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>ขนส่ง</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>ยานพาหนะที่ได้รับอนุญาต</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>รถ</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>รถจักรยานยนต์</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>จักรยาน</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>รสบัส</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>รถบรรทุก</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>ค่าใช้จ่ายเพิ่มเติม</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>แพ็คเกจพิเศษ</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>เผยแพร่</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>ความสำเร็จ</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>ข้อผิดพลาด</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>ไซต์ได้รับอนุมัติ</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>เกิดข้อผิดพลาด</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>วันอาทิตย์</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>วันจันทร์</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>วันอังคาร</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>วันพุธ</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>วันพฤหัสบดี</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>วันศุกร์</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>วันเสาร์</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>ไม่ จำกัด</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>ถูก จำกัด</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>สถานที่ค้นหา</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>ชื่อแพ็คเกจ</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>ราคาบรรจุภัณฑ์</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>ราคาสินค้า</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>เพิ่มใหม่</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>แน่ใจหรือว่าต้องการลบหมวดหมู่นี้?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>การกระทำนี้ไม่สามารถยกเลิกได้</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>ใช่ลบ</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>ถูกลบออก</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>สิ่งอำนวยความสะดวกถูกลบ</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>สิ่งอำนวยความสะดวก</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>ชื่อ</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>ใส่ชื่อ</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>ตกลง</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>ชื่อรายการ</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>ชื่อรายการ</value>
+  </data>
+</root>

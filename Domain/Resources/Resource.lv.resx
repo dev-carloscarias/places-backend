@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Id nav atrasts</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Nepareizs e-pasts</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Nederīgs vārds</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Nederīgs uzvārds</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Nepareiza parole</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Nederīgs lomu tips</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Nederīgs lietotāja tips</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Pieslēgties</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Piesakieties ar savu kontu</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Piesakieties ar Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Piesakieties ar Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>E -pasts</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Parole</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Aizmirsi paroli?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Pieslēgties</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Vai jums nav konta?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>E -pasts</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Parole</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Vai jums jau ir konts?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Pieslēgties</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Vārds</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Uzvārds</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Telefons</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Laipni lūdzam vietā</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Mēs esam pārliecināti, ka jūsu pieredze vietā būs satriecoša</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Nederīga valsts</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Jūsu verifikācijas kods {0} ir:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Koda verifikācijas pieprasījums</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>E -pasta koda pārbaude</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Lūdzu, ievadiet šo kodu {0}, lai apstiprinātu savu e -pasta kontu.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Paldies par pievienošanos {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Jums jābūt vairāk nekā 18 gadus vecam</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Lietotājs ar doto e -pastu jau pastāv.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Kods nespēja apstiprināt.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Nederīgs maksimālais paroles garums</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Nederīgs minimālais paroles garums</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Parolē jābūt vismaz vienam lielajam burtam</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Parolē jābūt vismaz vienai mazo burtu vēstulei</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Parolē jābūt vismaz vienam ciparam</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Parolē jābūt vismaz vienai īpašai rakstzīmei</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Nederīgs lietotājs</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Pierakstīties</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Vai jūs piekrītat mūsu privātuma politikai?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Pierakstīties</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Pierakstīties</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>apstipriniet paroli</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Pierakstīties</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Lietotājs nav apstiprinājis savu kontu.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Nederīgs nosaukums: {0}</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Nederīgs apraksts</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Nederīga valūta!</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Ievadīt kodu</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Kods</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Ievadiet kodu</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Godātais/Cienītā</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>ir bijusi</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>Reģistrēties</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Noklikšķiniet uz pogas Pieteikties!</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Pieslēgties</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Ievadīt kodu</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Kods</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Ievadiet jums nosūtīto kodu</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Godātais/Cienītā</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>ir bijusi</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>veiksmīgi reģistrēts</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Noklikšķiniet uz pogas Pieteikšanās</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Pieslēgties</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Pārbaude</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>E -pasta adrese</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Lūdzu, pārbaudiet savu e -pasta kontu</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Pieņemt</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>E -pasts nav reģistrēts</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>E -pasta adrese</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Pieņemt</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>E -pasts nav reģistrēts</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Ievadīt kodu</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Kods</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Pieņemt</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Pieņemt</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Atgūt paroli</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Jūsu kods tiks nosūtīts uz jūsu e -pastu, lūdzu, pārbaudiet</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Ievadiet kodu, kas bija</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>Nosūtīts jums</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Kods nav pareizs. Mēģiniet vēlreiz.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Jauna parole</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Apstipriniet savu paroli</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Lūdzu, ievadiet un apstipriniet savu</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>jauna parole</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Paroles atiestatīšana neizdevās. Lūdzu, vēlāk mēģiniet vēlreiz.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Profils</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Vārds</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Ievadiet savu vārdu</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Uzvārds</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Ievadiet savu uzvārdu</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>E -pasta adrese</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Ievadiet derīgu e -pasta adresi</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Tālruņa numurs</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Ievadiet savu tālruņa numuru</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Dzimšanas datums</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Ievadiet savu dzimšanas datumu</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Rediģēt profilu</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Panākumi!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Profils veiksmīgi atjaunināts</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Pieņemt</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Radās kļūda, mēģiniet vēlreiz vēlāk.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Mainīt paroli</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Pašreizējā parole</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Ievadiet savu pašreizējo paroli</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Jauna parole</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Ievadiet savu jauno paroli</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Apstipriniet paroli</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Apstipriniet savu jauno paroli</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Paroles neatbilst</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Kļūda</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Bija kļūda, mainot paroli</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Pieņemt</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Godātais/Cienītā</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Jūsu parole ir bijusi</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>veiksmīgi atiestatīt</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Noklikšķiniet uz pogas Pieteikšanās</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Pieslēgties</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Vietnes reģistrācija</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Mūsu komanda pārskatīs jūsu informāciju</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Šis process var aizņemt dažas dienas</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Pēc verifikācijas pabeigšanas jūs saņemsit paziņojumu un jūsu īpašums ir reģistrēts.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Blakus</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Funkcijas</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Nosaukums:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Tituls</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Pieaugušo cena</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Bērna cena</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Transporta cena</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Apraksts</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Kategorija</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Apvidus</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Valūta</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Aizmugure</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Blakus</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Lūdzu, aizpildiet visus laukus.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Pieejamība</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Diena</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Līdz</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Aizmugure</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Blakus</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Svētdiena</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Pirmdiena</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Otrdiena</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Trešdiena</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Ceturtdiena</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Piektdiena</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Sestdiena</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Lūdzu, aizpildiet grafiku vismaz vienu dienu.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Augšupielādējiet attēlus</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Augšupielādējiet savus fotoattēlus, lai reklamētu savu vietni, vai noklikšķiniet, lai atlasītu</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Jūs varat augšupielādēt līdz 100 attēliem</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Aizmugure</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Blakus</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Lūdzu, augšupielādējiet vismaz vienu attēlu</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Atrašanās vieta</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Pārliecinieties, lai sniegtu precīzu un pilnīgu informāciju</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Tas ietver adresi, māju, dzīvokli, zemi utt.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Aizmugure</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Blakus</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Ērtības</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Aizmugure</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Blakus</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Lūdzu, atlasiet vismaz vienu labierīcību</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Apstiprināšana</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Mēs esam gatavi parādīt jūsu vietni pasaulei. Mūsu komanda apstiprinās jūsu informāciju un palīdzēs jums saņemt daudzus apmeklētājus.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Lai pabeigtu, noklikšķiniet uz pogas Pieņemt.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Aizmugure</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Pieņemt</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Reģistrācija veiksmīga</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Kļūdas reģistrē vietni. Lūdzu, mēģiniet vēlreiz.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Jūsu vietne ir veiksmīgi reģistrēta, un tā nav apstiprināta.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Āfrika</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Āzija</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Eiropa</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Amerika</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Okeānija</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Pievienot jaunu</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Nosaukt</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Valūtas maiņas kurss</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Pievienots</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Ir pievienota valūta</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Kļūda</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Valūta reģistrēja kļūdu</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Pieņemt</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Vai esat pārliecināts, ka vēlaties izdzēst šo valūtu?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Šo darbību nevar atsaukt.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Jā, izdzēsiet</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Atcelt</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Izdzēsts</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Valūta ir izdzēsta</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Valūtas</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Nosaukt</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Ievadiet vārdu</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Kods</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Ievadīt kodu</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Simbols</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Ievadiet simbolu</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Valūtas maiņas kurss</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Ievadiet maiņas kursu</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Atcelt</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Ietaupīt</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Pievienot jaunu</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Nosaukt</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Vai esat pārliecināts, ka vēlaties izdzēst šo kategoriju?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Šo darbību nevar atsaukt.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Jā, izdzēsiet</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Atcelt</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Izdzēsts</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Kategorija ir izdzēsta</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Kategorija</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Nosaukt</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Ievadiet vārdu</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Atcelt</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Ietaupīt</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Tituls</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Lietotājvārds</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Radīšanas datums</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Tituls</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Nosaukt</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Apraksts</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Pieaugušo cena</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Bērna cena</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Transporta cena</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Kategorija</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Apvidus</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Valūta</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Diena</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Līdz</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Apstiprināt</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Noraidīt</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Apstiprināt noraidījumu</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Noraidīšanas iemesls</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Apstiprināta vietne:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Apstiprināts</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Kļūda</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Kļūda, kas apstiprina vietni</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Noraidīts</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Vietne noraidīta</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Profils</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Mainīt paroli</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Reģistrējieties kā īpašnieks</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Publicēt vietnes</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Publicēto vietņu saraksts</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Valūtas</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Kategorijas</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Īpašnieka autorizācija</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Vietnes atļauja</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Izspiest</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Pieeja</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Reģistrēt</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Meklēt pēc veida</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Izvēlieties kategoriju</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Vietņu pārvaldība</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Ieejas cena</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Kopējā cena</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Īpašs pakete</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Iesaiņojuma nosaukums</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Iepakojuma priekšmeti</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Papildu izmaksas</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Ieejas cena</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Vai jums ir kāda īpaša pakete?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Jā</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Ietvert</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Pievienot</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Kopsumma</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Vai jūsu vietnei ir papildu izmaksas?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Pievienot cenu</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Blakus</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Iepriekšējs</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Lūdzu, ievadiet derīgu ieejas cenu.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Vietņu pārvaldība</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Sabiedrība</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Privāts</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Ietilpība</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Pieaugušo cena</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Bērna cena</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Transporta cena</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Atlasiet atļautos transporta līdzekļus</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Automašīna</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Motocikls</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Velosipēds</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Autobuss</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Kravas automašīna</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Pievienot</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Sabiedrība</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Privāts</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Pieejamie grafiki</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Īss vietas apraksts</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Ērtības</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Cenas</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Pieaugušie</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Bērni</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Transportēt</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Atļautie transportlīdzekļi</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Automašīna</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Motocikls</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Velosipēds</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Autobuss</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Kravas automašīna</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Papildu izmaksas</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Īpašs pakete</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Izdot</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Veiksme</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Kļūda</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Vietne apstiprināta</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Ir radusies kļūda</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Svētdiena</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Pirmdiena</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Otrdiena</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Trešdiena</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Ceturtdiena</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Piektdiena</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Sestdiena</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Neierobežots</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Ierobežots</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Meklēšanas vieta</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Iesaiņojuma nosaukums</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Iesaiņojuma cena</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Preces cena</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Izmaksu nosaukums</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Pievienot jaunu</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Nosaukt</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Vai esat pārliecināts, ka vēlaties izdzēst šo kategoriju?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Šo darbību nevar atsaukt.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Jā, izdzēsiet</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Atcelt</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Izdzēsts</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Labierīcība ir izdzēsta</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Ērtības</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Nosaukt</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Ievadiet vārdu</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Atcelt</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Labi</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Vienuma nosaukums</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Vienuma nosaukums</value>
+  </data>
+</root>

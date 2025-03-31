@@ -1,0 +1,13 @@
+﻿global using AutoMapper;
+global using Newtonsoft.Json;
+global using Places.Application.Common;
+global using Places.Application.Dtos;
+global using Places.Application.Interfaces;
+global using Places.Domain.Common;
+global using Places.Domain.Define;
+global using Places.Domain.Dtos;
+global using Places.Domain.Entities;
+global using Places.Domain.Exceptions;
+global using Places.Domain.Interfaces;
+global using Places.Domain.Interfaces.Repositories;
+global using System.Linq.Expressions;

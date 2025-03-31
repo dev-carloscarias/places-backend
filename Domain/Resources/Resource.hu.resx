@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Id nem található</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Érvénytelen e-mail</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Érvénytelen keresztnév</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Érvénytelen vezetéknév</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Érvénytelen jelszó</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Érvénytelen szereptípus</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Érvénytelen felhasználói típus</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Belépés</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Jelentkezzen be a fiókjával</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Jelentkezz be facebookal</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Jelentkezzen be a Google -val</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Elfelejtette a jelszót?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Belépés</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Nincs fiókja?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Van már felhasználói fiókod?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Belépés</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Keresztnév</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Vezetéknév</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>telefon</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Üdvözöljük a Place</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Biztosak vagyunk benne, hogy a helyben tapasztalata fantasztikus lesz</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Érvénytelen ország</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>A {0} ellenőrzési kódja:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Kód -ellenőrzési kérés</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>E -mail kód -ellenőrzés</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Kérjük, írja be ezt a kódot a {0} -be az e -mail fiók érvényesítéséhez.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Köszönöm, hogy csatlakoztál a {0} -hoz</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Több mint 18 évesnek kell lennie</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Az adott e -mailben szereplő felhasználó már létezik.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>A kód nem volt képes megerősíteni.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Érvénytelen maximális jelszó hossza</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Érvénytelen minimális jelszó hossza</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>A jelszónak legalább egy felsőfokú betűt tartalmaznia kell</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>A jelszónak legalább egy alacsonyabb című betűt tartalmaznia kell</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>A jelszónak legalább egy számjegyet tartalmaznia kell</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>A jelszónak legalább egy speciális karaktert tartalmaznia kell</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Érvénytelen felhasználó</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Regisztrálj</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Egyetért az adatvédelmi politikánkkal?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Regisztrálj</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Regisztrálj</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Jelszó megerősítése</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Regisztrálj</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>A felhasználó nem erősítette meg a fiókját.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>hibás név</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Érvénytelen leírás!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Érvénytelen pénznem.</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Kód megadása</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Kód</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Írja be az elküldött kódot!</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Kedves</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>sikeresen</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>Regisztráció</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Kattintson a Bejelentkezés gombra</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Belépés</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Kód megadása</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Kód</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Írja be az Ön számára elküldött kódot</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Kedves</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>sikeresen</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>sikeresen regisztrált</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Kattintson a Bejelentkezés gombra</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Belépés</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Igazolás</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>E -mail cím</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Kérjük, ellenőrizze e -mail fiókját</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Elfogad</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Az e -mailt nem regisztrálták</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>E -mail cím</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Elfogad</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Az e -mailt nem regisztrálták</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Kód megadása</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Kód</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Elfogad</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Elfogad</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Helyezze vissza a jelszót</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>A kódját elküldjük az e -mailre, kérjük, ellenőrizze</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Írja be a kódot</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>elküldted neked</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>A kód helytelen. Próbáld újra.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Új jelszó</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Erősítse meg a jelszavát</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Kérjük, írja be és erősítse meg</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>új jelszó</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>A jelszó -visszaállítás sikertelen. Kérjük, próbálkozzon újra később.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Keresztnév</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Írja be a keresztnevét</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Vezetéknév</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Írja be a vezetéknevét</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>E -mail cím</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Írjon be egy érvényes e -mail címet</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Telefonszám</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Írja be a telefonszámát</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Születési idő</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Írja be születési dátumát</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Profil szerkesztése</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Siker!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>A profil sikeresen frissül</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Elfogad</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Hiba történt, próbálkozzon újra később.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Változtassa meg a jelszót</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Jelenlegi jelszó</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Írja be az aktuális jelszavát</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Új jelszó</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Írja be új jelszavát</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Erősítse meg a jelszót</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Erősítse meg az új jelszavát</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>A jelszavak nem egyeznek meg</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Hiba</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Hiba történt a jelszó megváltoztatása</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Elfogad</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Kedves</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>A jelszavad az volt</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>sikeresen visszaállítva</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Kattintson a Bejelentkezés gombra</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Belépés</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Helyszíni regisztráció</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Csapatunk felülvizsgálja az Ön adatait</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Ez a folyamat néhány napig is eltarthat</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Az ellenőrzés befejezése után értesítést kap, és az ingatlan regisztrált.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Következő</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Jellemzők</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Név:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Cím</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Felnőtt ár</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Gyermekár</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Szállítási ár</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Leírás</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Kategória</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Ország</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Következő</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Kérjük, töltse ki az összes mezőt.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Rendelkezésre állás</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Nap</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Tól</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>-Hoz</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Következő</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>vasárnap</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>hétfő</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>kedd</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>szerda</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>csütörtök</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>péntek</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>szombat</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Kérjük, töltse ki az ütemtervet legalább egy napig.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Képek feltöltése</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Töltse fel fotóit a webhely népszerűsítéséhez, vagy kattintson a Kiválasztáshoz</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Akár 100 képet is feltölthet</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Következő</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Kérjük, töltsön fel legalább egy képet</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Elhelyezkedés</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Ügyeljen arra, hogy pontos és teljes információt nyújtson</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Ide tartozik a cím, a ház, a lakás, a föld stb.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Következő</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Kényelmi szolgáltatások</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Következő</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Kérjük, válasszon legalább egy kényelmet</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Megerősítés</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Készen állunk arra, hogy bemutassuk webhelyét a világnak. Csapatunk validálja az Ön adatait, és segít sok látogató fogadásában.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>A véglegesítéshez kattintson az Elfogadás gombra.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Elfogad</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>A regisztráció sikeres</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Hiba a webhely regisztrációjának hiba. Kérjük, próbálkozzon újra.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Webhelyét sikeresen regisztrálták, és a jóváhagyásig folyamatban van.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Afrika</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Ázsia</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Európa</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Amerika</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Óceánia</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Add újdonság</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Árfolyam</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Hozzáadott</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>A valutát hozzáadták</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Hiba</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Hiba történt a valuta regisztrációja</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Elfogad</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Biztos benne, hogy törölni akarja ezt a valutát?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Ezt a műveletet nem lehet visszavonni.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Igen, törölje</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Töröl</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Törölt</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>A valutát törölték</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Valuták</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Írja be a nevét</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Kód</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Kód megadása</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Szimbólum</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Írja be a szimbólumot</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Árfolyam</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Írja be az árfolyamot</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Töröl</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Megtakarítás</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Add újdonság</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Biztos benne, hogy törölni akarja ezt a kategóriát?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Ezt a műveletet nem lehet visszavonni.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Igen, törölje</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Töröl</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Törölt</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>A kategóriát törölték</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Kategória</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Írja be a nevét</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Töröl</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Megtakarítás</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Cím</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Felhasználónév</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Létrehozás dátuma</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Cím</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Leírás</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Felnőtt ár</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Gyermekár</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Szállítási ár</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Kategória</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Ország</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Nap</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Tól</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>-Hoz</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Jóváhagy</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Elutasít</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Megerősítse az elutasítást</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Az elutasítás oka</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Jóváhagyott webhely:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Jóváhagyott</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Hiba</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Hiba a webhely jóváhagyásának hibája</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Elutasított</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>A webhelyet elutasították</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Jelszó módosítása</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Regisztráljon tulajdonosként</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Közzéteszi a webhelyeket</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>A közzétett webhelyek listája</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Valuták</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Kategóriák</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Tulajdonos engedélyezése</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Webhely engedélyezése</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Kijelentkezik ki</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Hozzáférés</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Nyilvántartás</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Keresés típusonként</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Válasszon egy kategóriát</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Helyszínigazdálkodás</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Belépési ár</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Teljes ár</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Speciális csomag</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Csomagnév</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Csomagelemek</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Többletköltség</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Belépési ár</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Van különleges csomagja?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Igen</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Nem</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Magában foglal</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Hozzáad</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Teljes</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Van -e webhelyének további költségei?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Adja hozzá az árat</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Következő</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Előző</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Kérjük, adjon meg egy érvényes belépési árat.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Helyszínigazdálkodás</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Nyilvános</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Magán</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Kapacitás</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Felnőtt ár</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Gyermekár</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Szállítási ár</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Válassza ki az engedélyezett szállítási eszközöket</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Autó</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Motorkerékpár</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Kerékpár</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Busz</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Teherautó</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Hozzáad</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Nyilvános</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Magán</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Rendelkezésre álló ütemterv</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>A hely rövid leírása</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Kényelmi szolgáltatások</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Árak</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Felnőttek</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Gyermekek</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Szállítás</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Megengedett járművek</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Autó</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Motorkerékpár</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Kerékpár</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Busz</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Teherautó</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>További költségek</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Speciális csomag</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Közzétesz</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Siker</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Hiba</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>A webhely jóváhagyása</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Hiba történt</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>vasárnap</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>hétfő</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>kedd</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>szerda</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>csütörtök</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>péntek</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>szombat</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Korlátlan</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Korlátozott</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Keresési hely</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Csomagnév</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Csomagár</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Tételár</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Költségnév</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Add újdonság</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Biztos benne, hogy törölni akarja ezt a kategóriát?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Ezt a műveletet nem lehet visszavonni.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Igen, törölje</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Töröl</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Törölt</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>A kényelmi kényelem törölték</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Kényelem</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Írja be a nevét</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Töröl</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Rendben</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Tétel neve</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Tétel neve</value>
+  </data>
+</root>

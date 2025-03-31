@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Nebyl jsem nalezen</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Neplatný e-mail</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Neplatné křestní jméno</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Neplatné příjmení</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Neplatné heslo</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Neplatný typ role</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Neplatný typ uživatele</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Přihlaste se s vaším účtem</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Přihlásit se pomocí Facebooku</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Přihlaste se pomocí Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>E-mailem</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Zapomenuté heslo?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Nemáte účet?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>E-mailem</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Máte již účet?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Příjmení</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Vítejte na místě</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Jsme si jisti, že vaše zkušenost bude úžasná</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Neplatná země</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Váš ověřovací kód pro {0} je:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Požadavek na ověření kódu</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Ověření e -mailového kódu</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Chcete -li ověřit váš e -mailový účet, zadejte tento kód do {0}.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Děkujeme, že jste se připojili k {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Musíte mít více než 18 let</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Uživatel s daným e -mailem již existuje.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Kód nebyl schopen potvrdit.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Neplatná maximální délka hesla</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Neplatná minimální délka hesla</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Heslo musí obsahovat alespoň jeden dopis s horním písmenem</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Heslo musí obsahovat alespoň jeden dopis s nižšími písmeny</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Heslo musí obsahovat alespoň jednu číslice</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Heslo musí obsahovat alespoň jeden speciální znak</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Neplatný uživatel</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Souhlasíte s našimi zásadami ochrany osobních údajů?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Potvrďte heslo</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Uživatel nepotvrdil svůj účet.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Neplatný název.</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Neplatný popis!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Neplatná měna</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Zadejte kód</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Kód</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Vložte kód</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Vážený/Vážená</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>byl/a</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>registrujete se!</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Klikněte na tlačítko.</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Zadejte kód</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Kód</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Zadejte kód, který vám byl zaslán</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Vážený/Vážená</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>byl/a</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>úspěšně registrováno</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Klikněte na tlačítko přihlášení</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Ověření</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>E-mailová adresa</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Zkontrolujte prosím svůj e -mailový účet</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Přijmout</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>E -mail není registrován</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Obnovit heslo</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>E-mailová adresa</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Váš kód bude odeslán na váš e -mail, zkontrolujte prosím</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Přijmout</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>E -mail není registrován</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Zadejte kód</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Kód</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Zadejte kód, který byl</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>poslal vám</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Přijmout</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Kód je nesprávný. Zkuste to znovu.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Nové heslo</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Potvrďte heslo</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Zadejte a potvrďte své</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>nové heslo</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Resetování hesla selhalo. Zkuste to prosím znovu později.</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Přijmout</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Křestní jméno</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Zadejte své křestní jméno</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Příjmení</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Zadejte své příjmení</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>E-mailová adresa</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Zadejte platnou e -mailovou adresu</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Telefonní číslo</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Zadejte své telefonní číslo</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Datum narození</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Zadejte své datum narození</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Upravit profil</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Úspěch!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Profil úspěšně aktualizován</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Přijmout</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Došlo k chybě, zkuste to znovu později.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Změnit heslo</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Aktuální heslo</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Zadejte své aktuální heslo</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Nové heslo</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Zadejte své nové heslo</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Potvrďte heslo</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Potvrďte své nové heslo</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Hesla se neshodují</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Heslo změnilo chybu</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Přijmout</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Vážený/Vážená</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Vaše heslo bylo</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>úspěšně resetovat</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Klikněte na tlačítko přihlášení</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Registrace webu</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Náš tým zkontroluje vaše informace</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Tento proces může trvat několik dní</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Po dokončení ověření obdržíte oznámení a vaše nemovitost je zaregistrována.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Funkce</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Jméno:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Titul</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Cena pro dospělé</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Cena dítěte</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Transportní cena</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Kategorie</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Země</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Měna</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Zadní</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Vyplňte prosím všechna pole.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Dostupnost</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Den</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Na</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Zadní</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>neděle</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>pondělí</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>úterý</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>středa</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>čtvrtek</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>pátek</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>sobota</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Vyplňte prosím rozvrh alespoň jeden den.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Nahrajte obrázky</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Nahrajte své fotografie pro propagaci vašeho webu nebo kliknutím na výběr</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Můžete nahrát až 100 obrázků</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Zadní</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Nahrajte prosím alespoň jeden obrázek</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Umístění</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Nezapomeňte poskytovat přesné a úplné informace</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>To zahrnuje adresu, dům, byt, půdu atd.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Zadní</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Vybavení</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Zadní</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Vyberte alespoň jednu vybavení</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Potvrzení</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Jsme připraveni předvést váš web světu. Náš tým potvrdí vaše informace a pomůže vám při přijímání mnoha návštěvníků.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Chcete -li dokončit, klikněte na tlačítko přijmout.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Zadní</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Přijmout</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Registrace úspěšná</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Chyba registrace webu. Zkuste to prosím znovu.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Váš web byl úspěšně zaregistrován a čeká na schválení.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Afrika</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Asie</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Evropa</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Amerika</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Oceánie</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Přidejte nové</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Kurz</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Přidáno</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Byla přidána měna</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Došlo k chybě zaregistrování měny</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Přijmout</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Jste si jisti, že chcete tuto měnu odstranit?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Tuto akci nelze vrátit zpět.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Ano, smazat</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Smazáno</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Měna byla smazána</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Měny</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Zadejte jméno</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Kód</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Zadejte kód</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Zadejte symbol</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Kurz</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Zadejte směnný kurz</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Přidejte nové</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Jste si jisti, že chcete tuto kategorii odstranit?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Tuto akci nelze vrátit zpět.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Ano, smazat</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Smazáno</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Kategorie byla smazána</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Kategorie</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Zadejte jméno</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Titul</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Uživatelské jméno</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Datum vytvoření</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Titul</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Cena pro dospělé</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Cena dítěte</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Transportní cena</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Kategorie</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Země</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Měna</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Den</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Na</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Schvalovat</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Odmítnout</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Potvrďte odmítnutí</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Důvod odmítnutí</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Schválené stránky:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Schválený</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Chyba schválení webu</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Odmítnuto</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Web odmítl</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Změnit heslo</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Zaregistrujte se jako vlastník</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Publikovat weby</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Seznam publikovaných stránek</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Měny</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Kategorie</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Autorizace vlastníka</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Autorizace webu</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Odhlaste</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Přístup</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Rejstřík</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Hledat podle typu</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Vyberte kategorii</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Správa stránek</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Vstupní cena</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Celková cena</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Speciální balíček</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Název balíčku</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Položky balíčku</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Další náklady</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Vstupní cena</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Máte nějaký speciální balíček?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Žádný</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Zahrnuje</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Celkový</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Má váš web dodatečné náklady?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Přidejte cenu</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Předchozí</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Zadejte prosím platnou vstupní cenu.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Správa stránek</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Veřejnost</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Soukromé</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Kapacita</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Cena pro dospělé</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Cena dítěte</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Transportní cena</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Vyberte povolené dopravní prostředky</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Motocykl</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Kolo</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Autobus</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Kamion</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Veřejnost</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Soukromé</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Dostupné plány</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Stručný popis místa</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Vybavení</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Ceny</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Dospělí</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Děti</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Doprava</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Povolená vozidla</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Motocykl</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Kolo</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Autobus</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Kamion</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Další náklady</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Speciální balíček</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Publikovat</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Úspěch</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Schválené stránky</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Došlo k chybě</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>neděle</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>pondělí</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>úterý</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>středa</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>čtvrtek</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>pátek</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>sobota</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Neomezený</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Omezený</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Umístění vyhledávání</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Název balíčku</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Cena balíčku</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Cena položky</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Název nákladů</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Přidejte nové</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Jste si jisti, že chcete tuto kategorii odstranit?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Tuto akci nelze vrátit zpět.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Ano, smazat</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Smazáno</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Byla smazána vybavenost</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Vybavení</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Zadejte jméno</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Dobře</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Název položky</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Název položky</value>
+  </data>
+</root>

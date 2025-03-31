@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Id nach bhfuarthas</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Ríomhphost neamhbhailí</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>An chéad ainm neamhbhailí</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Ainm deireanach neamhbhailí</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Pasfhocal neamhbhailí</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Cineál ról neamhbhailí</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Cineál úsáideora neamhbhailí</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Logáil isteach</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Logáil isteach le do chuntas</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Logáil isteach le Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Logáil isteach le Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Ríomhphost a chur</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Pasfhocal</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Dearmad ar pasfhocal?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Logáil isteach</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Nach bhfuil cuntas agat?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Ríomhphost a chur</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Pasfhocal</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>An bhfuil cuntas agat cheana féin?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Logáil isteach</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Ainm</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>An t -ainm deireanach</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Glaoigh</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Fáilte go dtí Áit</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Táimid cinnte go mbeidh do thaithí i bhfeidhm uamhnach</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Tír neamhbhailí</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Is é do chód fíoraithe do {0}:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Iarratas ar Fhíorú an Chóid</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Fíorú cód ríomhphoist</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Cuir isteach an cód seo i {0} chun do chuntas ríomhphoist a bhailíochtú.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Go raibh maith agat as a bheith páirteach le {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Caithfidh níos mó ná 18 mbliana d’aois a bheith agat</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Tá úsáideoir leis an ríomhphost a thugtar ann cheana féin.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Ní raibh an cód in ann a dhearbhú.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Fad uasta pasfhocal neamhbhailí neamhbhailí</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Fad íosta pasfhocal neamhbhailí neamhbhailí</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Caithfidh litir cháis uachtair amháin ar a laghad a bheith i bhfocal faire</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Caithfidh litir cháis íochtair amháin ar a laghad a bheith i bhfocal faire</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Caithfidh digit amháin ar a laghad a bheith sa phasfhocal</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Caithfidh carachtar speisialta amháin ar a laghad a bheith sa phasfhocal</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Úsáideoir neamhbhailí</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Clarú</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>An aontaíonn tú lenár bpolasaithe príobháideachais?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Clarú</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Clarú</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Deimhnigh Pasfhocal</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Clarú</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Níor dhearbhaigh an t -úsáideoir a chuntas.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Neamhbhailí</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Cur Síos Neamhbhailí!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Airgeadra Neamhbhailí!</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>iontráil</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Cód</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Cuir isteach an cód a seoladh!</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>A, .... a chara</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>bhí!</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>clár</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Cliceáil ar an gcnaipe Logáil Isteach!</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Logáil isteach</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>iontráil</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Cód</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Iontráil an cód a seoladh chugat</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>A, .... a chara</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>bhí!</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>cláraithe go rathúil</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Cliceáil ar an gcnaipe Logála isteach</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Logáil isteach</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Fíorú</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Seoladh ríomhphoist</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Seiceáil do chuntas ríomhphoist le do thoil</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Glac le</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Níl an ríomhphost cláraithe</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Seoladh ríomhphoist</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Glac le</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Níl an ríomhphost cláraithe</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>iontráil</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Cód</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Glac le</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Glac le</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Pasfhocal a aisghabháil</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Seolfar do chód chuig do r -phost, seiceáil le do thoil</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Iontráil an cód a bhí</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>Seolta chugat</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Tá an cód mícheart. Bain triail eile as.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Pasfhocal nua</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Deimhnigh do phasfhocal</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Iontráil agus dearbhaigh do</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>pasfhocal nua</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Theip ar athshocrú pasfhocal. Bain triail eile as níos déanaí.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Cuir i bpróifíl</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Ainm baiste</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Iontráil do chéad ainm</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>An t -ainm deireanach</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Iontráil d’ainm deireanach</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Seoladh ríomhphoist</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Iontráil seoladh ríomhphoist bailí</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Uimhir ghutháin</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Iontráil d’uimhir theileafóin</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Dáta na Breithe</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Iontráil do dháta breithe</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Próifíl eagarthóireachta</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Rath!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Próifíl nuashonraithe go rathúil</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Glac le</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Tharla earráid, bain triail eile as níos déanaí.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Athraigh pasfhocal</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Pasfhocal reatha</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Iontráil do phasfhocal reatha</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Pasfhocal nua</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Iontráil do phasfhocal nua</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Deimhnigh Pasfhocal</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Deimhnigh do phasfhocal nua</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Ní hionann pasfhocail</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Earráid</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Bhí earráid ann ag athrú an phasfhocal</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Glac le</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>A, .... a chara</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Tá do phasfhocal tar éis a bheith</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>Athshocraigh go rathúil</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Cliceáil ar an gcnaipe Logála isteach</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Logáil isteach</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Clárú suímh</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Déanfaidh ár bhfoireann athbhreithniú ar do chuid faisnéise</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Féadfaidh an próiseas seo cúpla lá a thógáil</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Gheobhaidh tú fógra nuair a bheidh an fíorú críochnaithe agus má tá do mhaoin cláraithe.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Ar aghaidh</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Bheith</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Ainmnigh:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Ceart</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Praghas do dhaoine fásta</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Praghas an linbh</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Praghas iompair</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Saghas</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Catagóir</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Tuath</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Airgeadra</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Ar ais</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Ar aghaidh</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Líon gach réimse le do thoil.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Infhaight</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Tréimhse</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Ó</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Go dtí</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Ar ais</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Ar aghaidh</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>An Domhnach</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>An Luan</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Dé Máirt</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>An Chéadaoin</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Déardaoin</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>An Aoine</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>An Satharn</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Comhlánaigh an sceideal le do thoil ar feadh lá amháin ar a laghad.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Íomhánna a uaslódáil</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Uaslódáil do ghrianghraif chun do shuíomh a chur chun cinn nó cliceáil chun a roghnú</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Is féidir leat suas le 100 íomhá a uaslódáil</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Ar ais</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Ar aghaidh</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Uaslódáil íomhá amháin ar a laghad le do thoil</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Áit</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Déan cinnte go soláthraíonn tú faisnéis chruinn agus iomlán</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Áirítear leis seo seoladh, teach, árasán, talamh, etc.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Ar ais</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Ar aghaidh</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Taitneamhachtaí</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Ar ais</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Ar aghaidh</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Roghnaigh taitneamhacht amháin ar a laghad</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Deimhniú</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Táimid réidh le do shuíomh a thaispeáint don domhan. Déanfaidh ár bhfoireann do chuid faisnéise a bhailíochtú agus cabhróidh sé leat go leor cuairteoirí a fháil.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Chun críochnú, cliceáil ar an gcnaipe Glactha.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Ar ais</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Glac le</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Clárú rathúil</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Earráid ag clárú an tsuímh. Bain triail eile as.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Tá do shuíomh cláraithe go rathúil agus tá sé ag feitheamh ar fhaomhadh.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>An Afraic</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>An Áise</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>An Eoraip</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>An tOileán Úr</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>An Aigéine</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Cuir nua leis</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Ainmnigh</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Ráta malairte</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Cuir cuireadh leis</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Tá airgeadra curtha leis</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Earráid</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Bhí earráid ann ag clárú an airgeadra</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Glac le</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>An bhfuil tú cinnte gur mhaith leat an t -airgeadra seo a scriosadh?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Ní féidir an gníomh seo a dhíscaoileadh.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Sea, scrios</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Cealaigh</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Scriosta</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Scriosadh airgeadra</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Airgeadraí</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Ainmnigh</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Cuir an t -ainm isteach</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Cód</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>iontráil</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Múnla</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Iontráil siombail</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Ráta malairte</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Iontráil an ráta malairte</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Cealaigh</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Spáráil</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Cuir nua leis</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Ainmnigh</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>An bhfuil tú cinnte gur mhaith leat an chatagóir seo a scriosadh?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Ní féidir an gníomh seo a dhíscaoileadh.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Sea, scrios</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Cealaigh</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Scriosta</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Scriosadh catagóir</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Catagóir</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Ainmnigh</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Cuir an t -ainm isteach</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Cealaigh</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Spáráil</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Ceart</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Ainm an úsáideora</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Dáta cruthaithe</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Ceart</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Ainmnigh</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Saghas</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Praghas do dhaoine fásta</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Praghas an linbh</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Praghas iompair</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Catagóir</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Tuath</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Airgeadra</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Tréimhse</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Ó</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Go dtí</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Bheith i bhfabhar</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Diúltú</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Deimhnigh diúltú</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Cúis le diúltú</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Suíomh ceadaithe:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Faofa</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Earráid</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Earráid ag ceadú an láithreáin</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Diúltaithe</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Diúltaíodh don Suíomh</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Cuir i bpróifíl</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Athraigh pasfhocal</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Cláraigh mar úinéir</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Láithreáin a fhoilsiú</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Liosta de na suíomhanna foilsithe</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Airgeadraí</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Catagóirí</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Údarú úinéirí</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Údarú suímh</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Logáil Amach</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Rochtain a dhéanamh ar</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Cláraigh</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Cuardaigh de réir cineáil</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Roghnaigh catagóir</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Bainistíocht suímh</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Praghas iontrála</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Praghas iomlán</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Pacáiste speisialta</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Ainm an phacáiste</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Míreanna Pacáiste</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Costas breise</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Praghas iontrála</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>An bhfuil aon phacáiste speisialta agat?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Tá</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Ar bith</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>San áireamh</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Cuir le</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Cuir le chéile</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>An bhfuil costais bhreise ag do shuíomh?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Cuir praghas leis</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Ar aghaidh</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Roimhe seo</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Iontráil praghas iontrála bailí le do thoil.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Bainistíocht suímh</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Poiblí</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Príobháideach</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Cumas</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Praghas do dhaoine fásta</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Praghas an linbh</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Praghas iompair</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Roghnaigh na modhanna iompair ceadaithe</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Cairt</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Gluaisrothar</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Rothar</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Ná i marbh</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Trucail</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Cuir le</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Poiblí</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Príobháideach</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Sceidil atá ar Fáil</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Cur síos gairid ar an áit</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Taitneamhachtaí</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Praghsanna</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Daoine fásta</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Facht</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Ionnarb</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Feithiclí ceadaithe</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Cairt</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Gluaisrothar</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Rothar</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Ná i marbh</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Trucail</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Costais bhreise</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Pacáiste speisialta</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Foilsigh</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Rath</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Earráid</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Suíomh ceadaithe</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Tharla earráid</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>An Domhnach</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>An Luan</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Dé Máirt</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>An Chéadaoin</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Déardaoin</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>An Aoine</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>An Satharn</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Neamhtheoranta</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Áirithe</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Suíomh cuardaigh</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Ainm an phacáiste</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Praghas an phacáiste</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Praghas earra</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Ainm an chostais</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Cuir nua leis</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Ainmnigh</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>An bhfuil tú cinnte gur mhaith leat an chatagóir seo a scriosadh?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Ní féidir an gníomh seo a dhíscaoileadh.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Sea, scrios</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Cealaigh</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Scriosta</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Scriosadh taitneamhacht</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Caiteachas</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Ainmnigh</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Cuir an t -ainm isteach</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Cealaigh</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Go maith</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Ainm na míre</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Ainm na míre</value>
+  </data>
+</root>

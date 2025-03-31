@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Id haipatikani</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Barua pepe batili</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Jina batili la kwanza</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Jina batili la mwisho</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Nenosiri batili</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Aina ya jukumu batili</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Aina batili ya mtumiaji</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Ingia</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Ingia na akaunti yako</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Ingia na Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Ingia na Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Barua pepe</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Nenosiri</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Umesahau nywila?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Ingia</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Je! Hauna akaunti?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Barua pepe</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Nenosiri</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Je! Tayari unayo akaunti?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Ingia</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Jina la kwanza</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Jina la familia</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Simu</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Karibu mahali</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Tuna hakika uzoefu wako mahali utakuwa wa kushangaza</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Nchi batili</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Nambari yako ya uthibitisho wa {0} ni:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Ombi la Uthibitishaji wa Msimbo!</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Uthibitishaji wa Msimbo wa Barua pepe!</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Tafadhali ingiza msimbo huu ndani ya {0} ili kuthibitisha akaunti yako ya barua pepe.!</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Asante kwa kujiunga na {0}!</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Lazima uwe na umri wa zaidi ya miaka 18!</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Mtumiaji aliye na barua pepe aliyopewa tayari yuko.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Nambari haikuweza kudhibitisha.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Urefu batili wa nywila</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Urefu wa nenosiri batili</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Nenosiri lazima lina angalau barua moja ya juu</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Nenosiri lazima lina angalau barua moja ya chini ya kesi</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Nenosiri lazima lina angalau nambari moja</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Nenosiri lazima lina angalau tabia moja maalum</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Mtumiaji batili</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Jisajili</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Je! Unakubaliana na sera zetu za faragha?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Jisajili</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Jisajili</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Thibitisha nywila</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Jisajili</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Mtumiaji hajathibitisha akaunti yake.</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Ingia</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Si sahihi</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Maelezo si Sahihi!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Sarafu batili!</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Weka msimbo</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Msimbo</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>ingiza mboo</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Mpendwa</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>Imekuwa</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>kujisajili</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Bofya kitufe cha Kuingia!</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Weka msimbo</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Msimbo</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Ingiza nambari iliyotumwa kwako</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Mpendwa</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>Imekuwa</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>kusajiliwa kwa mafanikio</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Bonyeza kitufe cha kuingia</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Ingia</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Uthibitishaji</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Anwani ya barua pepe</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Tafadhali angalia akaunti yako ya barua pepe</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Kukubali</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Barua pepe haijasajiliwa</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Anwani ya barua pepe</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Kukubali</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Barua pepe haijasajiliwa</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Weka msimbo</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Msimbo</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Kukubali</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Kukubali</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Rejesha nywila</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Nambari yako itatumwa kwa barua pepe yako, tafadhali angalia</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Ingiza nambari ambayo ilikuwa</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>kutumwa kwako</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Nambari sio sahihi. Jaribu tena.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Nenosiri mpya</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Thibitisha nywila yako</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Tafadhali ingiza na uthibitishe yako</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>Nenosiri mpya</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Kuweka upya nywila kumeshindwa. Tafadhali jaribu tena baadaye.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Wasifu</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Jina la kwanza</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Ingiza jina lako la kwanza</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Jina la mwisho</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Ingiza jina lako la mwisho</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Anwani ya barua pepe</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Ingiza anwani halali ya barua pepe</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Nambari ya simu</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Ingiza nambari yako ya simu</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Tarehe ya kuzaliwa</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Ingiza tarehe yako ya kuzaliwa</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Hariri wasifu</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Mafanikio!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Profaili imesasishwa kwa mafanikio</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Kukubali</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Hitilafu ilitokea, jaribu tena baadaye.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Badilisha nywila</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Nenosiri la sasa</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Ingiza nywila yako ya sasa</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Nenosiri mpya</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Ingiza nywila yako mpya</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Thibitisha nywila</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Thibitisha nywila yako mpya</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Nywila hazilingani</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Kosa</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Kulikuwa na kosa kubadilisha nywila</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Kukubali</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Mpendwa</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Nenosiri lako limekuwa</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>Rudisha upya</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Bonyeza kitufe cha kuingia</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Ingia</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Usajili wa Tovuti</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Timu yetu itakagua habari yako</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Utaratibu huu unaweza kuchukua siku chache</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Utapokea arifa mara tu uthibitisho utakapokamilika na mali yako imesajiliwa.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Ifuatayo</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Vipengee</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Jina:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Kichwa</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Bei ya watu wazima</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Bei ya mtoto</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Bei ya Usafiri</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Maelezo</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Jamii</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Nchi</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Sarafu</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Nyuma</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Ifuatayo</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Tafadhali jaza shamba zote.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Upatikanaji</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Siku</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Kutoka</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Kwa</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Nyuma</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Ifuatayo</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Jumapili</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Jumatatu</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Jumanne</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Jumatano</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Alhamisi</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Ijumaa</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Jumamosi</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Tafadhali kamilisha ratiba kwa angalau siku moja.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Pakia picha</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Pakia picha zako ili kukuza tovuti yako au bonyeza kuchagua</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Unaweza kupakia hadi picha 100</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Nyuma</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Ifuatayo</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Tafadhali pakia angalau picha moja</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Mahali</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Hakikisha kutoa habari sahihi na kamili</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Hii ni pamoja na anwani, nyumba, ghorofa, ardhi, nk.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Nyuma</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Ifuatayo</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Huduma</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Nyuma</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Ifuatayo</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Tafadhali chagua angalau huduma moja</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Uthibitisho</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Tuko tayari kuonyesha tovuti yako kwa ulimwengu. Timu yetu itathibitisha habari yako na kukusaidia katika kupokea wageni wengi.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Ili kukamilisha, bonyeza kitufe cha Kubali.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Nyuma</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Kukubali</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Usajili umefanikiwa</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Kosa kusajili tovuti. Tafadhali jaribu tena.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Tovuti yako imesajiliwa kwa mafanikio na inasubiri idhini.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Afrika</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Asia</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Ulaya</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Amerika</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Oceania</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Ongeza Mpya</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Jina</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Kiwango cha ubadilishaji</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Imeongezwa</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Fedha imeongezwa</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Kosa</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Kulikuwa na kosa la kusajili sarafu</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Kukubali</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Je! Una uhakika unataka kufuta sarafu hii?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Kitendo hiki hakiwezi kufutwa.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Ndio, futa</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Ghairi</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Kufutwa</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Fedha imefutwa</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Sarafu</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Jina</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Ingiza Jina</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Msimbo</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Weka msimbo</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Ishara</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Ingiza ishara</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Kiwango cha ubadilishaji</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Ingiza kiwango cha ubadilishaji</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Ghairi</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Hifadhi</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Ongeza Mpya</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Jina</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Je! Una uhakika unataka kufuta kitengo hiki?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Kitendo hiki hakiwezi kufutwa.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Ndio, futa</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Ghairi</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Kufutwa</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Jamii imefutwa</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Jamii</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Jina</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Ingiza Jina</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Ghairi</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Hifadhi</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Kichwa</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Jina la mtumiaji</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Tarehe ya uumbaji</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Kichwa</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Jina</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Maelezo</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Bei ya watu wazima</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Bei ya mtoto</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Bei ya Usafiri</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Jamii</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Nchi</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Sarafu</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Siku</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Kutoka</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Kwa</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Idhini</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Kukataa</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Thibitisha kukataliwa</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Sababu ya kukataliwa</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Tovuti iliyoidhinishwa:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Kupitishwa</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Kosa</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Kosa kupitisha Tovuti</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Kukataliwa</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Tovuti imekataliwa</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Wasifu</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Badilisha nywila</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Jisajili kama mmiliki</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Chapisha tovuti</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Orodha ya tovuti zilizochapishwa</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Sarafu</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Jamii</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Idhini ya mmiliki</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Uidhinishaji wa Tovuti</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Ingia nje</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Ufikiaji</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Jisajili</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Tafuta kwa aina</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Chagua Jamii</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Usimamizi wa Tovuti</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Bei ya kuingia</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Bei ya jumla</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Kifurushi maalum</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Jina la kifurushi</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Vitu vya kifurushi</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Gharama ya ziada</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Bei ya kuingia</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Je! Unayo kifurushi chochote maalum?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Ndio</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Hapana</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Inajumuisha</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>ADD</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Jumla</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Je! Tovuti yako ina gharama za ziada?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Ongeza bei kwa</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Ifuatayo</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Zamani</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Tafadhali ingiza bei halali ya kuingia.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Usimamizi wa Tovuti</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Umma</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Uwezo</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Bei ya watu wazima</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Bei ya mtoto</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Bei ya Usafiri</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Chagua njia zinazoruhusiwa za usafirishaji</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Gari</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Pikipiki</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Baiskeli</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Basi</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Lori</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>ADD</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Umma</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Ratiba zinazopatikana</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Maelezo mafupi ya mahali</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Huduma</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Bei</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Watu wazima</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Watoto</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Usafiri</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Magari yanayoruhusiwa</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Gari</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Pikipiki</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Baiskeli</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Basi</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Lori</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Gharama za ziada</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Kifurushi maalum</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Chapisha</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Mafanikio</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Kosa</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Tovuti imeidhinishwa</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Kosa limetokea</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Jumapili</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Jumatatu</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Jumanne</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Jumatano</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Alhamisi</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Ijumaa</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Jumamosi</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Isiyo na kikomo</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Mdogo</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Tafuta Mahali</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Jina la kifurushi</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Bei ya kifurushi</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Bei ya bidhaa</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Jina la gharama</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Ongeza Mpya</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Jina</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Je! Una uhakika unataka kufuta kitengo hiki?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Kitendo hiki hakiwezi kufutwa.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Ndio, futa</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Ghairi</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Kufutwa</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Utunzaji umefutwa</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Utunzaji</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Jina</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Ingiza Jina</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Ghairi</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Sawa</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Jina la bidhaa</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Jina la bidhaa</value>
+  </data>
+</root>

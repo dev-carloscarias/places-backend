@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>מזהה לא נמצא</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>אימייל שגוי</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>שם פרטי לא חוקי</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>שם משפחה לא חוקי</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>סיסמה שגויה</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>סוג תפקיד לא חוקי</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>סוג משתמש לא חוקי</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>התחברות</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>התחבר עם חשבונך</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>התחבר עם פייסבוק</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>התחבר עם גוגל</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>אימייל</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>סיסמה</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>שכחת את הסיסמא?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>התחברות</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>אין לך חשבון?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>אימייל</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>סיסמה</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>האם כבר יש לך חשבון?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>התחברות</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>שם פרטי</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>שם משפחה</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>טֵלֵפוֹן</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>ברוך הבא למקום</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>אנו בטוחים שהניסיון שלך במקום יהיה מדהים</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>מדינה לא חוקית</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>קוד האימות שלך עבור {0} הוא:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>בקשת אימות קוד</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>אימות קוד דוא"ל</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>אנא הזן קוד זה ל- {0} על מנת לאמת את חשבון הדוא"ל שלך.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>תודה לך שהצטרפת ל {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>אתה חייב להיות בן יותר מ -18</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>משתמש עם הדוא"ל הנתון כבר קיים.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>הקוד לא הצליח לאשר.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>אורך סיסמא מקסימלי לא חוקי</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>אורך סיסמא מינימלי לא חוקי</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>הסיסמה חייבת להכיל לפחות אותיות עליונות</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>הסיסמה חייבת להכיל לפחות אותיות קטנות</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>הסיסמה חייבת להכיל לפחות ספרה אחת</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>הסיסמה חייבת להכיל לפחות תו מיוחד אחד</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>משתמש שגוי</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>הירשם</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>האם אתה מסכים עם מדיניות הפרטיות שלנו?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>הירשם</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>הירשם</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>אשר סיסמה</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>הירשם</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>המשתמש לא אישר את חשבונו.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>שם לא חוקי</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>תיאור לא חוקי</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>קוד מטבע לא חוקי</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>נא למלא קוד</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>קוד</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>הכנס את הקוד</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>שלום</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>כבר היה!</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>רישום</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>לחץ על לחצן ההתחברות!</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>התחברות</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>נא למלא קוד</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>קוד</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>הזן את הקוד שנשלח אליך</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>שלום</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>כבר היה!</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>נרשם בהצלחה</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>לחץ על כפתור הכניסה</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>התחברות</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>אימות</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>כתובת דוא"ל</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>אנא בדוק את חשבון הדוא"ל שלך</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>לְקַבֵּל</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>הדוא"ל אינו רשום</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>כתובת דוא"ל</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>לְקַבֵּל</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>הדוא"ל אינו רשום</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>נא למלא קוד</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>קוד</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>לְקַבֵּל</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>לְקַבֵּל</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>לשחזר סיסמה</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>הקוד שלך יישלח לדוא"ל שלך, אנא בדוק</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>הזן את הקוד שהיה</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>נשלח אליך</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>הקוד שגוי. נסה שוב.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>סיסמה חדשה</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>אשר את הסיסמה שלך</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>אנא הכנס ואשר את שלך</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>סיסמה חדשה</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>איפוס הסיסמה נכשל. אנא נסה שוב מאוחר יותר.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>פּרוֹפִיל</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>שֵׁם פְּרַטִי</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>הזן את שמך הפרטי</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>שֵׁם מִשׁפָּחָה</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>הזן את שם המשפחה שלך</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>כתובת דוא"ל</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>הזן כתובת דוא"ל תקפה</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>מספר טלפון</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>הזן את מספר הטלפון שלך</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>תַאֲרִיך לֵידָה</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>הזן את תאריך הלידה שלך</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>ערוך פרופיל</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>הַצלָחָה!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>פרופיל עודכן בהצלחה</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>לְקַבֵּל</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>אירעה שגיאה, נסה שוב מאוחר יותר.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>שנה סיסמה</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>סיסמה נוכחית</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>הזן את הסיסמה הנוכחית שלך</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>סיסמה חדשה</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>הזן את הסיסמה החדשה שלך</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>אשר את הסיסמה</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>אשר את הסיסמה החדשה שלך</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>סיסמאות אינן תואמות</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>שְׁגִיאָה</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>הייתה שגיאה בשינוי הסיסמה</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>לְקַבֵּל</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>שלום</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>הסיסמה שלך הייתה</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>איפוס בהצלחה</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>לחץ על כפתור הכניסה</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>התחברות</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>רישום אתר</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>הצוות שלנו יבחן את המידע שלך</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>תהליך זה עשוי לארוך מספר ימים</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>תקבל הודעה לאחר סיום האימות והנכס שלך רשום.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>הַבָּא</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>תכונות</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>שֵׁם:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>כּוֹתֶרֶת</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>מחיר למבוגרים</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>מחיר ילד</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>מחיר הובלה</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>תֵאוּר</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>קָטֵגוֹרִיָה</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>מְדִינָה</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>מַטְבֵּעַ</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>בְּחֲזָרָה</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>הַבָּא</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>אנא מלא את כל השדות.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>זְמִינוּת</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>יְוֹם</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>מִן</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>אֶל</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>בְּחֲזָרָה</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>הַבָּא</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>יוֹם רִאשׁוֹן</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>יוֹם שֵׁנִי</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>יוֹם שְׁלִישִׁי</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>יוֹם רְבִיעִי</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>יוֹם חֲמִישִׁי</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>יוֹם שִׁישִׁי</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>שַׁבָּת</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>אנא מלא את לוח הזמנים לפחות ליום אחד.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>העלה תמונות</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>העלה את התמונות שלך לקידום האתר שלך או לחץ כדי לבחור</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>אתה יכול להעלות עד 100 תמונות</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>בְּחֲזָרָה</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>הַבָּא</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>אנא העלה לפחות תמונה אחת</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>מִקוּם</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>הקפד לספק מידע מדויק ומלא</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>זה כולל כתובת, בית, דירה, אדמות וכו '.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>בְּחֲזָרָה</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>הַבָּא</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>שירותים</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>בְּחֲזָרָה</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>הַבָּא</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>אנא בחר לפחות נוחות אחת</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>אִשׁוּר</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>אנו מוכנים להציג את האתר שלך לעולם. הצוות שלנו יאמת את המידע שלך ויסייע לך בקבלת מבקרים רבים.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>כדי לסיים, לחץ על כפתור קבל.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>בְּחֲזָרָה</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>לְקַבֵּל</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>ההרשמה מוצלחת</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>שגיאה ברישום האתר. אנא נסה שוב.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>האתר שלך נרשם בהצלחה וממתין לאישור.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>אַפְרִיקָה</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>אַסְיָה</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>אֵירוֹפָּה</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>אמריקה</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>אוקיאניה</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>הוסף חדש</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>שֵׁם</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>שער חליפין</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>נוסף</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>מטבע נוסף</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>שְׁגִיאָה</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>הייתה שגיאה שרשמה את המטבע</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>לְקַבֵּל</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>האם אתה בטוח שאתה רוצה למחוק את המטבע הזה?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>לא ניתן לבטל פעולה זו.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>כן, מחק</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>לְבַטֵל</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>נמחק</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>מטבע נמחק</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>מטבעות</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>שֵׁם</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>הזן שם</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>קוד</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>נא למלא קוד</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>סֵמֶל</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>הזן סמל</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>שער חליפין</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>הזן שער חליפין</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>לְבַטֵל</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>לְהַצִיל</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>הוסף חדש</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>שֵׁם</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>האם אתה בטוח שאתה רוצה למחוק את הקטגוריה הזו?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>לא ניתן לבטל פעולה זו.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>כן, מחק</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>לְבַטֵל</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>נמחק</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>הקטגוריה נמחקה</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>קָטֵגוֹרִיָה</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>שֵׁם</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>הזן שם</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>לְבַטֵל</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>לְהַצִיל</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>כּוֹתֶרֶת</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>שֵׁם מִשׁתַמֵשׁ</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>תאריך יצירה</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>כּוֹתֶרֶת</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>שֵׁם</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>תֵאוּר</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>מחיר למבוגרים</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>מחיר ילד</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>מחיר הובלה</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>קָטֵגוֹרִיָה</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>מְדִינָה</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>מַטְבֵּעַ</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>יְוֹם</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>מִן</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>אֶל</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>לְאַשֵׁר</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>לִדחוֹת</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>אשר דחייה</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>סיבה לדחייה</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>אתר מאושר:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>מְאוּשָׁר</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>שְׁגִיאָה</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>שגיאה באישור האתר</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>נִדחֶה</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>האתר נדחה</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>פּרוֹפִיל</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>שנה סיסמה</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>הירשם כבעלים</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>לפרסם אתרים</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>רשימת האתרים שפורסמו</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>מטבעות</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>קטגוריות</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>הרשאת בעלים</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>הרשאת אתרים</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>התנתק</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>גִישָׁה</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>לִרְשׁוֹם</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>חיפוש לפי סוג</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>בחר קטגוריה</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>ניהול אתרים</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>מחיר כניסה</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>מחיר כולל</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>חבילה מיוחדת</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>שם החבילה</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>פריטי חבילה</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>עלות נוספת</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>מחיר כניסה</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>האם יש לך חבילה מיוחדת?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>כֵּן</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>לֹא</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>כולל</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>לְהוֹסִיף</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>סַך הַכֹּל</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>האם לאתר שלך יש עלויות נוספות?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>הוסף מחיר ל</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>הַבָּא</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>קוֹדֵם</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>אנא הזן מחיר כניסה תקף.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>ניהול אתרים</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>פּוּמְבֵּי</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>פְּרָטִי</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>יְכוֹלֶת</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>מחיר למבוגרים</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>מחיר ילד</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>מחיר הובלה</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>בחר את אמצעי ההובלה המותר</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>מְכוֹנִית</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>אוֹפנוֹעַ</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>אופניים</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>אוֹטוֹבּוּס</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>מַשָׂאִית</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>לְהוֹסִיף</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>פּוּמְבֵּי</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>פְּרָטִי</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>לוחות זמנים זמינים</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>תיאור קצר של המקום</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>שירותים</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>מחירים</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>מבוגרים</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>יְלָדִים</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>תַחְבּוּרָה</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>כלי רכב מותר</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>מְכוֹנִית</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>אוֹפנוֹעַ</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>אופניים</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>אוֹטוֹבּוּס</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>מַשָׂאִית</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>עלויות נוספות</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>חבילה מיוחדת</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>לְפַרְסֵם</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>הַצלָחָה</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>שְׁגִיאָה</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>אושר באתר</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>אירעה שגיאה</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>יוֹם רִאשׁוֹן</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>יוֹם שֵׁנִי</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>יוֹם שְׁלִישִׁי</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>יוֹם רְבִיעִי</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>יוֹם חֲמִישִׁי</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>יוֹם שִׁישִׁי</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>שַׁבָּת</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>בִּלתִי מוּגבָּל</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>מוּגבָּל</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>מיקום חיפוש</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>שם החבילה</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>מחיר חבילה</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>מחיר פריט</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>שם עלות</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>הוסף חדש</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>שֵׁם</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>האם אתה בטוח שאתה רוצה למחוק את הקטגוריה הזו?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>לא ניתן לבטל פעולה זו.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>כן, מחק</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>לְבַטֵל</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>נמחק</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>הנוחות נמחקה</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>נוֹחוּת</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>שֵׁם</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>הזן שם</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>לְבַטֵל</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>בְּסֵדֶר</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>שם פריט</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>שם פריט</value>
+  </data>
+</root>

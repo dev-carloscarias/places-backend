@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>IDが見つかりません</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>無効なメール</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>無効な名</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>無効な姓</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>無効なパスワード</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>無効な役割タイプ</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>無効なユーザータイプ</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>アカウントでログインします</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Facebookでログインします</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Googleでログインします</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Eメール</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>パスワードをお忘れですか？</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>アカウントを持っていませんか？</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Eメール</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>すでにアカウントをお持ちですか？</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>ファーストネーム</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>苗字</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>場所へようこそ</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>私たちはあなたの経験が素晴らしいと確信しています</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>無効な国</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>{0}の検証コードは次のとおりです。</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>コード検証リクエスト</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>電子メールコードの確認</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>メールアカウントを検証するために、このコードを{0}に入力してください。</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>{0}に参加してくれてありがとう</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>あなたは18歳以上を持っている必要があります</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>指定された電子メールを持つユーザーはすでに存在しています。</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>コードは確認できませんでした。</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>無効な最大パスワード長</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>無効な最小パスワード長</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>パスワードには、少なくとも1つの大文字の文字が含まれている必要があります</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>パスワードには、少なくとも1つの小文字が含まれている必要があります</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>パスワードには少なくとも1桁が含まれている必要があります</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>パスワードには、少なくとも1つの特殊文字が含まれている必要があります</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>無効なユーザー</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>サインアップ</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>私たちのプライバシーポリシーに同意しますか？</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>サインアップ</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>サインアップ</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>パスワードを認証する</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>サインアップ</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>ユーザーは自分のアカウントを確認していません。</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>使用できない名前</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>無効な説明です！</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>無効な通貨です</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>コードを入力</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>コード</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>コードを入力してください</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Dear</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>送信時</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>ボタンをクリックしてください。</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>コードを入力</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>コード</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>送信されたコードを入力してください</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Dear</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>送信時</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>正常に登録されています</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>[ログイン]ボタンをクリックします</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>検証</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>電子メールアドレス</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>メールアカウントを確認してください</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>受け入れる</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>メールは登録されていません</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>電子メールアドレス</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>受け入れる</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>メールは登録されていません</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>コードを入力</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>コード</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>受け入れる</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>受け入れる</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>パスワードを回復します</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>あなたのコードはあなたのメールに送信されます、チェックしてください</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>あったコードを入力します</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>あなたに送られました</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>コードが正しくありません。もう一度やり直してください。</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>新しいパスワード</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>パスワードを確認してください</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>入力して確認してください</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>新しいパスワード</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>パスワードリセットに失敗しました。後でもう一度やり直してください。</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>プロフィール</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>ファーストネーム</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>あなたの名を入力してください</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>苗字</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>姓を入力してください</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>電子メールアドレス</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>有効なメールアドレスを入力します</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>電話番号を入力してください</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>生年月日</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>生年月日を入力してください</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>プロファイルを編集します</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>成功！</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>プロフィールが正常に更新されました</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>受け入れる</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>エラーが発生しました。後でもう一度やり直してください。</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>パスワードを変更する</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>現在のパスワード</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>現在のパスワードを入力してください</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>新しいパスワード</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>新しいパスワードを入力します</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>パスワードを認証する</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>新しいパスワードを確認してください</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>パスワードが一致しません</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>パスワードを変更するエラーがありました</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>受け入れる</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Dear</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>あなたのパスワードはされています</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>正常にリセット</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>[ログイン]ボタンをクリックします</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>サイト登録</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>私たちのチームはあなたの情報をレビューします</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>このプロセスには数日かかる場合があります</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>確認が完了し、財産が登録されたら、通知を受け取ります。</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>特徴</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>名前：</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>大人の価格</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>子供の価格</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>輸送価格</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>カテゴリ</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>国</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>すべてのフィールドに記入してください。</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>可用性</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>から</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>に</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>日曜日</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>月曜日</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>火曜日</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>水曜日</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>木曜日</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>金曜日</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>土曜日</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>少なくとも1日のスケジュールを完了してください。</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>画像をアップロードします</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>写真をアップロードしてサイトを宣伝するか、クリックして選択します</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>最大100枚の画像をアップロードできます</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>少なくとも1つの画像をアップロードしてください</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>正確で完全な情報を提供してください</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>これには、住所、家、アパート、土地などが含まれます。</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>アメニティ</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>少なくとも1つのアメニティを選択してください</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>私たちはあなたのサイトを世界に紹介する準備ができています。私たちのチームはあなたの情報を検証し、多くの訪問者を受け取るのを支援します。</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>ファイナリングするには、[Accept]ボタンをクリックします。</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>受け入れる</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>登録が成功しました</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>サイトの登録エラー。もう一度やり直してください。</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>あなたのサイトは正常に登録されており、承認が保留されています。</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>アフリカ</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>アジア</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>ヨーロッパ</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>アメリカ</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>オセアニア</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>新しい追加</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>為替レート</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>追加した</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>通貨が追加されました</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>通貨を登録するエラーがありました</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>受け入れる</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>この通貨を削除したいですか？</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>このアクションを元に戻すことはできません。</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>はい、削除します</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>削除されました</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>通貨が削除されました</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>名前を入力します</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>コード</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>コードを入力</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>シンボル</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>シンボルを入力します</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>為替レート</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>為替レートを入力します</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>新しい追加</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>このカテゴリを削除したいですか？</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>このアクションを元に戻すことはできません。</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>はい、削除します</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>削除されました</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>カテゴリが削除されました</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>カテゴリ</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>名前を入力します</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>作成日</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>大人の価格</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>子供の価格</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>輸送価格</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>カテゴリ</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>国</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>から</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>に</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>承認する</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>拒否する</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>拒否を確認します</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>拒絶の理由</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>承認されたサイト：</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>承認された</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>サイトの承認エラー</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>拒否</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>サイトは拒否されました</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>プロフィール</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>パスワードを変更する</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>所有者として登録します</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>サイトを公開します</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>公開されたサイトのリスト</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>カテゴリ</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>所有者の承認</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>サイト承認</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>ログアウト</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>アクセス</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>登録する</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>タイプごとに検索します</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>カテゴリを選択します</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>サイト管理</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>エントリー価格</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>総価格</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>特別なパッケージ</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>パッケージ名</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>パッケージアイテム</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>追加費用</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>エントリー価格</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>特別なパッケージはありますか？</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>含まれています</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>あなたのサイトには追加のコストがありますか？</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>価格を追加します</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>前の</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>有効な入力価格を入力してください。</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>サイト管理</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>公共</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>プライベート</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>容量</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>大人の価格</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>子供の価格</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>輸送価格</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>許可されている輸送手段を選択します</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>車</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>オートバイ</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>自転車</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>バス</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>トラック</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>公共</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>プライベート</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>利用可能なスケジュール</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>場所の簡単な説明</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>アメニティ</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>価格</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>大人</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>子供たち</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>輸送</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>許可された車両</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>車</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>オートバイ</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>自転車</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>バス</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>トラック</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>追加費用</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>特別なパッケージ</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>公開</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>承認されたサイト</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>エラーが発生しました</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>日曜日</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>月曜日</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>火曜日</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>水曜日</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>木曜日</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>金曜日</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>土曜日</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>無制限</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>限定</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>場所を検索します</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>パッケージ名</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>パッケージ価格</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>アイテム価格</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>コスト名</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>新しい追加</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>このカテゴリを削除したいですか？</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>このアクションを元に戻すことはできません。</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>はい、削除します</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>削除されました</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>アメニティが削除されました</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>アメニティ</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>名前を入力します</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>わかりました</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>アイテム名</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>アイテム名</value>
+  </data>
+</root>

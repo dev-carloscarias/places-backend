@@ -1,0 +1,15 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Places.Application.Interfaces;
+global using Places.Domain.Common;
+global using Places.Domain.Dtos;
+global using Places.Domain.Entities;
+global using Places.Domain.Interfaces;
+global using Places.Domain.Interfaces.Repositories;
+global using Places.Infrastructure.Common;
+global using Places.Infrastructure.Data;
+global using System.Diagnostics.CodeAnalysis;
+global using System.Linq.Expressions;
+global using System.Reflection;
+global using Places.Application.Dtos;
+global using Places.Domain.Resources;

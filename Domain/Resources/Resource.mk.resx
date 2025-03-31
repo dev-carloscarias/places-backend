@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Не е пронајдена</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Неточен Емаил</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Невалидно име</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Невалидно презиме</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>невалидна лозинка</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Невалиден тип на улога</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Невалиден тип на корисник</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Логирај Се</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Најавете се со вашата сметка</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Најавете се со Фејсбук</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Најавете се со Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Е -пошта</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Лозинка</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Ја заборави лозинката?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Логирај Се</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Немате сметка?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Е -пошта</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Лозинка</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Дали веќе имате сметка?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Логирај Се</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Презиме</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Добредојдовте на местото</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Сигурни сме дека вашето искуство во место ќе биде прекрасно</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Невалидна земја</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Вашиот код за верификација за {0} е:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Барање за верификација на код</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Верификација на кодот за е -пошта</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Внесете го овој код во {0} за да ја потврдите вашата сметка за е -пошта.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Ви благодариме што се придруживте на {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Мора да имате повеќе од 18 години</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Корисник со дадената е -пошта веќе постои.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Кодексот не беше во можност да потврди.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Невалидна максимална должина на лозинката</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Невалидна минимална должина на лозинка</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Лозинката мора да содржи најмалку една буква од горниот случај</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Лозинката мора да содржи барем едно писмо со пониски случаи</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Лозинката мора да содржи барем една цифра</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Лозинката мора да содржи барем еден посебен карактер</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Невалиден корисник</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Пријавување</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Дали се согласувате со нашите политики за приватност?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Пријавете се</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Пријавете се</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Потврди ја лозинката</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Пријавете се</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Корисникот не ја потврди својата сметка.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Неважечки</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Неважечки опис!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Невалиден код на валута</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Внесете  го кодот</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Внесете го испратениот код!</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Почитуван/а,</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>беше!</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>регистрација</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Кликнете на копчето Најава!</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Логирај Се</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Внесете  го кодот</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Внесете го кодот што ви беше испратен</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Почитуван/а,</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>беше!</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>успешно регистриран</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Кликнете на копчето за најавување</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Логирај Се</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Верификација</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Адреса за е -пошта</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Проверете ја вашата сметка за е -пошта</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Прифати</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Е -поштата не е регистрирана</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Адреса за е -пошта</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Прифати</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Е -поштата не е регистрирана</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Внесете  го кодот</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Прифати</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Прифати</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Вратете ја лозинката</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Вашиот код ќе биде испратен до вашата е -пошта, проверете</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Внесете го кодот што беше</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>Испратено до вас</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Кодот е неточен. Обидете се повторно.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Нова лозинка</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Потврдете ја вашата лозинка</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Внесете и потврдете го вашиот</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>нова лозинка</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Ресетирање на лозинка не успеа. Ве молиме, обидете се повторно подоцна.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Профил</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Внесете го вашето име</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Презиме</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Внесете го вашето презиме</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Адреса за е -пошта</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Внесете валидна адреса за е -пошта</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Телефонски број</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Внесете го вашиот телефонски број</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Датум на раѓање</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Внесете го вашиот датум на раѓање</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Уреди профил</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Успех!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Профилот успешно се ажурира</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Прифати</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Се појави грешка, обидете се повторно подоцна.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Променете ја лозинката</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Тековна лозинка</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Внесете ја вашата моментална лозинка</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Нова лозинка</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Внесете ја вашата нова лозинка</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Потврдете ја лозинката</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Потврдете ја вашата нова лозинка</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Лозинките не се совпаѓаат</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Грешка</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Имаше грешка во промена на лозинката</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Прифати</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Почитуван/а,</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Вашата лозинка е</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>успешно ресетирање</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Кликнете на копчето за најавување</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Логирај Се</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Регистрација на страници</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Нашиот тим ќе ги разгледа вашите информации</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Овој процес може да трае неколку дена</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Willе добиете известување откако ќе заврши верификацијата и вашиот имот е регистриран.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Следно</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Карактеристики</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Име:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Наслов</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Цена за возрасни</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Цена на децата</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Транспортна цена</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Опис</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Категорија</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Земја</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Валута</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Следно</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Пополнете ги сите полиња.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Достапност</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Ден</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Од</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>До</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Следно</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Недела</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Понеделник</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Вторник</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Среда</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Четврток</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Петок</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Сабота</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Пополнете го распоредот најмалку еден ден.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Поставете слики</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Поставете ги вашите фотографии за да ја промовирате вашата страница или да кликнете за да изберете</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Можете да поставите до 100 слики</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Следно</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Поставете барем една слика</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Локација</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Осигурете се да обезбедите точни и целосни информации</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Ова вклучува адреса, куќа, стан, земјиште, итн.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Следно</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Удобности</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Следно</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Изберете барем една удобност</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Потврда</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Ние сме подготвени да ја покажеме вашата страница на светот. Нашиот тим ќе ги потврди вашите информации и ќе ви помогне да прими многу посетители.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>За да се финализира, кликнете на копчето Прифати.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Прифати</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Регистрацијата успешна</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Грешка во регистрирањето на страницата. Ве молиме, обидете се повторно.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Вашата страница е успешно регистрирана и е во очекување на одобрување.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Африка</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Азија</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Европа</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Америка</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Океанија</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Додадете ново</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Девизен курс</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Додадено</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Додадена е валута</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Грешка</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Имаше грешка во регистрација на валутата</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Прифати</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Дали сте сигурни дека сакате да ја избришете оваа валута?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Оваа акција не може да се разоткрие.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Да, избришете</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Откажи</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Избришано</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Валутата е избришана</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Валути</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Внесете име</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Внесете  го кодот</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Симбол</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Внесете симбол</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Девизен курс</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Внесете го девизниот курс</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Откажи</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Зачувај</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Додадете ново</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Дали сте сигурни дека сакате да ја избришете оваа категорија?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Оваа акција не може да се разоткрие.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Да, избришете</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Откажи</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Избришано</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Категоријата е избришана</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Категорија</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Внесете име</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Откажи</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Зачувај</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Наслов</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Корисничко име</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Датум на создавање</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Наслов</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Опис</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Цена за возрасни</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Цена на децата</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Транспортна цена</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Категорија</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Земја</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Валута</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Ден</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Од</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>До</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Одобри</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Отфрли</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Потврдете го отфрлањето</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Причина за отфрлање</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Одобрена страница:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Одобрено</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Грешка</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Грешка во одобрувањето на страницата</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Отфрлен</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Отфрлена страница</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Профил</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Променете ја лозинката</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Регистрирајте се како сопственик</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Објавувајте страници</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Список на објавени страници</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Валути</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Овластување за сопственик</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Овластување на страницата</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Одјавете се</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Пристап</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Регистар</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Пребарување по тип</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Изберете категорија</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Управување со страници</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Влезната цена</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Вкупна цена</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Специјален пакет</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Име на пакет</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Предмети за пакување</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Дополнителни трошоци</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Влезната цена</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Дали имате некој посебен пакет?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Вклучува</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Додадете</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Вкупно</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Дали вашата страница има дополнителни трошоци?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Додадете цена на</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Следно</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Претходно</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Внесете важечка цена за влез.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Управување со страници</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Јавно</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Приватно</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Капацитет</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Цена за возрасни</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Цена на децата</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Транспортна цена</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Изберете го дозволеното транспорт на средства</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Автомобил</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Мотоцикл</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Велосипед</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Автобус</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Камион</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Додадете</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Јавно</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Приватно</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Достапни распореди</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Краток опис на местото</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Удобности</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Цени</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Возрасни</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Деца</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Транспорт</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Дозволени возила</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Автомобил</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Мотоцикл</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Велосипед</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Автобус</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Камион</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Дополнителни трошоци</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Специјален пакет</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Објавување</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Успех</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Грешка</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Одобрена страница</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Се појави грешка</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Недела</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Понеделник</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Вторник</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Среда</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Четврток</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Петок</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Сабота</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Неограничено</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Ограничено</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Локација за пребарување</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Име на пакет</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Цена на пакетот</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Цена на артикалот</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Име на цена</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Додадете ново</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Дали сте сигурни дека сакате да ја избришете оваа категорија?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Оваа акција не може да се разоткрие.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Да, избришете</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Откажи</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Избришано</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Удобноста е избришана</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Удобност</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Внесете име</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Откажи</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Добро</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Име на артикалот</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Име на артикалот</value>
+  </data>
+</root>

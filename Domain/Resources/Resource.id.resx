@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Saya tidak ditemukan</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Email tidak valid</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Nama depan tidak valid</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Nama Belakang Tidak Valid</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>kata sandi salah</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Jenis Peran Tidak Valid</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Jenis Pengguna Tidak Valid</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Gabung</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Masuk dengan akun Anda</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Masuk dengan Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Masuk dengan Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Surel</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Kata sandi</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Tidak ingat kata sandi?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Gabung</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Tidak punya akun?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Surel</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Kata sandi</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Apakah Anda sudah memiliki akun?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Gabung</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Nama depan</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Nama keluarga</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Telepon</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Selamat datang di tempat</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Kami yakin pengalaman Anda di tempat akan luar biasa</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Negara tidak valid</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Kode verifikasi Anda untuk {0} adalah:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Permintaan verifikasi kode</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Verifikasi kode email</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Harap masukkan kode ini ke {0} untuk memvalidasi akun email Anda.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Terima kasih telah bergabung dengan {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Anda harus memiliki lebih dari 18 tahun</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Pengguna dengan email yang diberikan sudah ada.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Kode tidak dapat mengkonfirmasi.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Panjang kata sandi maksimum tidak valid</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Panjang kata sandi minimum tidak valid</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Kata sandi harus berisi setidaknya satu surat kasus atas</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Kata sandi harus berisi setidaknya satu huruf kecil</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Kata sandi harus berisi setidaknya satu digit</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Kata sandi harus berisi setidaknya satu karakter khusus</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Pengguna tidak valid</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Mendaftar</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Apakah Anda setuju dengan kebijakan privasi kami?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Mendaftar</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Mendaftar</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>konfirmasi sandi</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Mendaftar</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Pengguna belum mengkonfirmasi akunnya.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Nama Tidak Valid</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Deskripsi Tidak Valid!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Mata uang tidak valid</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Masukkan kode</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Kode</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Masukkan kodenya</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Yang terhormat</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>telah</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>daftar</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Klik tombol login (masuk)</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Gabung</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Masukkan kode</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Kode</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Masukkan kode yang dikirimkan kepada Anda</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Yang terhormat</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>telah</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>berhasil terdaftar</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Klik pada tombol Login</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Gabung</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Verifikasi</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Alamat email</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Silakan periksa akun email Anda</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Menerima</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Email tidak terdaftar</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Alamat email</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Menerima</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Email tidak terdaftar</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Masukkan kode</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Kode</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Menerima</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Menerima</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Pulihkan Kata Sandi</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Kode Anda akan dikirim ke email Anda, silakan periksa</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Masukkan kode itu</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>dikirimkan kepada Anda</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Kode tidak benar. Coba lagi.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Kata sandi baru</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Konfirmasikan kata sandi Anda</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Harap masukkan dan konfirmasi</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>kata sandi baru</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Reset Kata Sandi Gagal. Silakan coba lagi nanti.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Nama depan</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Masukkan nama depan Anda</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Nama Belakang</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Masukkan nama belakang Anda</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Alamat email</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Masukkan alamat email yang valid</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Nomor telepon</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Masukkan Nomor Telepon Anda</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Tanggal lahir</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Masukkan tanggal lahir Anda</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Edit profil</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Kesuksesan!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Profil berhasil diperbarui</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Menerima</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Terjadi kesalahan, coba lagi nanti.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Ubah Kata Sandi</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Kata sandi saat ini</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Masukkan Kata Sandi Anda Saat Ini</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Kata sandi baru</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Masukkan Kata Sandi Baru Anda</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Konfirmasi Kata Sandi</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Konfirmasikan Kata Sandi Baru Anda</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Kata sandi tidak cocok</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Kesalahan</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Ada kesalahan yang mengubah kata sandi</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Menerima</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Yang terhormat</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Kata sandi Anda telah</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>berhasil mengatur ulang</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Klik pada tombol Login</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Gabung</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Pendaftaran Situs</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Tim kami akan meninjau informasi Anda</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Proses ini mungkin memakan waktu beberapa hari</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Anda akan menerima pemberitahuan setelah verifikasi selesai dan properti Anda terdaftar.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Berikutnya</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Fitur</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Nama:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Judul</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Harga dewasa</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Harga anak</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Harga transportasi</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Keterangan</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Negara</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Mata uang</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Berikutnya</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Harap isi semua bidang.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Tersedianya</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Hari</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Dari</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Ke</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Berikutnya</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Minggu</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Senin</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Selasa</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Rabu</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Kamis</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Jumat</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Sabtu</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Lengkapi jadwal setidaknya satu hari.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Unggah gambar</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Unggah foto Anda untuk mempromosikan situs Anda atau klik untuk memilih</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Anda dapat mengunggah hingga 100 gambar</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Berikutnya</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Harap unggah setidaknya satu gambar</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Lokasi</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Pastikan untuk memberikan informasi yang akurat dan lengkap</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Ini termasuk alamat, rumah, apartemen, tanah, dll.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Berikutnya</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Fasilitas</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Berikutnya</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Pilih setidaknya satu kemudahan</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Konfirmasi</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Kami siap untuk memamerkan situs Anda kepada dunia. Tim kami akan memvalidasi informasi Anda dan membantu Anda menerima banyak pengunjung.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Untuk menyelesaikan, klik tombol ACCECT.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Menerima</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Pendaftaran berhasil</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Kesalahan Mendaftarkan Situs. Tolong coba lagi.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Situs Anda telah berhasil terdaftar dan sedang menunggu persetujuan.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Afrika</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Asia</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Eropa</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Amerika</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Oceania</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Tambahkan baru</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Kurs</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Ditambahkan</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Mata uang telah ditambahkan</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Kesalahan</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Ada kesalahan yang mendaftarkan mata uang</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Menerima</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Apakah Anda yakin ingin menghapus mata uang ini?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Tindakan ini tidak bisa dibatalkan.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Ya, hapus</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Membatalkan</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Dihapus</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Mata uang telah dihapus</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Mata uang</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Masukkan nama</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Kode</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Masukkan kode</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Simbol</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Masukkan simbol</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Kurs</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Masukkan nilai tukar</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Membatalkan</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Menyimpan</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Tambahkan baru</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Anda yakin ingin menghapus kategori ini?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Tindakan ini tidak bisa dibatalkan.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Ya, hapus</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Membatalkan</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Dihapus</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Kategori telah dihapus</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Masukkan nama</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Membatalkan</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Menyimpan</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Judul</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Nama belakang</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Tanggal Pembuatan</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Judul</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Keterangan</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Harga dewasa</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Harga anak</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Harga transportasi</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Negara</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Mata uang</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Hari</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Dari</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Ke</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Menyetujui</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Menolak</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Konfirmasi penolakan</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Alasan penolakan</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Situs yang Disetujui:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Disetujui</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Kesalahan</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Kesalahan menyetujui situs</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Ditolak</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Situs ditolak</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Ubah Kata Sandi</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Mendaftar sebagai pemilik</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Situs Publikasikan</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Daftar Situs yang Diterbitkan</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Mata uang</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Otorisasi Pemilik</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Otorisasi Situs</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Keluar</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Mengakses</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Daftar</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Cari berdasarkan jenis</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Pilih kategori</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Manajemen situs</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Harga Masuk</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Harga Total</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Paket Khusus</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Nama paket</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Item paket</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Biaya tambahan</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Harga Masuk</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Apakah Anda punya paket khusus?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Ya</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>TIDAK</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Termasuk</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Menambahkan</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Apakah situs Anda memiliki biaya tambahan?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Tambahkan harga ke</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Berikutnya</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Sebelumnya</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Harap masukkan harga entri yang valid.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Manajemen situs</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Publik</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Pribadi</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Kapasitas</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Harga dewasa</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Harga anak</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Harga transportasi</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Pilih alat transportasi yang diizinkan</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Mobil</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Sepeda motor</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Sepeda</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Bis</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Truk</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Menambahkan</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Publik</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Pribadi</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Jadwal yang tersedia</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Deskripsi singkat tentang tempat itu</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Fasilitas</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Harga</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Orang dewasa</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Anak-anak</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Mengangkut</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Kendaraan yang diizinkan</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Mobil</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Sepeda motor</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Sepeda</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Bis</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Truk</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Biaya tambahan</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Paket Khusus</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Menerbitkan</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Kesuksesan</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Kesalahan</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Situs disetujui</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Terjadi kesalahan</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Minggu</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Senin</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Selasa</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Rabu</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Kamis</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Jumat</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Sabtu</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Tak terbatas</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Terbatas</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Lokasi pencarian</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Nama paket</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Harga paket</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Harga item</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Nama Biaya</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Tambahkan baru</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Anda yakin ingin menghapus kategori ini?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Tindakan ini tidak bisa dibatalkan.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Ya, hapus</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Membatalkan</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Dihapus</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Fasilitas telah dihapus</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Kemudahan</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Masukkan nama</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Membatalkan</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Oke</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Nama item</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Nama item</value>
+  </data>
+</root>

@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>ID не найден</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Неверный адрес электронной почты</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Неверное имя</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Неверная фамилия</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Неверный пароль</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Неверный тип роли</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Неверный тип пользователя</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Авторизоваться</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Войдите в свою учетную запись</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Войти с Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Войдите с Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Забыли пароль?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Авторизоваться</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>У вас нет учетной записи?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>У вас уже есть аккаунт?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Авторизоваться</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>телефон</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Добро пожаловать на место</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Мы уверены, что ваш опыт будет потрясающим</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Недействительная страна</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Ваш код проверки для {0}:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Запрос подтверждения</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Подтверждение кода электронной почты!</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Введите этот код в {0}, чтобы подтвердить свою учетную запись электронной почты.!</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Спасибо, что присоединились к {0}!</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Вам должно быть больше 18 лет!</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Пользователь с данным электронным письмом уже существует.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Код не смог подтвердить.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Неверная максимальная длина пароля</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Неверная минимальная длина пароля</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Пароль должен содержать как минимум одну верхнюю букву</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Пароль должен содержать как минимум одну нижнюю букву</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Пароль должен содержать хотя бы одну цифру</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Пароль должен содержать хотя бы один специальный символ</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Недействительный пользователь</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Зарегистрироваться</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Вы согласны с нашей политикой конфиденциальности?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Зарегистрироваться</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Зарегистрироваться</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Подтвердите пароль</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Зарегистрироваться</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Пользователь не подтвердил свою учетную запись.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Неверное имя</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Недопустимое описание!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Неверно указана валюта</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Введите код</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Введите код!</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Милая!</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>был</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>Зарегистрируйтесь!</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>нажать кнопку LOGIN;</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Авторизоваться</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Введите код</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Введите код, который был отправлен вам</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Милая!</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>был</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>успешно зарегистрирован</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Нажмите кнопку входа в систему</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Авторизоваться</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Проверка</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Пожалуйста, проверьте свою учетную запись электронной почты</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Электронное письмо не зарегистрировано</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Электронное письмо не зарегистрировано</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Введите код</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Восстановить пароль</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Ваш код будет отправлен на ваш адрес электронной почты, пожалуйста, проверьте</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Введите код, который был</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>отправлено вам</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Код неверен. Попробуйте еще раз.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Подтвердите свой пароль</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Пожалуйста, введите и подтвердите свой</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Сброс пароля не удался. Пожалуйста, попробуйте еще раз позже.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Введите свое имя</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Введите свою фамилию</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Введите действительный адрес электронной почты</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Номер телефона</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Введите свой номер телефона</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Введите дату рождения</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Редактировать профиль</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Успех!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Профиль обновлен успешно</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Произошла ошибка, попробуйте еще раз позже.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Текущий пароль</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Введите свой текущий пароль</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Введите свой новый пароль</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Подтвердите пароль</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Подтвердите свой новый пароль</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Пароли не совпадают</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Была ошибка, изменяя пароль</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Милая!</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Ваш пароль был</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>успешно сбросить</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Нажмите кнопку входа в систему</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Авторизоваться</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Регистрация сайта</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Наша команда рассмотрит вашу информацию</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Этот процесс может занять несколько дней</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Вы получите уведомление после завершения проверки, и ваша недвижимость будет зарегистрирована.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Функции</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Взрослая цена</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Дочерняя цена</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Транспортная цена</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Пожалуйста, заполните все поля.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Доступность</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>К</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Воскресенье</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Понедельник</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Вторник</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Среда</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Четверг</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Пятница</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Суббота</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Пожалуйста, заполните расписание как минимум на один день.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Загрузить изображения</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Загрузите свои фотографии, чтобы продвигать свой сайт или нажмите, чтобы выбрать</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Вы можете загрузить до 100 изображений</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Пожалуйста, загрузите хотя бы одно изображение</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Обязательно предоставьте точную и полную информацию</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Это включает в себя адрес, дом, квартиру, землю и т. Д.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Удобства</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Пожалуйста, выберите хотя бы одну удобство</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Подтверждение</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Мы готовы продемонстрировать ваш сайт в мир. Наша команда проверит вашу информацию и поможет вам получить много посетителей.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Чтобы завершить, нажмите кнопку «Принять».</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Регистрация успешно</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Ошибка регистрации сайта. Пожалуйста, попробуйте еще раз.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Ваш сайт был успешно зарегистрирован и ожидает одобрения.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Африка</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Азия</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Европа</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Америка</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Океания</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Добавить новый</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Обменный курс</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Добавлен</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Валюта была добавлена</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Была ошибка, регистрирующая валюту</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить эту валюту?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Это действие не может быть отменено.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Да, удалить</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Удален</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Валюта была удалена</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Валюты</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Введите имя</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Введите код</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Символ</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Введите символ</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Обменный курс</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Введите обменный курс</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Сохранять</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Добавить новый</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить эту категорию?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Это действие не может быть отменено.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Да, удалить</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Удален</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Категория была удалена</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Введите имя</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Сохранять</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Взрослая цена</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Дочерняя цена</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Транспортная цена</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>К</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Утвердить</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Отклонять</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Подтвердите отказ</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Причина отклонения</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Утвержденный сайт:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Одобренный</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Ошибка утверждения сайта</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Отклоненный</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Сайт отклонен</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Зарегистрироваться как владелец</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Публикайте сайты</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Список опубликованных сайтов</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Валюты</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Авторизация владельца</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Авторизация сайта</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Выходите из строя</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Зарегистрировать</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Поиск по типу</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Выберите категорию</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Управление сайтом</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Входная цена</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Общая цена</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Специальный пакет</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Название пакета</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Упаковка предметов</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Дополнительная стоимость</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Входная цена</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>У вас есть специальный пакет?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Включает</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Добавлять</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Общий</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>У вашего сайта есть дополнительные расходы?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Добавить цену к</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Предыдущий</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Пожалуйста, введите действительную цену входа.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Управление сайтом</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Публичный</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Частный</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Емкость</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Взрослая цена</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Дочерняя цена</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Транспортная цена</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Выберите разрешенное средство транспорта</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Машина</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Мотоцикл</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Велосипед</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Автобус</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Грузовик</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Добавлять</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Публичный</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Частный</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Доступные графики</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Краткое описание места</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Удобства</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Цены</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Взрослые</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Дети</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Транспорт</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Разрешенные транспортные средства</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Машина</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Мотоцикл</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Велосипед</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Автобус</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Грузовик</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Дополнительные расходы</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Специальный пакет</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Публиковать</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Успех</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Сайт утвержден</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Произошла ошибка</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Воскресенье</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Понедельник</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Вторник</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Среда</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Четверг</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Пятница</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Суббота</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Неограниченный</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Ограничен</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Место поиска</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Название пакета</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Цена пакета</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Цена товара</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Название стоимости</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Добавить новый</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить эту категорию?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Это действие не может быть отменено.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Да, удалить</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Удален</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Удобство было удалено</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Удобства</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Введите имя</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Хорошо</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Название элемента</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Название элемента</value>
+  </data>
+</root>

@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Nuk u gjet</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Email i pavlefshem</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Emri i pavlefshëm</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Mbiemri i pavlefshëm</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Fjalëkalim i pavlefshëm</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Lloji i pavlefshëm i rolit</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Lloji i pavlefshëm i përdoruesit</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Hyrje</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Hyni me llogarinë tuaj</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Kyçuni nëpërmjet facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Hyni me Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Postë elektronike</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Fjalëkalim</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Keni harruar fjalëkalimin?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Hyrje</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Nuk keni një llogari?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Postë elektronike</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Fjalëkalim</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>A keni tashmë një llogari?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Logoj</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Emri</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Mbiemri</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Telefonoj</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Mirësevini në Place</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Ne jemi të sigurt se përvoja juaj në vend do të jetë e mrekullueshme</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Vend i pavlefshëm</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Kodi juaj i verifikimit për {0} është:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Kërkesë për verifikimin e kodit!</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Verifikimi i kodit të emailit!</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Vendos këtë kod në {0} për të vërtetuar llogarinë tënde të emailit.!</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Faleminderit që u bashkove me {0}!</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Duhet të jeni më shumë se 18 vjeç!</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Një përdorues me emailin e dhënë tashmë ekziston.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Kodi nuk ishte në gjendje të konfirmonte.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Gjatësia maksimale e fjalëkalimit maksimal</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Gjatësia minimale e pavlefshme e fjalëkalimit</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Fjalëkalimi duhet të përmbajë të paktën një shkronjë të rastit të sipërm</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Fjalëkalimi duhet të përmbajë të paktën një shkronjë të rastit më të ulët</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Fjalëkalimi duhet të përmbajë të paktën një shifër</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Fjalëkalimi duhet të përmbajë të paktën një karakter të veçantë</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Përdorues i pavlefshëm</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Regjistrim</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>A jeni dakord me politikat tona të intimitetit?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Regjistrohem</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Regjistrohem</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Konfirmoni fjalëkalimin</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Regjistrohem</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Përdoruesi nuk e ka konfirmuar llogarinë e tij.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Emwr i Pavlefshwm</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Përshkrim i pavlefshëm!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Kod monedhe i pavlefshëm</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Fut kodin</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Kodi</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Vendos kodin e dërguar!</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>I/e dashur</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>ÇFARË ËSHTË BËRË?</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>regjistër</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Kliko në butonin Hyrje!</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Hyrje</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Fut kodin</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Kodi</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Vendosni kodin që ju është dërguar</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>I/e dashur</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>ÇFARË ËSHTË BËRË?</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>Regjistruar me sukses</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Klikoni në butonin e hyrjes</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Hyrje</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Verifikim</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Adresa e postës elektronike</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Ju lutemi kontrolloni llogarinë tuaj të postës elektronike</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Pranoj</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Emaili nuk është i regjistruar</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Adresa e postës elektronike</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Pranoj</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Emaili nuk është i regjistruar</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Fut kodin</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Kodi</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Pranoj</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Pranoj</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Rikuperoni fjalëkalimin</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Kodi juaj do të dërgohet në emailin tuaj, ju lutemi kontrolloni</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Vendosni kodin që ishte</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>të dërguar tek ju</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Kodi është i pasaktë. Provo përsëri.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Fjalëkalim i ri</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Konfirmoni fjalëkalimin tuaj</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Ju lutemi shkruani dhe konfirmoni tuajin</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>fjalëkalim i ri</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Rivendosja e fjalëkalimit dështoi. Ju lutemi provoni përsëri më vonë.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Emër</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Vendosni emrin tuaj të parë</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Mbiemri</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Vendosni mbiemrin tuaj</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Adresa e postës elektronike</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Vendosni një adresë të vlefshme emaili</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Numër telefoni</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Vendosni numrin tuaj të telefonit</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Data e lindjes</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Vendosni datën tuaj të lindjes</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Redakto profilin</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Suksesi!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Profili i azhurnuar me sukses</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Pranoj</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Ndodhi një gabim, provoni përsëri më vonë.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Ndryshoni fjalëkalimin</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Fjalëkalimi aktual</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Vendosni fjalëkalimin tuaj aktual</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Fjalëkalim i ri</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Vendosni fjalëkalimin tuaj të ri</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Konfirmoni fjalëkalimin</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Konfirmoni fjalëkalimin tuaj të ri</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Fjalëkalimet nuk përputhen</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Gabim</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Kishte një gabim në ndryshimin e fjalëkalimit</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Pranoj</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>I/e dashur</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Fjalëkalimi juaj ka qenë</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>Rivendosni me sukses</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Klikoni në butonin e hyrjes</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Hyrje</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Regjistrim në sit</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Ekipi ynë do të rishikojë informacionin tuaj</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Ky proces mund të zgjasë disa ditë</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Ju do të merrni një njoftim pasi të përfundojë verifikimi dhe prona juaj të regjistrohet.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Tjetër</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Tiparet</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Emri:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Titull</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Çmim për të rritur</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Çmim i fëmijës</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Çmim i transportit</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Përshkrim</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Vend</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Monedhë</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>I prapambetur</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Tjetër</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Ju lutemi plotësoni të gjitha fushat.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Disponueshmëri</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Ditë</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Nga</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Nga</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>I prapambetur</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Tjetër</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>E diel</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>E hënë</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>E martë</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>E mërkurë</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>E enjte</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>E premte</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>E shtunë</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Ju lutemi plotësoni orarin për të paktën një ditë.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Ngarko imazhe</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Vendosni fotot tuaja për të promovuar faqen tuaj ose klikoni për të zgjedhur</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Ju mund të ngarkoni deri në 100 imazhe</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>I prapambetur</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Tjetër</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Ju lutemi ngarkoni të paktën një imazh</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Vend</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Sigurohuni që të siguroni informacion të saktë dhe të plotë</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Kjo përfshin adresën, shtëpinë, apartamentin, tokën, etj.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>I prapambetur</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Tjetër</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Pajisje</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>I prapambetur</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Tjetër</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Ju lutemi zgjidhni të paktën një komoditet</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Konfirmim</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Ne jemi të gatshëm ta shfaqim faqen tuaj në botë. Ekipi ynë do të vërtetojë informacionin tuaj dhe do t'ju ndihmojë në marrjen e shumë vizitorëve.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Për të përfunduar, klikoni në butonin Prano.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>I prapambetur</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Pranoj</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Regjistrimi i suksesshëm</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Gabim në regjistrimin e faqes. Ju lutem provoni përsëri.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Faqja juaj është regjistruar me sukses dhe është në pritje të miratimit.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Afrika</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Azi</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Evropë</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Amerikë</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Oqeani</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Shtoj të reja</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Emër</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Kursi i këmbimit</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>I shtuar</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Valuta është shtuar</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Gabim</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Kishte një gabim në regjistrimin e monedhës</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Pranoj</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>A jeni i sigurt që doni të fshini këtë monedhë?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Ky veprim nuk mund të zhbëhet.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Po, fshi</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Anuloj</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>I fshirë</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Valuta është fshirë</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Monedhë</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Emër</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Futni emrin</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Kodi</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Fut kodin</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Simbol</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Hyni në simbol</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Kursi i këmbimit</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Vendosni kursin e këmbimit</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Anuloj</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Ruaj</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Shtoj të reja</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Emër</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>A jeni i sigurt që doni të fshini këtë kategori?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Ky veprim nuk mund të zhbëhet.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Po, fshi</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Anuloj</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>I fshirë</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Kategoria është fshirë</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Emër</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Futni emrin</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Anuloj</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Ruaj</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Titull</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Emrin e përdoruesit</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Data e krijimit</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Titull</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Emër</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Përshkrim</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Çmim për të rritur</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Çmim i fëmijës</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Çmim i transportit</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Vend</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Monedhë</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Ditë</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Nga</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Nga</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Aprovoj</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Hedh poshtë</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Konfirmoni refuzimin</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Arsyeja e refuzimit</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Faqja e aprovuar:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>I miratuar</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Gabim</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Gabim në aprovimin e faqes</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>I refuzuar</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Faqja e refuzuar</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Ndryshoni fjalëkalimin</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Regjistrohuni si pronar</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Publikoni faqet</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Lista e faqeve të publikuara</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Monedhë</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Autorizim i pronarit</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Autorizim i faqes</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Dal</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Hyrje</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Regjistroj</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Kërkoni sipas llojit</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Zgjidhni një kategori</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Menaxhimi i faqes</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Çmim i hyrjes</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Çmim total</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Pako speciale</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Emrin e paketës</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Artikujt e paketave</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Kosto shtesë</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Çmim i hyrjes</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>A keni ndonjë paketë të veçantë?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Po</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Jo</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Përfshin</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Shtoj</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>I plotë</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>A ka faqja juaj kosto shtesë?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Shtoni çmimin në</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Tjetër</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>I parakohshëm</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Ju lutemi shkruani një çmim të vlefshëm hyrje.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Menaxhimi i faqes</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Në publik</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Kapacitet</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Çmim për të rritur</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Çmim i fëmijës</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Çmim i transportit</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Zgjidhni mjetet e lejuara të transportit</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Makinë</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Motor</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Biçikletë</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Autobus</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Kamion</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Shtoj</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Në publik</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Oraret e disponueshme</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Përshkrimi i shkurtër i vendit</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Pajisje</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Çmime</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Të rriturit</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Fëmijë</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Transportoj</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Automjete të lejuara</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Makinë</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Motor</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Biçikletë</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Autobus</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Kamion</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Kostot shtesë</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Pako speciale</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Botoj</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Sukses</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Gabim</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Miratuar sitin</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Ka ndodhur një gabim</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>E diel</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>E hënë</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>E martë</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>E mërkurë</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>E enjte</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>E premte</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>E shtunë</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>I pakufizuar</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>I kufizuar</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Vendndodhja e kërkimit</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Emrin e paketës</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Çmimi i paketës</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Çmim i artikullit</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Kosto</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Shtoj të reja</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Emër</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>A jeni i sigurt që doni të fshini këtë kategori?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Ky veprim nuk mund të zhbëhet.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Po, fshi</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Anuloj</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>I fshirë</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Komoditeti është fshirë</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Komoditet</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Emër</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Futni emrin</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Anuloj</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>I mirë</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Emrin e artikullit</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Emrin e artikullit</value>
+  </data>
+</root>

@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>ID NIET GEVONDEN</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Ongeldig e-mail</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Ongeldige voornaam</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Ongeldige achternaam</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>ongeldig wachtwoord</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Ongeldig roltype</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Ongeldig gebruikertype</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Log in met uw account</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Inloggen met Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Log in met Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>E -mail</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Wachtwoord</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Wachtwoord vergeten?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Heb je geen account?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>E -mail</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Wachtwoord</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Heeft u al een account?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Telefoon</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Welkom bij plaats</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>We zijn er zeker van dat je ervaring op zijn plaats zal zijn</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Ongeldig land</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Uw verificatiecode voor {0} is:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Verzoek van codeverificatie</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>E -mailcode verificatie</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Voer deze code in in {0} om uw e -mailaccount te valideren.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Bedankt voor je deelname aan {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Je moet meer dan 18 jaar oud hebben</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Er bestaat al een gebruiker met de gegeven e -mail.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Code kon niet bevestigen.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Ongeldige maximale wachtwoordlengte</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Ongeldige minimale wachtwoordlengte</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Wachtwoord moet ten minste één hoofdletter bevatten</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Wachtwoord moet ten minste één kleine letters bevatten</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Wachtwoord moet ten minste één cijfer bevatten</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Wachtwoord moet ten minste één speciaal teken bevatten</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Ongeldige gebruiker</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Aanmelden</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Ben je het eens met ons privacybeleid?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Aanmelden</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Aanmelden</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>bevestig wachtwoord</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Aanmelden</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Gebruiker heeft zijn account niet bevestigd.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Ongeldige naam</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Ongeldige lange beschrijving</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Ongeldige valuta!</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Code invoeren</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Voer de code in.</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Beste</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>Is geweest</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>Registreren</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Klik op de knop &lt;g x=1 id="784"&gt;Login&lt;/g&gt;.</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Code invoeren</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Voer de code in die naar u is verzonden</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Beste</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>Is geweest</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>succesvol geregistreerd</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Klik op de inlogknop</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Verificatie</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>E -mailadres</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Controleer uw e -mailaccount</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Accepteren</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>De e -mail is niet geregistreerd</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>E -mailadres</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Accepteren</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>De e -mail is niet geregistreerd</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Code invoeren</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Accepteren</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Accepteren</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Herstel het wachtwoord</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Uw code wordt naar uw e -mail verzonden, controleer</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Voer de code in die was</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>naar u verzonden</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>De code is onjuist. Probeer het opnieuw.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Nieuw wachtwoord</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Bevestig uw wachtwoord</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Voer uw</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>Nieuw wachtwoord</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Wachtwoord reset mislukt. Probeer het later opnieuw.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Profiel</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Voer uw voornaam in</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Voer uw achternaam in</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>E -mailadres</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Voer een geldig e -mailadres in</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Telefoonnummer</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Voer uw telefoonnummer in</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Voer uw geboortedatum in</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Bewerk profiel</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Succes!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Profiel met succes bijgewerkt</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Accepteren</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Er is een fout opgetreden, probeer het later opnieuw.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Wijzig het wachtwoord</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Huidig ​​wachtwoord</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Voer uw huidige wachtwoord in</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Nieuw wachtwoord</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Voer uw nieuwe wachtwoord in</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Bevestig het wachtwoord</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Bevestig uw nieuwe wachtwoord</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Wachtwoorden komen niet overeen</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Fout</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Er was een foutmelding het wachtwoord wijzigen</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Accepteren</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Beste</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Uw wachtwoord is geweest</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>met succes gereset</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Klik op de inlogknop</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Site -registratie</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Ons team zal uw informatie beoordelen</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Dit proces kan enkele dagen duren</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>U ontvangt een melding zodra de verificatie is voltooid en uw eigendom is geregistreerd.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Functies</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Naam:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Volwassen prijs</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Kinderprijs</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Transportprijs</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Beschrijving</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Categorie</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Munteenheid</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Rug</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Vul alle velden in.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Beschikbaarheid</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Dag</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Van</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Naar</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Rug</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Zondag</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Maandag</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Dinsdag</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Woensdag</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Donderdag</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Vrijdag</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Zaterdag</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Voltooi het schema voor minstens één dag.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Upload afbeeldingen</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Upload uw foto's om uw site te promoten of klik om te selecteren</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>U kunt maximaal 100 afbeeldingen uploaden</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Rug</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Upload alstublieft ten minste één afbeelding</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Locatie</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Zorg ervoor dat u nauwkeurige en volledige informatie verstrekt</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Dit omvat adres, huis, appartement, land, enz.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Rug</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Voorzieningen</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Rug</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Selecteer ten minste één voorziening</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Bevestiging</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>We zijn klaar om uw site te presenteren naar de wereld. Ons team valideert uw informatie en helpt u bij het ontvangen van veel bezoekers.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Klik op de knop Accepteren om te voltooien.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Rug</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Accepteren</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Registratie succesvol</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Fout bij het registreren van de site. Probeer het opnieuw.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Uw site is succesvol geregistreerd en is in afwachting van goedkeuring.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Afrika</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Azië</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Europa</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Amerika</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Oceanië</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Voeg nieuw toe</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Wisselkoers</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Toegevoegd</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Er is valuta toegevoegd</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Fout</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Er was een foutmelding bij het registreren van de valuta</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Accepteren</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Weet u zeker dat u deze valuta wilt verwijderen?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Deze actie kan niet ongedaan worden gemaakt.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Ja, verwijder</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Verwijderd</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Valuta is verwijderd</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Voer de naam in</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Code invoeren</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Symbool</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Voer symbool in</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Wisselkoers</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Voer de wisselkoers in</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Redden</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Voeg nieuw toe</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Weet u zeker dat u deze categorie wilt verwijderen?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Deze actie kan niet ongedaan worden gemaakt.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Ja, verwijder</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Verwijderd</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Categorie is verwijderd</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Categorie</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Voer de naam in</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Redden</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Gebruikersnaam</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Creatie -datum</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Beschrijving</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Volwassen prijs</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Kinderprijs</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Transportprijs</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Categorie</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Munteenheid</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Dag</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Van</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Naar</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Goedkeuren</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Afwijzen</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Bevestig afwijzing</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Reden voor afwijzing</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Goedgekeurde site:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Goedgekeurd</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Fout</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Fout bij het goedkeuren van de site</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Afgewezen</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Site afgewezen</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Profiel</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Wijzig het wachtwoord</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Registreer als eigenaar</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Publiceer sites</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Lijst met gepubliceerde sites</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Categorieën</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Eigenaarautorisatie</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Site Authorization</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Uitloggen</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Toegang</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Zoek op type</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Kies een categorie</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Sitebeheer</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Toegangsprijs</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Totale prijs</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Speciaal pakket</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Pakketnaam</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Pakketitems</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Extra kosten</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Toegangsprijs</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Heeft u een speciaal pakket?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Nee</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Inclusief</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Totaal</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Heeft uw site extra kosten?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Prijs toevoegen aan</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Vorig</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Voer een geldige toegangsprijs in.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Sitebeheer</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Openbaar</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Privé</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Capaciteit</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Volwassen prijs</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Kinderprijs</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Transportprijs</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Selecteer het toegestane vervoermiddel</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Motorfiets</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Fiets</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Bus</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Vrachtwagen</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Openbaar</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Privé</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Beschikbare schema's</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Korte beschrijving van de plaats</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Voorzieningen</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Prijzen</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Volwassenen</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Kinderen</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Vervoer</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Toegestane voertuigen</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Motorfiets</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Fiets</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Bus</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Vrachtwagen</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Extra kosten</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Speciaal pakket</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Publiceren</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Succes</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Fout</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Goedgekeurd site</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Er is een fout opgetreden</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Zondag</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Maandag</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Dinsdag</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Woensdag</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Donderdag</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Vrijdag</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Zaterdag</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Onbeperkt</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Beperkt</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Zoeklocatie</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Pakketnaam</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Pakketprijs</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Artikelprijs</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Kostennaam</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Voeg nieuw toe</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Weet u zeker dat u deze categorie wilt verwijderen?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Deze actie kan niet ongedaan worden gemaakt.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Ja, verwijder</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Verwijderd</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Voorziening is verwijderd</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Voorziening</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Voer de naam in</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Itemnaam</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Itemnaam</value>
+  </data>
+</root>

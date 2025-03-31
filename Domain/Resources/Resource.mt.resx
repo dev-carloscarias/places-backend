@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Ma nstabx</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Email invalidu</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Isem invalidu</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Kunjom invalidu</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Password invalida</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Tip ta 'rwol invalidu</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Tip ta 'utent invalidu</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Idħol</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Idħol mal-kont tiegħek</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Idħol ma 'Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Idħol ma 'Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Insejt il-password?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Idħol</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>M'għandekx kont?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Diġà għandek kont?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Idħol</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Isem</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Kunjom</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Merħba fil-post</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Aħna żgur li l-esperjenza tiegħek f'postha tkun tal-biża '</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Pajjiż invalidu</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Il-kodiċi tal-verifika tiegħek għal {0} huwa:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Talba għall-verifika tal-kodiċi</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Verifika tal-Kodiċi tal-Email</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Jekk jogħġbok daħħal dan il-kodiċi f '{0} sabiex tivvalida l-kont tal-email tiegħek.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Grazzi talli ngħaqad ma '{0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Irid ikollok aktar minn 18-il sena</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Utent bl-email mogħti diġà jeżisti.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Kodiċi ma kienx kapaċi jikkonferma.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Tul massimu invalidu tal-password</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Tul tal-password minimu invalidu</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Il-password trid fiha mill-inqas ittra waħda ta 'fuq</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Il-password trid fiha mill-inqas ittra waħda baxxa</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Il-password għandu jkun fiha mill-inqas ċifra waħda</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Il-password trid fiha mill-inqas karattru speċjali wieħed</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Utent invalidu</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Irregistra</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Taqbel mal-politiki tal-privatezza tagħna?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Irregistra</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Irregistra</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Ikkonferma il-Password</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Irregistra</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Utent ma kkonfermax il-kont tiegħu.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Mhux validu</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Deskrizzjoni Mhux Valida!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Munita Mhux Valida!</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Ikteb il-PIN</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Kodiċi</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Daħħal il-kodiċi mibgħut!</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>cerv</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>ma kien</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>Irreġistra</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Ikklikkja fuq il-buttuna Idħol!</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Idħol</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Ikteb il-PIN</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Kodiċi</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Daħħal il-kodiċi li ntbagħat lilek</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>cerv</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>ma kien</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>irreġistrat b'suċċess</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Ikklikkja fuq il-buttuna tal-login</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Idħol</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Verifika</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Indirizz tal-email</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Jekk jogħġbok iċċekkja l-kont tal-email tiegħek</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Aċċetta</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>L-email mhix irreġistrata</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Indirizz tal-email</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Aċċetta</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>L-email mhix irreġistrata</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Ikteb il-PIN</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Kodiċi</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Aċċetta</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Aċċetta</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Irkupra l-password</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Il-kodiċi tiegħek jintbagħat lill-email tiegħek, jekk jogħġbok iċċekkja</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Daħħal il-kodiċi li kien</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>mibgħut lilek</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Il-kodiċi mhuwiex korrett. Erġa 'pprova.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Password ġdida</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Ikkonferma l-password tiegħek</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Jekk jogħġbok daħħal u kkonferma tiegħek</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>password ġdida</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Ir-reset tal-password falliet. Jekk jogħġbok erġa 'pprova aktar tard.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>L-ewwel isem</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Daħħal l-ewwel isem tiegħek</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Kunjom</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Daħħal l-Kunjom Tiegħek</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Indirizz tal-email</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Daħħal indirizz elettroniku validu</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Numru tat-telefon</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Daħħal in-numru tat-telefon tiegħek</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Data tat-twelid</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Daħħal id-data tat-twelid tiegħek</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Editja profil</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Suċċess!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Profil aġġornat b'suċċess</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Aċċetta</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>Sar żball, erġa 'pprova aktar tard.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Ibdel il-password</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Password kurrenti</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Daħħal il-password kurrenti tiegħek</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Password ġdida</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Daħħal il-password il-ġdida tiegħek</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Ikkonferma l-password</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Ikkonferma l-password il-ġdida tiegħek</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Il-passwords ma jaqblux</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Żball</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Kien hemm żball li jbiddel il-password</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Aċċetta</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>cerv</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>il-password tiegħek kienet</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>Irrisettja b'suċċess</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Ikklikkja fuq il-buttuna tal-login</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Idħol</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Reġistrazzjoni tas-Sit</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>It-tim tagħna se jirrevedi l-informazzjoni tiegħek</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Dan il-proċess jista 'jieħu ftit jiem</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Int tirċievi notifika ladarba l-verifika tkun kompluta u l-propjetà tiegħek tkun irreġistrata.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Sussegwentement</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Karatteristiċi</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Isem:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Titlu</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Prezz għall-adulti</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Prezz tat-Tfal</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Prezz tat-Trasport</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Deskrizzjoni</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Kategorija</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Pajjiż</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Munita</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Lura</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Sussegwentement</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Jekk jogħġbok imla l-oqsma kollha.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Disponibbiltà</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Jum</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Minn</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Lura</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Sussegwentement</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Ħadd</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>It-Tnejn</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>It-Tlieta</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>L-Erbgħa</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Il-Ħamis</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Il-Ġimgħa</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Is-Sibt</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Jekk jogħġbok imla l-iskeda għal mill-inqas ġurnata.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Tella 'immaġini</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Tella 'r-ritratti tiegħek biex tippromwovi s-sit tiegħek jew ikklikkja biex tagħżel</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Tista 'ttella' sa 100 immaġini</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Lura</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Sussegwentement</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Jekk jogħġbok ittella 'mill-inqas immaġni waħda</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Kun żgur li tipprovdi informazzjoni preċiża u kompluta</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Dan jinkludi indirizz, dar, appartament, art, eċċ.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Lura</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Sussegwentement</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Kumditajiet</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Lura</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Sussegwentement</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Jekk jogħġbok agħżel mill-inqas kumdità waħda</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Konferma</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Aħna lesti li nuru s-sit tiegħek għad-dinja. It-tim tagħna se jivvalida l-informazzjoni tiegħek u jgħinek tirċievi ħafna viżitaturi.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Biex tiffinalizza, ikklikkja l-buttuna Aċċetta.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Lura</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Aċċetta</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Ir-reġistrazzjoni ta ’suċċess</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Żball li jirreġistra s-sit. Jekk jogħġbok erġa 'pprova.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Is-sit tiegħek ġie rreġistrat b'suċċess u huwa pendenti għall-approvazzjoni.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Afrika</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Asja</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Ewropa</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>L-Amerika</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Oċeanja</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Żid ġdid</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Isem</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Rata tal-kambju</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Miżjud</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Ġiet miżjuda munita</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Żball</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Kien hemm żball li rreġistra l-munita</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Aċċetta</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Int żgur li trid tħassar din il-munita?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Din l-azzjoni ma tistax titneħħa.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Iva, ħassar</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Ikkanċella</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Imħassar</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Il-munita tħassret</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Muniti</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Isem</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Daħħal l-isem</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Kodiċi</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Ikteb il-PIN</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Simbolu</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Daħħal is-simbolu</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Rata tal-kambju</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Daħħal ir-rata tal-kambju</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Ikkanċella</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Ħlief</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Żid ġdid</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Isem</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Int żgur li trid tħassar din il-kategorija?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Din l-azzjoni ma tistax titneħħa.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Iva, ħassar</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Ikkanċella</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Imħassar</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Kategorija tħassret</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Kategorija</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Isem</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Daħħal l-isem</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Ikkanċella</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Ħlief</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Titlu</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Isem tal-Utent</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Data tal-ħolqien</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Titlu</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Isem</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Deskrizzjoni</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Prezz għall-adulti</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Prezz tat-Tfal</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Prezz tat-Trasport</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Kategorija</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Pajjiż</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Munita</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Jum</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Minn</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Approva</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Tiċħad</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Ikkonferma ċ-ċaħda</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Raġuni għar-rifjut</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Sit approvat:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Approvat</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Żball</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Żball li japprova s-sit</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Miċħuda</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Sit miċħud</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Ibdel il-password</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Irreġistra bħala sid</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Tippubblika siti</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Lista ta 'siti ppubblikati</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Muniti</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Kategoriji</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Awtorizzazzjoni tas-Sid</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Awtorizzazzjoni tas-Sit</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Idħol</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Aċċess</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Irreġistra</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Tfittxija skont it-tip</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Agħżel kategorija</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Ġestjoni tas-Sit</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Prezz tad-Dħul</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Prezz totali</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Pakkett speċjali</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Isem tal-Pakkett</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Oġġetti tal-pakkett</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Spiża addizzjonali</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Prezz tad-Dħul</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Għandek xi pakkett speċjali?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>IVA</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>LE</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Jinkludi</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Żid</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Totali</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>Is-sit tiegħek għandu spejjeż addizzjonali?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Żid il-prezz ma '</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Sussegwentement</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Preċedenti</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Jekk jogħġbok daħħal prezz tad-dħul validu.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Ġestjoni tas-Sit</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Pubbliku</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Kapaċità</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Prezz għall-adulti</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Prezz tat-Tfal</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Prezz tat-Trasport</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Agħżel il-mezzi ta 'trasport permessi</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Karozza</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Mutur</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Rota</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Xarabank</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Trakk</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Żid</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Pubbliku</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Skedi disponibbli</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Deskrizzjoni qasira tal-post</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Kumditajiet</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Prezzijiet</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Adulti</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Tfal</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Trasport</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Vetturi permessi</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Karozza</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Mutur</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Rota</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Xarabank</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Trakk</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Spejjeż addizzjonali</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Pakkett speċjali</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Ippubblika</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Suċċess</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Żball</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Sit approvat</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>Seħħ żball</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Ħadd</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>It-Tnejn</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>It-Tlieta</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>L-Erbgħa</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Il-Ħamis</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Il-Ġimgħa</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Is-Sibt</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Bla limitu</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Limitat</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Post tat-tfittxija</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Isem tal-Pakkett</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Prezz tal-Pakkett</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Prezz tal-oġġett</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Isem tal-ispejjeż</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Żid ġdid</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Isem</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Int żgur li trid tħassar din il-kategorija?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Din l-azzjoni ma tistax titneħħa.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Iva, ħassar</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Ikkanċella</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Imħassar</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>L-amenità tħassret</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Kumdità</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Isem</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Daħħal l-isem</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Ikkanċella</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Isem tal-oġġett</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Isem tal-oġġett</value>
+  </data>
+</root>

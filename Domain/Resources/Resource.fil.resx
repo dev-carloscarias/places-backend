@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>Hindi natagpuan ang id</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Di -wastong email</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Di -wastong unang pangalan</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Di -wastong apelyido</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>di wastong password</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Hindi wastong uri ng papel</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Di -wastong uri ng gumagamit</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>Mag log in</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Mag -login sa iyong account</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Mag login sa facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Mag -login sa Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Nakalimutan ang password?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>Mag log in</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>Wala kang account?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Mayroon ka na bang isang account?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Mag log in</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Pangalan</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Huling pangalan</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Telepono</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Maligayang pagdating sa lugar</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Sigurado kami na ang iyong karanasan sa lugar ay magiging kahanga -hangang</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>Di -wastong bansa</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>Ang iyong verification code para sa {0} ay:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Kahilingan sa pag -verify ng code</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Pag -verify ng Email Code</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Mangyaring ipasok ang code na ito sa {0} upang mapatunayan ang iyong email account.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Salamat sa pagsali sa {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Dapat mayroon kang higit sa 18 taong gulang</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Ang isang gumagamit na may naibigay na email ay mayroon na.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>Hindi makumpirma ng code.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Di -wastong maximum na haba ng password</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Di -wastong minimum na haba ng password</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>Ang password ay dapat naglalaman ng hindi bababa sa isang itaas na sulat ng kaso</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>Ang password ay dapat naglalaman ng hindi bababa sa isang mas mababang sulat ng kaso</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>Ang password ay dapat naglalaman ng hindi bababa sa isang digit</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>Ang password ay dapat naglalaman ng hindi bababa sa isang espesyal na karakter</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Di -wastong gumagamit</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Pag -signup</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Sumasang -ayon ka ba sa aming mga patakaran sa privacy?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Mag -sign up</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Mag -sign up</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Kumpirmahin ang password</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Mag -sign up</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>Hindi kinumpirma ng gumagamit ang kanyang account.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>mga hilera at haligi</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Di-wastong Paglalarawan!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>Di-wastong Pera!</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Ilagay ang code na ipinadala!</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>ano ang tagalog ang mahal sa liham</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>ay na -</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>paggamit</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Mag-click sa pindutan ng Pag-login!</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>Mag log in</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Ipasok ang code na ipinadala sa iyo</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>ano ang tagalog ang mahal sa liham</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>ay na -</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>matagumpay na nakarehistro</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Mag -click sa pindutan ng pag -login</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>Mag log in</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Pag -verify</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Email address</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Mangyaring suriin ang iyong email account</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Tanggapin</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>Ang email ay hindi nakarehistro</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Email address</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Tanggapin</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>Ang email ay hindi nakarehistro</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Tanggapin</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Tanggapin</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Mabawi ang password</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>Ipapadala ang iyong code sa iyong email, mangyaring suriin</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Ipasok ang code na</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>ipinadala sa iyo</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>Ang code ay hindi tama. Subukang muli.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Bagong password</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Kumpirmahin ang iyong password</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Mangyaring ipasok at kumpirmahin ang iyong</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>bagong password</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>Nabigo ang pag -reset ng password. Mangyaring subukang muli mamaya.</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Unang pangalan</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Ipasok ang iyong unang pangalan</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Huling Pangalan</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Ipasok ang iyong apelyido</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Email address</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Magpasok ng isang wastong email address</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Numero ng telepono</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Ipasok ang iyong numero ng telepono</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Petsa ng kapanganakan</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Ipasok ang iyong petsa ng kapanganakan</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>I -edit ang profile</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Tagumpay!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Matagumpay na na -update ang profile</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Tanggapin</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>May naganap na error, subukang muli sa ibang pagkakataon.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Baguhin ang password</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Kasalukuyang password</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Ipasok ang iyong kasalukuyang password</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Bagong password</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Ipasok ang iyong bagong password</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Kumpirmahin ang password</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Kumpirmahin ang iyong bagong password</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Ang mga password ay hindi tumutugma</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Nagkaroon ng isang error sa pagbabago ng password</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Tanggapin</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>ano ang tagalog ang mahal sa liham</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>Ang iyong password ay naging</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>matagumpay na na -reset</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Mag -click sa pindutan ng pag -login</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>Mag log in</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Pagrehistro sa Site</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>Susuriin ng aming koponan ang iyong impormasyon</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Ang prosesong ito ay maaaring tumagal ng ilang araw</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Makakatanggap ka ng isang abiso sa sandaling kumpleto ang pagpapatunay at nakarehistro ang iyong pag -aari.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Susunod</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Mga tampok</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Pangalan:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Pamagat</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Presyo ng may sapat na gulang</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Presyo ng Bata</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Presyo ng transportasyon</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Paglalarawan</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Kategorya</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>Bansa</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Pera</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Balik</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Susunod</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Mangyaring punan ang lahat ng mga patlang.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Pagkakaroon</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Araw</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Mula sa</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>Sa</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Balik</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Susunod</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Linggo</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Lunes</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Martes</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Miyerkules</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Huwebes</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Biyernes</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Sabado</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Mangyaring kumpletuhin ang iskedyul nang hindi bababa sa isang araw.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Mag -upload ng mga imahe</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>I -upload ang iyong mga larawan upang maisulong ang iyong site o mag -click upang piliin</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Maaari kang mag -upload ng hanggang sa 100 mga imahe</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Balik</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Susunod</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Mangyaring mag -upload ng kahit isang imahe</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Lokasyon</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Siguraduhing magbigay ng tumpak at kumpletong impormasyon</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Kasama dito ang address, bahay, apartment, lupa, atbp.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Balik</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Susunod</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Mga amenities</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Balik</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Susunod</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Mangyaring piliin ang hindi bababa sa isang amenity</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Kumpirmasyon</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Handa kaming ipakita ang iyong site sa mundo. Patunayan ng aming koponan ang iyong impormasyon at tutulungan ka sa pagtanggap ng maraming mga bisita.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Upang tapusin, i -click ang pindutan ng Tanggapin.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Balik</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Tanggapin</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Matagumpay ang pagrehistro</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Error sa pagrehistro sa site. Mangyaring subukang muli.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>Ang iyong site ay matagumpay na nakarehistro at nakabinbin ang pag -apruba.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Africa</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Asya</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Europa</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>America</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Oceania</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Magdagdag ng Bago</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Pangalan</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Palitan ng rate</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Idinagdag</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>Ang pera ay naidagdag</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Nagkaroon ng isang error na nagrehistro ng pera</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Tanggapin</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Sigurado ka bang nais mong tanggalin ang pera na ito?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Ang pagkilos na ito ay hindi maaaring magawa.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Oo, tanggalin</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Kanselahin</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Tinanggal</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>Ang pera ay tinanggal</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Pera</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Pangalan</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Ipasok ang Pangalan</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Simbolo</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Ipasok ang simbolo</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Palitan ng rate</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Ipasok ang rate ng palitan</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Kanselahin</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>I -save</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Magdagdag ng Bago</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Pangalan</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Sigurado ka bang nais mong tanggalin ang kategoryang ito?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Ang pagkilos na ito ay hindi maaaring magawa.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Oo, tanggalin</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Kanselahin</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Tinanggal</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>Ang kategorya ay tinanggal</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Kategorya</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Pangalan</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Ipasok ang Pangalan</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Kanselahin</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>I -save</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Pamagat</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Pangalan ng gumagamit</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Petsa ng paglikha</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Pamagat</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Pangalan</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Paglalarawan</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Presyo ng may sapat na gulang</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Presyo ng Bata</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Presyo ng transportasyon</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Kategorya</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>Bansa</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Pera</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Araw</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Mula sa</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>Sa</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Aprubahan</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Tanggihan</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Kumpirmahin ang pagtanggi</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Dahilan para sa pagtanggi</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Inaprubahang Site:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Inaprubahan</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Error sa pag -apruba sa site</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Tinanggihan</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Tinanggihan ng site</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Baguhin ang password</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Magrehistro bilang may -ari</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Mag -publish ng mga site</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Listahan ng mga nai -publish na site</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Pera</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Mga kategorya</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Pahintulot ng may -ari</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Pahintulot ng site</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Mag -log out</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>I -access</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Magrehistro</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Maghanap ayon sa Uri</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Pumili ng isang kategorya</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Pamamahala sa Site</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Presyo ng pagpasok</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Kabuuang presyo</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Espesyal na pakete</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Pangalan ng Package</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Mga item sa package</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Karagdagang gastos</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Presyo ng pagpasok</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Mayroon ka bang espesyal na pakete?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Oo</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>Hindi</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>May kasamang</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Idagdag</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Kabuuan</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>May karagdagang gastos ba ang iyong site?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Magdagdag ng presyo sa</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Susunod</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Nakaraan</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Mangyaring magpasok ng isang wastong presyo ng pagpasok.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Pamamahala sa Site</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Publiko</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Pribado</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Kapasidad</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Presyo ng may sapat na gulang</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Presyo ng Bata</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Presyo ng transportasyon</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Piliin ang pinahihintulutang paraan ng transportasyon</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Kotse</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Motorsiklo</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Bisikleta</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Bus</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Trak</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Idagdag</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Publiko</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Pribado</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Magagamit na mga iskedyul</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Maikling paglalarawan ng lugar</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Mga amenities</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Mga presyo</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>May sapat na gulang</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Mga anak</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Transportasyon</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Pinapayagan na mga sasakyan</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Kotse</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Motorsiklo</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Bisikleta</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Bus</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Trak</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Karagdagang gastos</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Espesyal na pakete</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>I -publish</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Tagumpay</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Inaprubahan ang site</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>May naganap na error</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Linggo</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Lunes</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Martes</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Miyerkules</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Huwebes</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Biyernes</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Sabado</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Walang limitasyong</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Limitado</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Lokasyon ng paghahanap</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Pangalan ng Package</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Presyo ng Package</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Presyo ng item</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Pangalan ng gastos</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Magdagdag ng Bago</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Pangalan</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Sigurado ka bang nais mong tanggalin ang kategoryang ito?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Ang pagkilos na ito ay hindi maaaring magawa.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Oo, tanggalin</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Kanselahin</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Tinanggal</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>Ang amenity ay tinanggal</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Amenity</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Pangalan</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Ipasok ang Pangalan</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Kanselahin</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Pangalan ng item</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Pangalan ng item</value>
+  </data>
+</root>

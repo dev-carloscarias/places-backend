@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>No he trobat</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Email invàlid</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Nom no vàlid</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Nom no vàlid</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>contrasenya invàlida</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Tipus de rol no vàlid</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Tipus d'usuari no vàlid</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>iniciar Sessió</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>Inicieu la sessió amb el vostre compte</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>Inicia sessió amb Facebook</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Inicieu la sessió amb Google</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>Correu electrònic</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>Contrasenya</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>Has oblidat la contrasenya?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>iniciar Sessió</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>No teniu cap compte?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>Correu electrònic</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>Contrasenya</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>Ja teniu un compte?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>Iniciar Sessió</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>Cognom</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>Telèfon</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>Benvingut a Place</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>Estem segurs que la vostra experiència al seu lloc serà impressionant</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>País no vàlid</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>El vostre codi de verificació per a {0} és:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Sol·licitud de verificació del codi</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>Verificació del codi de correu electrònic</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>Introduïu aquest codi a {0} per validar el vostre compte de correu electrònic.</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>Gràcies per unir -vos a {0}</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>Deu tenir més de 18 anys</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Ja existeix un usuari amb el correu electrònic donat.</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>El codi no ha estat capaç de confirmar.</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>Longitud màxima de la contrasenya no vàlida</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>Longitud mínima de contrasenya no vàlida</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>La contrasenya ha de contenir almenys una lletra de la caixa superior</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>La contrasenya ha de contenir almenys una lletra minúscula</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>La contrasenya ha de contenir almenys un dígit</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>La contrasenya ha de contenir almenys un caràcter especial</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>Usuari no vàlid</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>Registra't</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>Esteu d’acord amb les nostres polítiques de privadesa?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>Registra't</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>Registra't</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>Confirma la contrassenya</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>Registra't</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>L'usuari no ha confirmat el seu compte.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Nom no vàlid</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>Descripció no vàlida"</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>El codi de moneda no és vàlid</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>Introdueix el codi</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>Codi</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>Introdueix el codi enviat!</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>Benvolgut/uda</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>ha estat!</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>Registra’t</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>Fes clic al botó Inicia sessió!</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>iniciar Sessió</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>Introdueix el codi</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>Codi</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Introduïu el codi que us ha enviat</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>Benvolgut/uda</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>ha estat!</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>registrat amb èxit</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>Feu clic al botó Inici de sessió</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>iniciar Sessió</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>Verificació</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>Adreça de correu electrònic</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>Consulteu el vostre compte de correu electrònic</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>Acceptar</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>El correu electrònic no està registrat</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>Recupereu la contrasenya</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>Adreça de correu electrònic</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>El vostre codi s’enviarà al vostre correu electrònic, comproveu -ho</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>Acceptar</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>El correu electrònic no està registrat</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>Introdueix el codi</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>Codi</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>Introduïu el codi que era</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>Enviat a vosaltres</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>Acceptar</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>El codi és incorrecte. Torneu -ho a provar.</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>Nova contrasenya</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>Confirmeu la vostra contrasenya</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>Introduïu i confirmeu el vostre</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>nova contrasenya</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>El restabliment de la contrasenya ha fallat. Torneu -ho a provar més tard.</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>Acceptar</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>Introduïu el vostre nom</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>Introduïu el vostre cognom</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>Adreça de correu electrònic</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>Introduïu una adreça de correu electrònic vàlida</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>Número de telèfon</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>Introduïu el vostre número de telèfon</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>Data de naixement</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>Introduïu la vostra data de naixement</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>Editar perfil</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>Èxit!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>Perfil actualitzat correctament</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>Acceptar</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>S'ha produït un error, torneu -ho a provar més tard.</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>Canvieu la contrasenya</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>Contrasenya actual</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>Introduïu la vostra contrasenya actual</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>Nova contrasenya</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>Introduïu la vostra nova contrasenya</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>Confirmeu la contrasenya</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>Confirmeu la vostra nova contrasenya</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>Les contrasenyes no coincideixen</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>Hi va haver un error canviant la contrasenya</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>Acceptar</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>Benvolgut/uda</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>La vostra contrasenya ha estat</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>Restablir amb èxit</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>Feu clic al botó Inici de sessió</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>iniciar Sessió</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>Registre del lloc</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>El nostre equip revisarà la vostra informació</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>Aquest procés pot trigar uns dies</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>Rebrà una notificació un cop finalitzi la verificació i la propietat està registrada.</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>Pròxim</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>Funcions</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>Nom:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>Títol</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>Preu adult</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>Preu infantil</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>Preu del transport</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>Descripció</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>Moneda</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>Esquena</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>Pròxim</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>Empleneu tots els camps.</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>Disponibilitat</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>Dia</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>Des de</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>Esquena</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>Pròxim</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>Diumenge</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>Dilluns</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>Dimarts</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>Dimecres</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>Dijous</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>Divendres</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>Dissabte</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>Completeu la programació almenys un dia.</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>Pengeu imatges</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>Pengeu les fotos per promocionar el vostre lloc o feu clic per seleccionar</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>Podeu penjar fins a 100 imatges</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>Esquena</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>Pròxim</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>Si us plau, pengeu almenys una imatge</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>Situació</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>Assegureu -vos de proporcionar informació precisa i completa</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>Inclou adreça, casa, apartament, terra, etc.</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>Esquena</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>Pròxim</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>Comoditats</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>Esquena</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>Pròxim</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>Seleccioneu almenys una comoditat</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>Confirmació</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>Estem preparats per mostrar el vostre lloc al món. El nostre equip validarà la vostra informació i us ajudarà a rebre molts visitants.</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>Per finalitzar, feu clic al botó Accepta.</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>Esquena</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>Acceptar</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>Registre amb èxit</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>Error registrant el lloc. Torneu -ho a provar.</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>El vostre lloc s'ha registrat amb èxit i està pendent de l'aprovació.</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>Àfrica</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>Àsia</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>Europa</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>Amèrica</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>Oceania</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>Afegiu nou</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>Tipus de canvi</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>Afegit</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>S'ha afegit moneda</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>Hi va haver un error en registrar la moneda</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>Acceptar</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>Esteu segur que voleu suprimir aquesta moneda?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>Aquesta acció no es pot desfer.</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>Sí, suprimeix</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>Cancel·lar</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>Suprimit</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>S'ha suprimit la moneda</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>Monedes</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Introduir el nom</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>Codi</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>Introdueix el codi</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>Símbol</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>Introduïu el símbol</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>Tipus de canvi</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>Introduïu el tipus de canvi</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>Cancel·lar</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>Estalviar</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>Afegiu nou</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>Esteu segur que voleu suprimir aquesta categoria?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>Aquesta acció no es pot desfer.</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>Sí, suprimeix</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>Cancel·lar</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>Suprimit</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>S'ha suprimit la categoria</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Introduir el nom</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>Cancel·lar</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>Estalviar</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>Títol</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>Nom d'usuari</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>Data de creació</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>Títol</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>Descripció</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>Preu adult</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>Preu infantil</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>Preu del transport</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>Moneda</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>Dia</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>Des de</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>Aprovar</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>Rebutjar</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>Confirmeu el rebuig</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>Motiu del rebuig</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>Lloc aprovat:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>Aprovat</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>Error aprovant el lloc</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>Rebutjat</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>Lloc rebutjat</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>Canvieu la contrasenya</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>Registra't com a propietari</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>Publicar llocs</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>Llista de llocs publicats</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>Monedes</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>Autorització del propietari</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>Autorització del lloc</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>Tancar la sessió</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>Accés</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>Cerqueu per tipus</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>Trieu una categoria</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>Gestió</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>Preu d'entrada</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>Preu total</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>Paquet especial</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>Nom del paquet</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>Els articles del paquet</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>Cost addicional</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>Preu d'entrada</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>Tens algun paquet especial?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>Incloure</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>Addiccionar</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>El vostre lloc té costos addicionals?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>Afegiu el preu a</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>Pròxim</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>Previ</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>Introduïu un preu d'entrada vàlid.</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>Gestió</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>Públic</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>Capacitat</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>Preu adult</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>Preu infantil</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>Preu del transport</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>Seleccioneu els mitjans de transport permesos</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>Cotxe</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>Motocicleta</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>Bicicleta</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>Autobús</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>Vagó</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>Addiccionar</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>Públic</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>Horaris disponibles</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>Breu descripció del lloc</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>Comoditats</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>Preus</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>Adults</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>Nens</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>Transportar</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>Vehicles permesos</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>Cotxe</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>Motocicleta</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>Bicicleta</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>Autobús</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>Vagó</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>Costos addicionals</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>Paquet especial</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>Publicar</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>Èxit</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>Lloc aprovat</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>S'ha produït un error</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>Diumenge</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>Dilluns</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>Dimarts</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>Dimecres</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>Dijous</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>Divendres</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>Dissabte</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>Il·limitat</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>Limitat</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>Cerca Ubicació</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>Nom del paquet</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>Preu del paquet</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>Preu de l'article</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>Nom de cost</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>Afegiu nou</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>Esteu segur que voleu suprimir aquesta categoria?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>Aquesta acció no es pot desfer.</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>Sí, suprimeix</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>Cancel·lar</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>Suprimit</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>S'ha suprimit l'amenitat</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>Comoditat</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>Introduir el nom</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>Cancel·lar</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>Nom de l'article</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>Nom de l'article</value>
+  </data>
+</root>

@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IdNotFound" xml:space="preserve">
+    <value>आईडी नहीं मिला</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>अमान्य ईमेल</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>अमान्य पहला नाम</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>अमान्य अंतिम नाम</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>अवैध पासवर्ड</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>अमान्य भूमिका प्रकार</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>अमान्य उपयोगकर्ता प्रकार</value>
+  </data>
+  <data name="login_screen_page_title" xml:space="preserve">
+    <value>लॉग इन करें</value>
+  </data>
+  <data name="login_screen_login_title" xml:space="preserve">
+    <value>अपने खाते के साथ लॉगिन करें</value>
+  </data>
+  <data name="login_screen_facebook_button" xml:space="preserve">
+    <value>फ़ेसबुक लॉगिन करें</value>
+  </data>
+  <data name="login_screen_google_button" xml:space="preserve">
+    <value>Google के साथ लॉगिन करें</value>
+  </data>
+  <data name="login_screen_email_caption" xml:space="preserve">
+    <value>ईमेल</value>
+  </data>
+  <data name="login_screen_password_caption" xml:space="preserve">
+    <value>पासवर्ड</value>
+  </data>
+  <data name="login_screen_forgot_password_caption" xml:space="preserve">
+    <value>पासवर्ड भूल गए?</value>
+  </data>
+  <data name="login_screen_login_button" xml:space="preserve">
+    <value>लॉग इन करें</value>
+  </data>
+  <data name="login_screen_account_caption" xml:space="preserve">
+    <value>कोई खाता नहीं है?</value>
+  </data>
+  <data name="signin_screen_email_caption" xml:space="preserve">
+    <value>ईमेल</value>
+  </data>
+  <data name="signin_screen_password_caption" xml:space="preserve">
+    <value>पासवर्ड</value>
+  </data>
+  <data name="signin_screen_account_caption" xml:space="preserve">
+    <value>क्या पहले से आपका खाता है?</value>
+  </data>
+  <data name="signin_screen_login_caption" xml:space="preserve">
+    <value>लॉग इन करें</value>
+  </data>
+  <data name="signin_screen_first_name_caption" xml:space="preserve">
+    <value>पहला नाम</value>
+  </data>
+  <data name="signin_screen_last_name_caption" xml:space="preserve">
+    <value>उपनाम</value>
+  </data>
+  <data name="signin_screen_telephone_caption" xml:space="preserve">
+    <value>टेलीफ़ोन</value>
+  </data>
+  <data name="email_welcome_subject" xml:space="preserve">
+    <value>स्थान पर आपका स्वागत है</value>
+  </data>
+  <data name="email_welcome_message" xml:space="preserve">
+    <value>हमें यकीन है कि जगह में आपका अनुभव कमाल का होगा</value>
+  </data>
+  <data name="InvalidCountry" xml:space="preserve">
+    <value>अमान्य देश</value>
+  </data>
+  <data name="SMSVerificationMessage" xml:space="preserve">
+    <value>{0} के लिए आपका सत्यापन कोड है:</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>कोड सत्यापन अनुरोध</value>
+  </data>
+  <data name="EmailVerificationTitle" xml:space="preserve">
+    <value>ईमेल कोड सत्यापन</value>
+  </data>
+  <data name="EmailVerificationInstructions" xml:space="preserve">
+    <value>अपने ईमेल खाते को मान्य करने के लिए कृपया इस कोड को {0} में दर्ज करें।</value>
+  </data>
+  <data name="EmailVerificationThanks" xml:space="preserve">
+    <value>{0} में शामिल होने के लिए धन्यवाद</value>
+  </data>
+  <data name="InvalidDateofBirth" xml:space="preserve">
+    <value>आपकी उम्र 18 वर्ष से अधिक होनी चाहिए</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>दिए गए ईमेल वाला उपयोगकर्ता पहले से मौजूद है।</value>
+  </data>
+  <data name="InvalidVerificationCode" xml:space="preserve">
+    <value>कोड पुष्टि करने में सक्षम नहीं था।</value>
+  </data>
+  <data name="InvalidPasswordMaxLength" xml:space="preserve">
+    <value>अमान्य अधिकतम पासवर्ड लंबाई</value>
+  </data>
+  <data name="InvalidPasswordMinLength" xml:space="preserve">
+    <value>अमान्य न्यूनतम पासवर्ड लंबाई</value>
+  </data>
+  <data name="InvalidPasswordUppercase" xml:space="preserve">
+    <value>पासवर्ड में कम से कम एक ऊपरी केस लेटर होना चाहिए</value>
+  </data>
+  <data name="InvalidPasswordLowerCase" xml:space="preserve">
+    <value>पासवर्ड में कम से कम एक निचला मामला पत्र होना चाहिए</value>
+  </data>
+  <data name="InvalidPasswordDigit" xml:space="preserve">
+    <value>पासवर्ड में कम से कम एक अंक होना चाहिए</value>
+  </data>
+  <data name="InvalidPasswordSpecialCharacter" xml:space="preserve">
+    <value>पासवर्ड में कम से कम एक विशेष चरित्र होना चाहिए</value>
+  </data>
+  <data name="InvalidUser" xml:space="preserve">
+    <value>अमान्य उपयोगकर्ता</value>
+  </data>
+  <data name="login_screen_register_caption" xml:space="preserve">
+    <value>साइन अप करें</value>
+  </data>
+  <data name="signin_screen_privacy_policies_caption" xml:space="preserve">
+    <value>क्या आप हमारी गोपनीयता नीतियों से सहमत हैं?</value>
+  </data>
+  <data name="signin_screen_signin_title" xml:space="preserve">
+    <value>साइन अप करें</value>
+  </data>
+  <data name="signin_screen_register_button" xml:space="preserve">
+    <value>साइन अप करें</value>
+  </data>
+  <data name="signin_screen_confirm_password_caption" xml:space="preserve">
+    <value>पासवर्ड की पुष्टि कीजिये</value>
+  </data>
+  <data name="signin_screen_page_title" xml:space="preserve">
+    <value>साइन अप करें</value>
+  </data>
+  <data name="InvalidUserValidation" xml:space="preserve">
+    <value>उपयोगकर्ता ने उसके खाते की पुष्टि नहीं की है।</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>अवैध नाम</value>
+  </data>
+  <data name="InvalidDescription" xml:space="preserve">
+    <value>अमान्य विवरण!</value>
+  </data>
+  <data name="InvalidCurrency" xml:space="preserve">
+    <value>अमान्य मुद्रा</value>
+  </data>
+  <data name="ingresar_codigo" xml:space="preserve">
+    <value>कोड दर्ज करें</value>
+  </data>
+  <data name="codigo" xml:space="preserve">
+    <value>कोड</value>
+  </data>
+  <data name="ingresa_el_codigo" xml:space="preserve">
+    <value>हमारे द्वारा इसपर भेजा गया कोड प्रविष्ट करें</value>
+  </data>
+  <data name="estimado" xml:space="preserve">
+    <value>प्रिय</value>
+  </data>
+  <data name="se_ha" xml:space="preserve">
+    <value>Gya gya gya</value>
+  </data>
+  <data name="registrado_con_exito" xml:space="preserve">
+    <value>पंजीकरण करें</value>
+  </data>
+  <data name="boton_ingresar" xml:space="preserve">
+    <value>अब, ‘लॉग इन बटन‘ पर क्लिक करें।</value>
+  </data>
+  <data name="ingresar" xml:space="preserve">
+    <value>लॉग इन करें</value>
+  </data>
+  <data name="register_code_ingresar_codigo" xml:space="preserve">
+    <value>कोड दर्ज करें</value>
+  </data>
+  <data name="register_code_codigo" xml:space="preserve">
+    <value>कोड</value>
+  </data>
+  <data name="register_code_ingresa_el_codigo" xml:space="preserve">
+    <value>आपके द्वारा भेजे गए कोड को दर्ज करें</value>
+  </data>
+  <data name="register_success_estimado" xml:space="preserve">
+    <value>प्रिय</value>
+  </data>
+  <data name="register_success_se_ha" xml:space="preserve">
+    <value>Gya gya gya</value>
+  </data>
+  <data name="register_success_registrado_con_exito" xml:space="preserve">
+    <value>सफलतापूर्वक पंजीकृत</value>
+  </data>
+  <data name="register_success_boton_ingresar" xml:space="preserve">
+    <value>लॉगिन बटन पर क्लिक करें</value>
+  </data>
+  <data name="register_success_ingresar" xml:space="preserve">
+    <value>लॉग इन करें</value>
+  </data>
+  <data name="complete_registration_verificacion" xml:space="preserve">
+    <value>सत्यापन</value>
+  </data>
+  <data name="complete_registration_direccion_de_correo" xml:space="preserve">
+    <value>मेल पता</value>
+  </data>
+  <data name="complete_registration_por_favor_revise" xml:space="preserve">
+    <value>कृपया अपना ईमेल खाता देखें</value>
+  </data>
+  <data name="complete_registration_aceptar" xml:space="preserve">
+    <value>स्वीकार करना</value>
+  </data>
+  <data name="complete_registration_el_correo_electronico" xml:space="preserve">
+    <value>ईमेल पंजीकृत नहीं है</value>
+  </data>
+  <data name="password_recovery_direccion_de_correo" xml:space="preserve">
+    <value>मेल पता</value>
+  </data>
+  <data name="password_recovery_aceptar" xml:space="preserve">
+    <value>स्वीकार करना</value>
+  </data>
+  <data name="password_recovery_el_correo_electronico" xml:space="preserve">
+    <value>ईमेल पंजीकृत नहीं है</value>
+  </data>
+  <data name="verify_password_code_ingresar_codigo" xml:space="preserve">
+    <value>कोड दर्ज करें</value>
+  </data>
+  <data name="verify_password_code_codigo" xml:space="preserve">
+    <value>कोड</value>
+  </data>
+  <data name="verify_password_code_aceptar" xml:space="preserve">
+    <value>स्वीकार करना</value>
+  </data>
+  <data name="reset_password_component_aceptar" xml:space="preserve">
+    <value>स्वीकार करना</value>
+  </data>
+  <data name="password_recovery_recuperar_contrasenia" xml:space="preserve">
+    <value>पासवर्ड की वसूली</value>
+  </data>
+  <data name="password_recovery_su_codigo_sera" xml:space="preserve">
+    <value>आपका कोड आपके ईमेल पर भेजा जाएगा, कृपया जाँच करें</value>
+  </data>
+  <data name="verify_password_code_ingresa_el_codigo" xml:space="preserve">
+    <value>वह कोड दर्ज करें जो था</value>
+  </data>
+  <data name="verify_password_code_enviado" xml:space="preserve">
+    <value>आपको भेजा गया</value>
+  </data>
+  <data name="verify_password_code_el_codigo_es" xml:space="preserve">
+    <value>कोड गलत है। पुनः प्रयास करें।</value>
+  </data>
+  <data name="reset_password_component_nueva_contrasenia" xml:space="preserve">
+    <value>नया पासवर्ड</value>
+  </data>
+  <data name="reset_password_component_confirme_su_contrasenia" xml:space="preserve">
+    <value>अपने पासवर्ड की पुष्टि करें</value>
+  </data>
+  <data name="reset_password_component_por_favor_ingrese" xml:space="preserve">
+    <value>कृपया दर्ज करें और पुष्टि करें</value>
+  </data>
+  <data name="reset_password_component_nueva_clave" xml:space="preserve">
+    <value>नया पासवर्ड</value>
+  </data>
+  <data name="reset_password_component_error_message" xml:space="preserve">
+    <value>पासवर्ड रीसेट विफल रहा। कृपया बाद में पुन: प्रयास करें।</value>
+  </data>
+  <data name="profile_perfil" xml:space="preserve">
+    <value>प्रोफ़ाइल</value>
+  </data>
+  <data name="profile_nombre" xml:space="preserve">
+    <value>पहला नाम</value>
+  </data>
+  <data name="profile_ingrese_su_nombre" xml:space="preserve">
+    <value>अपना पहला नाम दर्ज करें</value>
+  </data>
+  <data name="profile_apellido" xml:space="preserve">
+    <value>उपनाम</value>
+  </data>
+  <data name="profile_ingrese_su_apellido" xml:space="preserve">
+    <value>अपना अंतिम नाम दर्ज करें</value>
+  </data>
+  <data name="profile_correo" xml:space="preserve">
+    <value>मेल पता</value>
+  </data>
+  <data name="profile_ingrese_correo" xml:space="preserve">
+    <value>एक मान्य ईमेल पता दर्ज करें</value>
+  </data>
+  <data name="profile_telefono" xml:space="preserve">
+    <value>फ़ोन नंबर</value>
+  </data>
+  <data name="profile_ingrese_telefono" xml:space="preserve">
+    <value>अपना फोन नंबर डालें</value>
+  </data>
+  <data name="profile_nacimiento" xml:space="preserve">
+    <value>जन्म तिथि</value>
+  </data>
+  <data name="profile_ingrese_nacimiento" xml:space="preserve">
+    <value>आपका जन्म तारीख प्रवेश करे</value>
+  </data>
+  <data name="profile_editar" xml:space="preserve">
+    <value>प्रोफ़ाइल संपादित करें</value>
+  </data>
+  <data name="profile_exito" xml:space="preserve">
+    <value>सफलता!</value>
+  </data>
+  <data name="profile_perfil_actualizado_con" xml:space="preserve">
+    <value>प्रोफ़ाइल सफलतापूर्वक अपडेट की गई</value>
+  </data>
+  <data name="profile_aceptar" xml:space="preserve">
+    <value>स्वीकार करना</value>
+  </data>
+  <data name="profile_error_message" xml:space="preserve">
+    <value>एक त्रुटि हुई, बाद में फिर से प्रयास करें।</value>
+  </data>
+  <data name="change_password_cambio_de_contrasenia" xml:space="preserve">
+    <value>पासवर्ड बदलें</value>
+  </data>
+  <data name="change_password_contraseña_actual" xml:space="preserve">
+    <value>वर्तमान पासवर्ड</value>
+  </data>
+  <data name="change_password_ingresa_su_contrasenia" xml:space="preserve">
+    <value>अपने वर्तमान पासवर्ड को दर्ज करें</value>
+  </data>
+  <data name="change_password_nueva_contrasenia" xml:space="preserve">
+    <value>नया पासवर्ड</value>
+  </data>
+  <data name="change_password_ingresa_su_nueva" xml:space="preserve">
+    <value>अपना नया पासवर्ड दर्ज करें</value>
+  </data>
+  <data name="change_password_confirmar_contrasenia" xml:space="preserve">
+    <value>पासवर्ड की पुष्टि कीजिये</value>
+  </data>
+  <data name="change_password_confirme_su_nueva" xml:space="preserve">
+    <value>अपने नए पासवर्ड की पुष्टि करें</value>
+  </data>
+  <data name="change_password_las_contrasenias_no" xml:space="preserve">
+    <value>सांकेतिक शब्द मेल नहीं खाते</value>
+  </data>
+  <data name="change_password_error" xml:space="preserve">
+    <value>गलती</value>
+  </data>
+  <data name="change_password_hubo_un_error" xml:space="preserve">
+    <value>पासवर्ड बदलने में कोई त्रुटि थी</value>
+  </data>
+  <data name="change_password_aceptar" xml:space="preserve">
+    <value>स्वीकार करना</value>
+  </data>
+  <data name="password_change_confirmation_estimado" xml:space="preserve">
+    <value>प्रिय</value>
+  </data>
+  <data name="password_change_confirmation_se_ha_restablecido" xml:space="preserve">
+    <value>आपका पासवर्ड रहा है</value>
+  </data>
+  <data name="password_change_confirmation_con_exito_su" xml:space="preserve">
+    <value>सफलतापूर्वक रीसेट करें</value>
+  </data>
+  <data name="password_change_confirmation_haz_clic_en" xml:space="preserve">
+    <value>लॉगिन बटन पर क्लिक करें</value>
+  </data>
+  <data name="password_change_confirmation_ingresar" xml:space="preserve">
+    <value>लॉग इन करें</value>
+  </data>
+  <data name="site_register_landing_registro_de_sitios" xml:space="preserve">
+    <value>स्थल पंजीकरण</value>
+  </data>
+  <data name="site_register_landing_nuestro_equipo_revisara" xml:space="preserve">
+    <value>हमारी टीम आपकी जानकारी की समीक्षा करेगी</value>
+  </data>
+  <data name="site_register_landing_este_proceso_puede" xml:space="preserve">
+    <value>इस प्रक्रिया में कुछ दिन लग सकते हैं</value>
+  </data>
+  <data name="site_register_landing_recibiras_una_notificacion" xml:space="preserve">
+    <value>सत्यापन पूरा होने के बाद आपको एक अधिसूचना प्राप्त होगी और आपकी संपत्ति पंजीकृत हो जाएगी।</value>
+  </data>
+  <data name="site_register_landing_siguiente" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="site_register_features_caracteristicas" xml:space="preserve">
+    <value>विशेषताएँ</value>
+  </data>
+  <data name="site_register_features_nombre" xml:space="preserve">
+    <value>नाम:</value>
+  </data>
+  <data name="site_register_features_titulo" xml:space="preserve">
+    <value>शीर्षक</value>
+  </data>
+  <data name="site_register_features_precio_adultos" xml:space="preserve">
+    <value>वयस्क मूल्य</value>
+  </data>
+  <data name="site_register_features_precio_menores" xml:space="preserve">
+    <value>बाल कीमत</value>
+  </data>
+  <data name="site_register_features_precio_transporte" xml:space="preserve">
+    <value>परिवहन मूल्य</value>
+  </data>
+  <data name="site_register_features_descripcion" xml:space="preserve">
+    <value>विवरण</value>
+  </data>
+  <data name="site_register_features_categoria" xml:space="preserve">
+    <value>वर्ग</value>
+  </data>
+  <data name="site_register_features_pais" xml:space="preserve">
+    <value>देश</value>
+  </data>
+  <data name="site_register_features_moneda" xml:space="preserve">
+    <value>मुद्रा</value>
+  </data>
+  <data name="site_register_features_regresar" xml:space="preserve">
+    <value>पीछे</value>
+  </data>
+  <data name="site_register_features_siguiente" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="site_register_features_por_favor_completa" xml:space="preserve">
+    <value>कृपया सभी खानों को भरें।</value>
+  </data>
+  <data name="site_register_availability_disponibilidad" xml:space="preserve">
+    <value>उपलब्धता</value>
+  </data>
+  <data name="site_register_availability_dia" xml:space="preserve">
+    <value>दिन</value>
+  </data>
+  <data name="site_register_availability_de" xml:space="preserve">
+    <value>से</value>
+  </data>
+  <data name="site_register_availability_a" xml:space="preserve">
+    <value>को</value>
+  </data>
+  <data name="site_register_availability_regresar" xml:space="preserve">
+    <value>पीछे</value>
+  </data>
+  <data name="site_register_availability_siguiente" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="site_register_availability_domingo" xml:space="preserve">
+    <value>रविवार</value>
+  </data>
+  <data name="site_register_availability_lunes" xml:space="preserve">
+    <value>सोमवार</value>
+  </data>
+  <data name="site_register_availability_martes" xml:space="preserve">
+    <value>मंगलवार</value>
+  </data>
+  <data name="site_register_availability_miercoles" xml:space="preserve">
+    <value>बुधवार</value>
+  </data>
+  <data name="site_register_availability_jueves" xml:space="preserve">
+    <value>गुरुवार</value>
+  </data>
+  <data name="site_register_availability_viernes" xml:space="preserve">
+    <value>शुक्रवार</value>
+  </data>
+  <data name="site_register_availability_sabado" xml:space="preserve">
+    <value>शनिवार</value>
+  </data>
+  <data name="site_register_availability_por_favor_completa" xml:space="preserve">
+    <value>कृपया कम से कम एक दिन के लिए शेड्यूल पूरा करें।</value>
+  </data>
+  <data name="site_register_images_subir_imagenes" xml:space="preserve">
+    <value>चित्र अपलोड करें</value>
+  </data>
+  <data name="site_register_images_sube_tus_fotos" xml:space="preserve">
+    <value>अपनी साइट को बढ़ावा देने के लिए अपनी फ़ोटो अपलोड करें या चयन करने के लिए क्लिक करें</value>
+  </data>
+  <data name="site_register_images_puedes_subir_hasta" xml:space="preserve">
+    <value>आप 100 छवियों तक अपलोड कर सकते हैं</value>
+  </data>
+  <data name="site_register_images_regresar" xml:space="preserve">
+    <value>पीछे</value>
+  </data>
+  <data name="site_register_images_siguiente" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="site_register_images_por_favor_sube" xml:space="preserve">
+    <value>कृपया कम से कम एक छवि अपलोड करें</value>
+  </data>
+  <data name="site_register_location_ubicacion" xml:space="preserve">
+    <value>जगह</value>
+  </data>
+  <data name="site_register_location_asegurate_de_proporcionar" xml:space="preserve">
+    <value>सटीक और पूर्ण जानकारी प्रदान करना सुनिश्चित करें</value>
+  </data>
+  <data name="site_register_location_esto_incluye_la" xml:space="preserve">
+    <value>इसमें पता, घर, अपार्टमेंट, भूमि, आदि शामिल हैं।</value>
+  </data>
+  <data name="site_register_location_regresar" xml:space="preserve">
+    <value>पीछे</value>
+  </data>
+  <data name="site_register_location_siguiente" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="site_register_amenities_amenidades" xml:space="preserve">
+    <value>सुविधाएं</value>
+  </data>
+  <data name="site_register_amenities_regresar" xml:space="preserve">
+    <value>पीछे</value>
+  </data>
+  <data name="site_register_amenities_siguiente" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="site_register_amenities_por_favor_selecciona" xml:space="preserve">
+    <value>कृपया कम से कम एक एमेनिटी का चयन करें</value>
+  </data>
+  <data name="site_register_confirmation_confirmacion" xml:space="preserve">
+    <value>पुष्टीकरण</value>
+  </data>
+  <data name="site_register_confirmation_estamos_listos_para" xml:space="preserve">
+    <value>हम आपकी साइट को दुनिया में दिखाने के लिए तैयार हैं। हमारी टीम आपकी जानकारी को मान्य करेगी और कई आगंतुकों को प्राप्त करने में आपकी सहायता करेगी।</value>
+  </data>
+  <data name="site_register_confirmation_para_finalizar_haz" xml:space="preserve">
+    <value>अंतिम रूप देने के लिए, स्वीकार बटन पर क्लिक करें।</value>
+  </data>
+  <data name="site_register_confirmation_regresar" xml:space="preserve">
+    <value>पीछे</value>
+  </data>
+  <data name="site_register_confirmation_aceptar" xml:space="preserve">
+    <value>स्वीकार करना</value>
+  </data>
+  <data name="site_register_confirmation_registro_exitoso" xml:space="preserve">
+    <value>सफल पंजीकरण</value>
+  </data>
+  <data name="site_register_confirmation_error" xml:space="preserve">
+    <value>साइट को पंजीकृत करने में त्रुटि। कृपया पुन: प्रयास करें।</value>
+  </data>
+  <data name="site_register_confirmation_tu_sitio_ha" xml:space="preserve">
+    <value>आपकी साइट को सफलतापूर्वक पंजीकृत किया गया है और यह स्वीकृति लंबित है।</value>
+  </data>
+  <data name="aproved_sites_continents_africa" xml:space="preserve">
+    <value>अफ्रीका</value>
+  </data>
+  <data name="aproved_sites_continents_asia" xml:space="preserve">
+    <value>एशिया</value>
+  </data>
+  <data name="aproved_sites_continents_europa" xml:space="preserve">
+    <value>यूरोप</value>
+  </data>
+  <data name="aproved_sites_continents_america" xml:space="preserve">
+    <value>अमेरिका</value>
+  </data>
+  <data name="aproved_sites_continents_oceania" xml:space="preserve">
+    <value>ओशिनिया</value>
+  </data>
+  <data name="currency_list_agregar_nuevo" xml:space="preserve">
+    <value>नया जोड़ो</value>
+  </data>
+  <data name="currency_list_nombre" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="currency_list_tipo_de_cambio" xml:space="preserve">
+    <value>विनिमय दर</value>
+  </data>
+  <data name="currency_list_agregada" xml:space="preserve">
+    <value>जोड़ा</value>
+  </data>
+  <data name="currency_list_la_moneda_ha" xml:space="preserve">
+    <value>मुद्रा जोड़ी गई है</value>
+  </data>
+  <data name="currency_list_error" xml:space="preserve">
+    <value>गलती</value>
+  </data>
+  <data name="currency_list_hubo_un_error" xml:space="preserve">
+    <value>मुद्रा को पंजीकृत करने में त्रुटि थी</value>
+  </data>
+  <data name="currency_list_aceptar" xml:space="preserve">
+    <value>स्वीकार करना</value>
+  </data>
+  <data name="currency_list_esta_seguro_que" xml:space="preserve">
+    <value>क्या आप सुनिश्चित हैं कि आप इस मुद्रा को हटाना चाहते हैं?</value>
+  </data>
+  <data name="currency_list_esta_accion_no" xml:space="preserve">
+    <value>इस एक्शन को वापस नहीं किया जा सकता।</value>
+  </data>
+  <data name="currency_list_si_eliminar" xml:space="preserve">
+    <value>हाँ, हटाएं</value>
+  </data>
+  <data name="currency_list_cancelar" xml:space="preserve">
+    <value>रद्द करना</value>
+  </data>
+  <data name="currency_list_eliminado" xml:space="preserve">
+    <value>हटाए गए</value>
+  </data>
+  <data name="currency_list_la_moneda_ha_deleted" xml:space="preserve">
+    <value>मुद्रा हटा दी गई है</value>
+  </data>
+  <data name="currency_dialog_monedas" xml:space="preserve">
+    <value>मुद्राओं</value>
+  </data>
+  <data name="currency_dialog_nombre" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="currency_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>नाम दर्ज करें</value>
+  </data>
+  <data name="currency_dialog_codigo" xml:space="preserve">
+    <value>कोड</value>
+  </data>
+  <data name="currency_dialog_ingresa_codigo" xml:space="preserve">
+    <value>कोड दर्ज करें</value>
+  </data>
+  <data name="currency_dialog_simbolo" xml:space="preserve">
+    <value>प्रतीक</value>
+  </data>
+  <data name="currency_dialog_ingrese_simbolo" xml:space="preserve">
+    <value>प्रतीक दर्ज करें</value>
+  </data>
+  <data name="currency_dialog_tipo_de_cambio" xml:space="preserve">
+    <value>विनिमय दर</value>
+  </data>
+  <data name="currency_dialog_ingrese_tipo_de" xml:space="preserve">
+    <value>विनिमय दर दर्ज करें</value>
+  </data>
+  <data name="currency_dialog_cancelar" xml:space="preserve">
+    <value>रद्द करना</value>
+  </data>
+  <data name="currency_dialog_guardar" xml:space="preserve">
+    <value>बचाना</value>
+  </data>
+  <data name="category_list_agregar_nuevo" xml:space="preserve">
+    <value>नया जोड़ो</value>
+  </data>
+  <data name="category_list_nombre" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="category_list_esta_seguro_que" xml:space="preserve">
+    <value>क्या आप सुनिश्चित हैं कि आप इस श्रेणी को हटाना चाहते हैं?</value>
+  </data>
+  <data name="category_list_esta_accion_no" xml:space="preserve">
+    <value>इस एक्शन को वापस नहीं किया जा सकता।</value>
+  </data>
+  <data name="category_list_si_eliminar" xml:space="preserve">
+    <value>हाँ, हटाएं</value>
+  </data>
+  <data name="category_list_cancelar" xml:space="preserve">
+    <value>रद्द करना</value>
+  </data>
+  <data name="category_list_eliminado" xml:space="preserve">
+    <value>हटाए गए</value>
+  </data>
+  <data name="category_list_la_categoria_ha" xml:space="preserve">
+    <value>श्रेणी हटा दी गई है</value>
+  </data>
+  <data name="category_dialog_categoria" xml:space="preserve">
+    <value>वर्ग</value>
+  </data>
+  <data name="category_dialog_nombre" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="category_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>नाम दर्ज करें</value>
+  </data>
+  <data name="category_dialog_cancelar" xml:space="preserve">
+    <value>रद्द करना</value>
+  </data>
+  <data name="category_dialog_guardar" xml:space="preserve">
+    <value>बचाना</value>
+  </data>
+  <data name="approve_sites_titulo" xml:space="preserve">
+    <value>शीर्षक</value>
+  </data>
+  <data name="approve_sites_nombre_del_usuario" xml:space="preserve">
+    <value>उपयोगकर्ता नाम</value>
+  </data>
+  <data name="approve_sites_fecha_de_creacion" xml:space="preserve">
+    <value>निर्माण तिथि</value>
+  </data>
+  <data name="view_site_dialog_titulo" xml:space="preserve">
+    <value>शीर्षक</value>
+  </data>
+  <data name="view_site_dialog_nombre" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="view_site_dialog_descripcion" xml:space="preserve">
+    <value>विवरण</value>
+  </data>
+  <data name="view_site_dialog_precio_adultos" xml:space="preserve">
+    <value>वयस्क मूल्य</value>
+  </data>
+  <data name="view_site_dialog_precio_menores" xml:space="preserve">
+    <value>बाल कीमत</value>
+  </data>
+  <data name="view_site_dialog_precio_transporte" xml:space="preserve">
+    <value>परिवहन मूल्य</value>
+  </data>
+  <data name="view_site_dialog_categoria" xml:space="preserve">
+    <value>वर्ग</value>
+  </data>
+  <data name="view_site_dialog_pais" xml:space="preserve">
+    <value>देश</value>
+  </data>
+  <data name="view_site_dialog_moneda" xml:space="preserve">
+    <value>मुद्रा</value>
+  </data>
+  <data name="view_site_dialog_dia" xml:space="preserve">
+    <value>दिन</value>
+  </data>
+  <data name="view_site_dialog_de" xml:space="preserve">
+    <value>से</value>
+  </data>
+  <data name="view_site_dialog_a" xml:space="preserve">
+    <value>को</value>
+  </data>
+  <data name="view_site_dialog_aprobar" xml:space="preserve">
+    <value>मंज़ूरी देना</value>
+  </data>
+  <data name="view_site_dialog_rechazar" xml:space="preserve">
+    <value>अस्वीकार करना</value>
+  </data>
+  <data name="view_site_dialog_confirmar_rechazo" xml:space="preserve">
+    <value>अस्वीकृति की पुष्टि करें</value>
+  </data>
+  <data name="view_site_dialog_razon_del_rechazo" xml:space="preserve">
+    <value>खारिज करने का कारण</value>
+  </data>
+  <data name="view_site_dialog_sito_aprobado" xml:space="preserve">
+    <value>स्वीकृत साइट:</value>
+  </data>
+  <data name="view_site_dialog_aprobado" xml:space="preserve">
+    <value>अनुमत</value>
+  </data>
+  <data name="view_site_dialog_error" xml:space="preserve">
+    <value>गलती</value>
+  </data>
+  <data name="view_site_dialog_error_aprobando" xml:space="preserve">
+    <value>साइट को मंजूरी देने में त्रुटि</value>
+  </data>
+  <data name="view_site_dialog_rechazado" xml:space="preserve">
+    <value>अस्वीकार कर दिया</value>
+  </data>
+  <data name="view_site_dialog_sitio_rechazado" xml:space="preserve">
+    <value>साइट अस्वीकृत</value>
+  </data>
+  <data name="menu_profile" xml:space="preserve">
+    <value>प्रोफ़ाइल</value>
+  </data>
+  <data name="menu_change_password" xml:space="preserve">
+    <value>पासवर्ड बदलें</value>
+  </data>
+  <data name="menu_register" xml:space="preserve">
+    <value>स्वामी के रूप में पंजीकरण करें</value>
+  </data>
+  <data name="menu_publish_sites" xml:space="preserve">
+    <value>साइटों को प्रकाशित करें</value>
+  </data>
+  <data name="menu_published_site" xml:space="preserve">
+    <value>प्रकाशित साइटों की सूची</value>
+  </data>
+  <data name="menu_currency" xml:space="preserve">
+    <value>मुद्राओं</value>
+  </data>
+  <data name="menu_categories" xml:space="preserve">
+    <value>श्रेणियां</value>
+  </data>
+  <data name="menu_auth_propietaries" xml:space="preserve">
+    <value>स्वामी प्राधिकरण</value>
+  </data>
+  <data name="menu_auth_sites" xml:space="preserve">
+    <value>स्थल प्राधिकरण</value>
+  </data>
+  <data name="menu_logout" xml:space="preserve">
+    <value>लॉग आउट</value>
+  </data>
+  <data name="menu_access" xml:space="preserve">
+    <value>पहुँच</value>
+  </data>
+  <data name="menu_registe" xml:space="preserve">
+    <value>पंजीकरण करवाना</value>
+  </data>
+  <data name="approved_sites_buscar" xml:space="preserve">
+    <value>प्रकार द्वारा खोजें</value>
+  </data>
+  <data name="approved_sites_category" xml:space="preserve">
+    <value>एक श्रेणी चुनें</value>
+  </data>
+  <data name="menu_gestion" xml:space="preserve">
+    <value>स्थल प्रबंधन</value>
+  </data>
+  <data name="view_site_dialog_precio_entrada" xml:space="preserve">
+    <value>प्रविष्टि मूल्य</value>
+  </data>
+  <data name="view_site_dialog_precio_total" xml:space="preserve">
+    <value>कुल कीमत</value>
+  </data>
+  <data name="view_site_dialog_paquete_items" xml:space="preserve">
+    <value>पैकेज आइटम</value>
+  </data>
+  <data name="view_site_dialog_costos_adicionales" xml:space="preserve">
+    <value>अतिरिक्त लागत</value>
+  </data>
+  <data name="view_site_dialog_paquete_especial" xml:space="preserve">
+    <value>विशेष पैकेज</value>
+  </data>
+  <data name="view_site_dialog_paquete_nombre" xml:space="preserve">
+    <value>पैकेज नाम</value>
+  </data>
+  <data name="site_register_pricing_entry" xml:space="preserve">
+    <value>प्रविष्टि मूल्य</value>
+  </data>
+  <data name="site_register_pricing_special" xml:space="preserve">
+    <value>क्या आपके पास कोई विशेष पैकेज है?</value>
+  </data>
+  <data name="site_register_pricing_yes" xml:space="preserve">
+    <value>हाँ</value>
+  </data>
+  <data name="site_register_pricing_no" xml:space="preserve">
+    <value>नहीं</value>
+  </data>
+  <data name="site_register_pricing_includes" xml:space="preserve">
+    <value>शामिल</value>
+  </data>
+  <data name="site_register_pricing_add" xml:space="preserve">
+    <value>जोड़ना</value>
+  </data>
+  <data name="site_register_pricing_total" xml:space="preserve">
+    <value>कुल</value>
+  </data>
+  <data name="site_register_pricing_additional" xml:space="preserve">
+    <value>क्या आपकी साइट में अतिरिक्त लागत है?</value>
+  </data>
+  <data name="site_register_pricing_add_price" xml:space="preserve">
+    <value>मूल्य जोड़ें</value>
+  </data>
+  <data name="site_register_pricing_next" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="site_register_pricing_previous" xml:space="preserve">
+    <value>पहले का</value>
+  </data>
+  <data name="site_register_pricing_error" xml:space="preserve">
+    <value>कृपया एक वैध प्रवेश मूल्य दर्ज करें।</value>
+  </data>
+  <data name="menu_gestion_2" xml:space="preserve">
+    <value>स्थल प्रबंधन</value>
+  </data>
+  <data name="site_register_publico" xml:space="preserve">
+    <value>जनता</value>
+  </data>
+  <data name="site_register_privado" xml:space="preserve">
+    <value>निजी</value>
+  </data>
+  <data name="site_register_features_capacidad" xml:space="preserve">
+    <value>क्षमता</value>
+  </data>
+  <data name="site_register_pricing_adult_price" xml:space="preserve">
+    <value>वयस्क कीमत</value>
+  </data>
+  <data name="site_register_pricing_child_price" xml:space="preserve">
+    <value>बाल कीमत</value>
+  </data>
+  <data name="site_register_pricing_transport_price" xml:space="preserve">
+    <value>परिवहन मूल्य</value>
+  </data>
+  <data name="site_register_pricing_transportation" xml:space="preserve">
+    <value>परिवहन के अनुमत साधनों का चयन करें</value>
+  </data>
+  <data name="site_register_transport_car" xml:space="preserve">
+    <value>कार</value>
+  </data>
+  <data name="site_register_transport_moto" xml:space="preserve">
+    <value>मोटरसाइकिल</value>
+  </data>
+  <data name="site_register_transport_bicycle" xml:space="preserve">
+    <value>साइकिल</value>
+  </data>
+  <data name="site_register_transport_bus" xml:space="preserve">
+    <value>बस</value>
+  </data>
+  <data name="site_register_transport_truck" xml:space="preserve">
+    <value>ट्रक</value>
+  </data>
+  <data name="site_register_add" xml:space="preserve">
+    <value>जोड़ना</value>
+  </data>
+  <data name="site_register_confirmation_public" xml:space="preserve">
+    <value>जनता</value>
+  </data>
+  <data name="site_register_confirmation_private" xml:space="preserve">
+    <value>निजी</value>
+  </data>
+  <data name="site_register_confirmation_horarios_dispo" xml:space="preserve">
+    <value>उपलब्ध कार्यक्रम</value>
+  </data>
+  <data name="site_register_confirmation_breve_resumen" xml:space="preserve">
+    <value>जगह का संक्षिप्त विवरण</value>
+  </data>
+  <data name="site_register_confirmation_amenidades" xml:space="preserve">
+    <value>सुविधाएं</value>
+  </data>
+  <data name="site_register_confirmation_precios" xml:space="preserve">
+    <value>कीमतों</value>
+  </data>
+  <data name="site_register_confirmation_adultos" xml:space="preserve">
+    <value>वयस्कों</value>
+  </data>
+  <data name="site_register_confirmation_ninos" xml:space="preserve">
+    <value>बच्चे</value>
+  </data>
+  <data name="site_register_confirmation_transporte" xml:space="preserve">
+    <value>परिवहन</value>
+  </data>
+  <data name="site_register_confirmation_vehiculos_permitidos" xml:space="preserve">
+    <value>अनुमत वाहन</value>
+  </data>
+  <data name="site_register_confirmation_automovil" xml:space="preserve">
+    <value>कार</value>
+  </data>
+  <data name="site_register_confirmation_moto" xml:space="preserve">
+    <value>मोटरसाइकिल</value>
+  </data>
+  <data name="site_register_confirmation_bicicleta" xml:space="preserve">
+    <value>साइकिल</value>
+  </data>
+  <data name="site_register_confirmation_bus" xml:space="preserve">
+    <value>बस</value>
+  </data>
+  <data name="site_register_confirmation_camion" xml:space="preserve">
+    <value>ट्रक</value>
+  </data>
+  <data name="site_register_confirmation_costo_adicional" xml:space="preserve">
+    <value>अतिरिक्त लागत</value>
+  </data>
+  <data name="site_register_confirmation_paquete_especial" xml:space="preserve">
+    <value>विशेष पैकेज</value>
+  </data>
+  <data name="site_register_confirmation_publicar" xml:space="preserve">
+    <value>प्रकाशित करना</value>
+  </data>
+  <data name="site_register_confirmation_success" xml:space="preserve">
+    <value>सफलता</value>
+  </data>
+  <data name="site_register_confirmation_error_swal" xml:space="preserve">
+    <value>गलती</value>
+  </data>
+  <data name="site_register_confirmation_aprobado" xml:space="preserve">
+    <value>स्वीकृत साइट</value>
+  </data>
+  <data name="site_register_confirmation_haocurrido" xml:space="preserve">
+    <value>एक गलती हुई है</value>
+  </data>
+  <data name="site_register_confirmation_domingo" xml:space="preserve">
+    <value>रविवार</value>
+  </data>
+  <data name="site_register_confirmation_lunes" xml:space="preserve">
+    <value>सोमवार</value>
+  </data>
+  <data name="site_register_confirmation_martes" xml:space="preserve">
+    <value>मंगलवार</value>
+  </data>
+  <data name="site_register_confirmation_miercoles" xml:space="preserve">
+    <value>बुधवार</value>
+  </data>
+  <data name="site_register_confirmation_jueves" xml:space="preserve">
+    <value>गुरुवार</value>
+  </data>
+  <data name="site_register_confirmation_viernes" xml:space="preserve">
+    <value>शुक्रवार</value>
+  </data>
+  <data name="site_register_confirmation_sabado" xml:space="preserve">
+    <value>शनिवार</value>
+  </data>
+  <data name="site_register_features_sin_limite" xml:space="preserve">
+    <value>असीमित</value>
+  </data>
+  <data name="site_register_features_limite" xml:space="preserve">
+    <value>सीमित</value>
+  </data>
+  <data name="site_register_location_buscar" xml:space="preserve">
+    <value>खोज स्थान</value>
+  </data>
+  <data name="site_register_pricing_package_name" xml:space="preserve">
+    <value>पैकेज नाम</value>
+  </data>
+  <data name="site_register_pricing_package_price" xml:space="preserve">
+    <value>पैकेज मूल्य</value>
+  </data>
+  <data name="site_register_pricing_package_item_price" xml:space="preserve">
+    <value>आइटम की कीमत</value>
+  </data>
+  <data name="site_register_pricing_package_cost_name" xml:space="preserve">
+    <value>लागत नाम</value>
+  </data>
+  <data name="amenity_list_agregar_nuevo" xml:space="preserve">
+    <value>नया जोड़ो</value>
+  </data>
+  <data name="amenity_list_nombre" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="amenity_list_esta_seguro_que" xml:space="preserve">
+    <value>क्या आप सुनिश्चित हैं कि आप इस श्रेणी को हटाना चाहते हैं?</value>
+  </data>
+  <data name="amenity_list_esta_accion_no" xml:space="preserve">
+    <value>इस एक्शन को वापस नहीं किया जा सकता।</value>
+  </data>
+  <data name="amenity_list_si_eliminar" xml:space="preserve">
+    <value>हाँ, हटाएं</value>
+  </data>
+  <data name="amenity_list_cancelar" xml:space="preserve">
+    <value>रद्द करना</value>
+  </data>
+  <data name="amenity_list_eliminado" xml:space="preserve">
+    <value>हटाए गए</value>
+  </data>
+  <data name="amenity_list_la_categoria_ha" xml:space="preserve">
+    <value>एमेनिटी को हटा दिया गया है</value>
+  </data>
+  <data name="amenity_dialog_categoria" xml:space="preserve">
+    <value>सुख-सुविधा</value>
+  </data>
+  <data name="amenity_dialog_nombre" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="amenity_dialog_ingrese_su_nombre" xml:space="preserve">
+    <value>नाम दर्ज करें</value>
+  </data>
+  <data name="amenity_dialog_cancelar" xml:space="preserve">
+    <value>रद्द करना</value>
+  </data>
+  <data name="amenity_dialog_guardar" xml:space="preserve">
+    <value>ठीक है</value>
+  </data>
+  <data name="site_register_pricing_package_item_name" xml:space="preserve">
+    <value>आइटम नाम</value>
+  </data>
+  <data name="site_register_pricing_package_item_name_2" xml:space="preserve">
+    <value>आइटम नाम</value>
+  </data>
+</root>
