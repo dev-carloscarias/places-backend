@@ -1,4 +1,10 @@
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
+using System.Net;
+using Microsoft.AspNetCore.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +14,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.AddSerilog(builder.Configuration);
 builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
 
+// Configura el puerto dinámicamente para Azure
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080"; // Usa el puerto de Azure o 8080 como respaldo
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(int.Parse(port));
+});
+
 // Add Authentication
+var secretKey = builder.Configuration["JwtBearer:SecretKey"];
+if (string.IsNullOrEmpty(secretKey))
+{
+    throw new InvalidOperationException("JwtBearer:SecretKey is not configured in appsettings.json or environment variables.");
+}
+
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -25,15 +44,15 @@ builder.Services.AddAuthentication(x =>
         ValidateIssuerSigningKey = true,
         ValidIssuer = builder.Configuration["JwtBearer:Issuer"],
         ValidAudience = builder.Configuration["JwtBearer:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtBearer:SecretKey"]!))
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
     };
 });
 
 // Add the DB Context
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddControllers()
-    /*.AddJsonOptions(options => options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))*/;
+builder.Services.AddControllers();
 builder.Services.AddMemoryCache();
 
 builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
@@ -85,30 +104,35 @@ builder.Services.AddSwaggerGen(options =>
     }
 });
 
-//HostingEnvironment hostingEnvironment = new HostingEnvironment();
+// Configura SignalR
+builder.Services.AddSignalR();
 
+// Configura autenticación con Facebook y Google (comenta si no lo usas)
 builder.Services.AddAuthentication()
     .AddFacebook(fb =>
     {
-        fb.AppId = builder.Configuration["AuthenticatonProviders:FacebookAppId"] ?? string.Empty;
-        fb.AppSecret = builder.Configuration["AuthenticatonProviders:FacebookAppSecret"] ?? string.Empty;
+        var appId = builder.Configuration["AuthenticatonProviders:FacebookAppId"];
+        var appSecret = builder.Configuration["AuthenticatonProviders:FacebookAppSecret"];
+        if (string.IsNullOrEmpty(appId) || string.IsNullOrEmpty(appSecret))
+        {
+            throw new InvalidOperationException("Facebook authentication credentials are not configured.");
+        }
+        fb.AppId = appId;
+        fb.AppSecret = appSecret;
         fb.SaveTokens = true;
     })
     .AddGoogle(g =>
     {
-        g.ClientId = builder.Configuration["AuthenticatonProviders:GoogleClientId"] ?? string.Empty;
-        g.ClientSecret = builder.Configuration["AuthenticatonProviders:GoogleClientSecret"] ?? string.Empty;
+        var clientId = builder.Configuration["AuthenticatonProviders:GoogleClientId"];
+        var clientSecret = builder.Configuration["AuthenticatonProviders:GoogleClientSecret"];
+        if (string.IsNullOrEmpty(clientId) || string.IsNullOrEmpty(clientSecret))
+        {
+            throw new InvalidOperationException("Google authentication credentials are not configured.");
+        }
+        g.ClientId = clientId;
+        g.ClientSecret = clientSecret;
         g.SaveTokens = true;
-    })
-    /*.AddApple(a =>
-    {
-        a.ClientId = builder.Configuration["AuthenticatonProviders:AppleClientId"] ?? string.Empty;
-        a.KeyId = builder.Configuration["AuthenticatonProviders:AppleKeyId"] ?? string.Empty;
-        a.TeamId = builder.Configuration["AuthenticatonProviders:AppleTeamId"] ?? string.Empty;
-        a.UsePrivateKey(keyId
-            => hostingEnvironment.ContentRootFileProvider.GetFileInfo($"AuthKey_{keyId}.p8"));
-        a.SaveTokens = true;
-    })*/;
+    });
 
 builder.Services.AddHttpLogging(logging =>
 {
@@ -133,46 +157,66 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
     options.Secure = CookieSecurePolicy.None;
 });
 
+// Configura CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
-        builder.AllowAnyOrigin()
+        builder.WithOrigins("https://nice-pond-01f64d51e.5.azurestaticapps.net")
                .AllowAnyMethod()
-               .AllowAnyHeader());
+               .AllowAnyHeader()
+               .AllowCredentials()); // Necesario para SignalR y autenticación
 });
 
 builder.Services.Configure<ForwardedHeadersOptions>(options =>
 {
-    options.ForwardedHeaders =
-        ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+    options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
     options.KnownProxies.Add(IPAddress.Parse("127.0.0.1"));
 });
 
-var app = builder.Build();
+// Habilita logging detallado para depuración
+builder.Services.AddLogging(logging =>
+{
+    logging.AddConsole();
+    logging.AddDebug();
+    logging.SetMinimumLevel(LogLevel.Debug);
+});
 
-app.UseCors("AllowAll");
+var app = builder.Build();
 app.UseForwardedHeaders();
 app.UseHttpLogging();
 app.UseMiddleware<GlobalValuesMiddleware>();
+
+// Maneja solicitudes OPTIONS explícitamente para evitar errores CORS
+app.Use(async (context, next) =>
+{
+    if (context.Request.Method == "OPTIONS")
+    {
+        context.Response.StatusCode = StatusCodes.Status200OK;
+        context.Response.Headers.Add("Access-Control-Allow-Origin", context.Request.Headers["Origin"]);
+        context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+        context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
+        context.Response.Headers.Add("Access-Control-Allow-Credentials", "true");
+        context.Response.Headers.Add("Access-Control-Max-Age", "86400");
+        return;
+    }
+    await next();
+});
+
+app.UseCors("AllowAll");
+
 app.MapControllers();
 app.MapHub<ChatHub>("/chatHub");
 app.MapHub<NotificationHub>("/notificationHub");
 
 app.Use(async (context, next) =>
 {
-    // Connection: RemoteIp
-    app.Logger.LogInformation("Request RemoteIp: {RemoteIpAddress}",
-        context.Connection.RemoteIpAddress);
-
+    app.Logger.LogInformation("Request RemoteIp: {RemoteIpAddress}", context.Connection.RemoteIpAddress);
     await next(context);
 });
 
 // Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
 app.UseSwagger();
 app.UseSwaggerUI();
-//}
 
 app.UseSerilogRequestLogging();
 
@@ -181,10 +225,10 @@ app.UseExceptionMiddleware();
 
 app.UseLocalizationMiddleware();
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
-
 
 app.Run();
 
