@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\devcc\\development\\outsourced\\places-backend\\Application\\Application.csproj": {}
+    "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Application\\Application.csproj": {}
   },
   "projects": {
-    "X:\\devcc\\development\\outsourced\\places-backend\\Application\\Application.csproj": {
+    "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\devcc\\development\\outsourced\\places-backend\\Application\\Application.csproj",
+        "projectUniqueName": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Application\\Application.csproj",
         "projectName": "Places.Application",
-        "projectPath": "X:\\devcc\\development\\outsourced\\places-backend\\Application\\Application.csproj",
+        "projectPath": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\devcc\\.nuget\\packages\\",
-        "outputPath": "X:\\devcc\\development\\outsourced\\places-backend\\Application\\obj\\",
+        "outputPath": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "X:\\devcc\\development\\outsourced\\places-backend\\Domain\\Domain.csproj": {
-                "projectPath": "X:\\devcc\\development\\outsourced\\places-backend\\Domain\\Domain.csproj"
+              "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Domain\\Domain.csproj": {
+                "projectPath": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -115,14 +115,14 @@
         }
       }
     },
-    "X:\\devcc\\development\\outsourced\\places-backend\\Domain\\Domain.csproj": {
+    "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\devcc\\development\\outsourced\\places-backend\\Domain\\Domain.csproj",
+        "projectUniqueName": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Domain\\Domain.csproj",
         "projectName": "Places.Domain",
-        "projectPath": "X:\\devcc\\development\\outsourced\\places-backend\\Domain\\Domain.csproj",
+        "projectPath": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\devcc\\.nuget\\packages\\",
-        "outputPath": "X:\\devcc\\development\\outsourced\\places-backend\\Domain\\obj\\",
+        "outputPath": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

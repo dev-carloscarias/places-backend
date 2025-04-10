@@ -375,7 +375,8 @@
       "Places.Domain/1.0.0": {
         "runtime": {
           "Places.Domain.dll": {
-            "fileVersion": "0.0.0.0"
+            "assemblyVersion": "1.0.0",
+            "fileVersion": ""
           }
         },
         "resources": {

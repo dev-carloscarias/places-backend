@@ -11,6 +11,6 @@ public interface IEmailService
     Task<EmailResponse> SendOwnerRegistrationResult(User user, string message);
 
     Task<EmailResponse> SendSiteRegistrationResult(User user, string message);
-    Task<EmailResponse> SendCodeVerificationResult(string mail, string message);
 
+    Task<EmailResponse> SendCodeVerificationResult(string mail, string message);
 }

@@ -149,12 +149,11 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
 });
 
 var app = builder.Build();
+
+app.UseCors("AllowAll");
 app.UseForwardedHeaders();
 app.UseHttpLogging();
 app.UseMiddleware<GlobalValuesMiddleware>();
-
-app.UseCors("AllowAll");
-
 app.MapControllers();
 app.MapHub<ChatHub>("/chatHub");
 app.MapHub<NotificationHub>("/notificationHub");
