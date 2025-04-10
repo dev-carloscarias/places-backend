@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qg7l55S7jxU=",
+  "dgSpecHash": "XK1V9iQNcYY=",
   "success": true,
-  "projectFilePath": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Infraestructure\\Infrastructure.csproj",
+  "projectFilePath": "X:\\devcc\\development\\outsourced\\places-backend\\Infraestructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\devcc\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\devcc\\.nuget\\packages\\azure.core\\1.39.0\\azure.core.1.39.0.nupkg.sha512",

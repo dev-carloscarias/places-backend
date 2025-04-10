@@ -7163,11 +7163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Api\\Api.csproj",
+      "projectUniqueName": "X:\\devcc\\development\\outsourced\\places-backend\\Api\\Api.csproj",
       "projectName": "Places.Api",
-      "projectPath": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Api\\Api.csproj",
+      "projectPath": "X:\\devcc\\development\\outsourced\\places-backend\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\devcc\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Api\\obj\\",
+      "outputPath": "X:\\devcc\\development\\outsourced\\places-backend\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7188,8 +7188,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Infraestructure\\Infrastructure.csproj": {
-              "projectPath": "\\\\Mac\\SSD\\devcc\\development\\outsourced\\PlacesAPI\\Infraestructure\\Infrastructure.csproj"
+            "X:\\devcc\\development\\outsourced\\places-backend\\Infraestructure\\Infrastructure.csproj": {
+              "projectPath": "X:\\devcc\\development\\outsourced\\places-backend\\Infraestructure\\Infrastructure.csproj"
             }
           }
         }
