@@ -163,8 +163,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll", builder =>
         builder.WithOrigins("https://nice-pond-01f64d51e.5.azurestaticapps.net")
                .AllowAnyMethod()
-               .AllowAnyHeader()
-               .AllowCredentials()); // Necesario para SignalR y autenticación
+               .AllowAnyHeader() // Permite cualquier encabezado, incluyendo X_LANGUAGE
+               .AllowCredentials());
 });
 
 builder.Services.Configure<ForwardedHeadersOptions>(options =>
@@ -194,7 +194,8 @@ app.Use(async (context, next) =>
         context.Response.StatusCode = StatusCodes.Status200OK;
         context.Response.Headers.Add("Access-Control-Allow-Origin", context.Request.Headers["Origin"]);
         context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-        context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
+        // Incluye X_LANGUAGE y otros encabezados personalizados
+        context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization, X_LANGUAGE");
         context.Response.Headers.Add("Access-Control-Allow-Credentials", "true");
         context.Response.Headers.Add("Access-Control-Max-Age", "86400");
         return;
@@ -225,7 +226,7 @@ app.UseExceptionMiddleware();
 
 app.UseLocalizationMiddleware();
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
