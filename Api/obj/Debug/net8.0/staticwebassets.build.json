@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "JOTSbxaVCbAK0YNpbDWoAPLFkUGRcgNAgxRB8/hgWqw=",
+  "Source": "Places.Api",
+  "BasePath": "_content/Places.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,172 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Places.Domain/1.0.0": {
+        "runtime": {
+          "Places.Domain.dll": {}
+        },
+        "resources": {
+          "ar/Places.Domain.resources.dll": {
+            "locale": "ar"
+          },
+          "az/Places.Domain.resources.dll": {
+            "locale": "az"
+          },
+          "bg/Places.Domain.resources.dll": {
+            "locale": "bg"
+          },
+          "bs/Places.Domain.resources.dll": {
+            "locale": "bs"
+          },
+          "ca/Places.Domain.resources.dll": {
+            "locale": "ca"
+          },
+          "cs/Places.Domain.resources.dll": {
+            "locale": "cs"
+          },
+          "da/Places.Domain.resources.dll": {
+            "locale": "da"
+          },
+          "de/Places.Domain.resources.dll": {
+            "locale": "de"
+          },
+          "el/Places.Domain.resources.dll": {
+            "locale": "el"
+          },
+          "es/Places.Domain.resources.dll": {
+            "locale": "es"
+          },
+          "fi/Places.Domain.resources.dll": {
+            "locale": "fi"
+          },
+          "fil/Places.Domain.resources.dll": {
+            "locale": "fil"
+          },
+          "fr/Places.Domain.resources.dll": {
+            "locale": "fr"
+          },
+          "ga/Places.Domain.resources.dll": {
+            "locale": "ga"
+          },
+          "he/Places.Domain.resources.dll": {
+            "locale": "he"
+          },
+          "hi/Places.Domain.resources.dll": {
+            "locale": "hi"
+          },
+          "hr/Places.Domain.resources.dll": {
+            "locale": "hr"
+          },
+          "hu/Places.Domain.resources.dll": {
+            "locale": "hu"
+          },
+          "hy/Places.Domain.resources.dll": {
+            "locale": "hy"
+          },
+          "id/Places.Domain.resources.dll": {
+            "locale": "id"
+          },
+          "is/Places.Domain.resources.dll": {
+            "locale": "is"
+          },
+          "it/Places.Domain.resources.dll": {
+            "locale": "it"
+          },
+          "ja/Places.Domain.resources.dll": {
+            "locale": "ja"
+          },
+          "ka/Places.Domain.resources.dll": {
+            "locale": "ka"
+          },
+          "ko/Places.Domain.resources.dll": {
+            "locale": "ko"
+          },
+          "lt/Places.Domain.resources.dll": {
+            "locale": "lt"
+          },
+          "lv/Places.Domain.resources.dll": {
+            "locale": "lv"
+          },
+          "mk/Places.Domain.resources.dll": {
+            "locale": "mk"
+          },
+          "ms/Places.Domain.resources.dll": {
+            "locale": "ms"
+          },
+          "mt/Places.Domain.resources.dll": {
+            "locale": "mt"
+          },
+          "nl/Places.Domain.resources.dll": {
+            "locale": "nl"
+          },
+          "no/Places.Domain.resources.dll": {
+            "locale": "no"
+          },
+          "pl/Places.Domain.resources.dll": {
+            "locale": "pl"
+          },
+          "pt/Places.Domain.resources.dll": {
+            "locale": "pt"
+          },
+          "ro/Places.Domain.resources.dll": {
+            "locale": "ro"
+          },
+          "ru/Places.Domain.resources.dll": {
+            "locale": "ru"
+          },
+          "sk/Places.Domain.resources.dll": {
+            "locale": "sk"
+          },
+          "sl/Places.Domain.resources.dll": {
+            "locale": "sl"
+          },
+          "sq/Places.Domain.resources.dll": {
+            "locale": "sq"
+          },
+          "sr/Places.Domain.resources.dll": {
+            "locale": "sr"
+          },
+          "sv/Places.Domain.resources.dll": {
+            "locale": "sv"
+          },
+          "sw/Places.Domain.resources.dll": {
+            "locale": "sw"
+          },
+          "th/Places.Domain.resources.dll": {
+            "locale": "th"
+          },
+          "tr/Places.Domain.resources.dll": {
+            "locale": "tr"
+          },
+          "uk/Places.Domain.resources.dll": {
+            "locale": "uk"
+          },
+          "vi/Places.Domain.resources.dll": {
+            "locale": "vi"
+          },
+          "xh/Places.Domain.resources.dll": {
+            "locale": "xh"
+          },
+          "zh/Places.Domain.resources.dll": {
+            "locale": "zh"
+          },
+          "zu/Places.Domain.resources.dll": {
+            "locale": "zu"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Places.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

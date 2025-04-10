@@ -116,12 +116,11 @@ public class AuthenticationService : IAuthenticationService
 
         var createdUser = await _userRepository.AddAsync(newUser);
 
-        user.Telephone = "40264326";
-
         user.Telephone = $"+{createdUser.Country.CountryCode}{user.Telephone}";
 
         await _emailService.SendWelcomeEmailAsync(user, string.Empty, string.Empty);
-        _smsService.SendVerificationMessage(user);
+        await _emailService.SendCodeVerificationResult(user.Email, "Tu codigo de verificacion es: " + user.TelephoneCodeValidation);
+        //_smsService.SendVerificationMessage(user);
 
         return createdUser;
     }
