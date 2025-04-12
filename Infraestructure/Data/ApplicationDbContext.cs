@@ -54,6 +54,12 @@ public class ApplicationDbContext : DbContext
     public DbSet<Notification> Notifications { get; set; }
     public DbSet<Incident> Incidents { get; set; }
 
+    public DbSet<Reservation> Reservations { get; set; }
+    public DbSet<ReservationTransfer> ReservationTransfers { get; set; }
+    public DbSet<ReservationAdditionalCost> ReservationAdditionalCosts { get; set; }
+    public DbSet<ReservationSelectedTransportOption> ReservationSelectedTransportOptions { get; set; }
+
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
@@ -112,7 +118,7 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<Rating>()
             .HasOne(r => r.User)
-            .WithMany() 
+            .WithMany()
             .HasForeignKey(r => r.UserId)
             .OnDelete(DeleteBehavior.Restrict);
 
@@ -158,7 +164,7 @@ public class ApplicationDbContext : DbContext
           .HasOne(i => i.User)
           .WithMany()
           .HasForeignKey(i => i.UserId)
-          .OnDelete(DeleteBehavior.Restrict); 
+          .OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<Incident>()
             .HasOne(i => i.Site)
@@ -168,7 +174,7 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<Country>()
             .HasOne(c => c.Currency)
-            .WithMany() 
+            .WithMany()
             .HasForeignKey(c => c.CurrencyId)
             .IsRequired(false);
 
@@ -177,6 +183,96 @@ public class ApplicationDbContext : DbContext
             .WithMany(c => c.Countries)
             .HasForeignKey(c => c.ContinentId)
             .IsRequired(false);
+
+        modelBuilder.Entity<Reservation>(entity =>
+        {
+            entity.HasKey(c => c.Id);
+
+            entity.Property(a => a.AdultAgreedPrice)
+            .HasColumnType("decimal(18,2)");
+
+            entity.Property(a => a.ChildAgreedPrice)
+            .HasColumnType("decimal(18,2)");
+
+            entity.HasOne(e => e.Site)
+            .WithMany()
+            .HasForeignKey(e => e.SiteId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+            entity.HasOne(e => e.SpecialPackage)
+          .WithMany()
+          .HasForeignKey(e => e.SpecialPackageId)
+          .OnDelete(DeleteBehavior.Restrict);
+
+            entity.HasMany(e => e.Transfers)
+                  .WithOne()
+                  .HasForeignKey(t => t.ReservationId)
+                  .OnDelete(DeleteBehavior.Cascade);
+
+            entity.HasMany(e => e.AdditionalCosts)
+                  .WithOne()
+                  .HasForeignKey(t => t.ReservationId)
+                  .OnDelete(DeleteBehavior.Cascade);
+
+            entity.HasMany(e => e.SelectedTransportOptions)
+                  .WithOne()
+                  .HasForeignKey(t => t.ReservationId)
+                  .OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<ReservationTransfer>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+
+            entity.Property(e => e.ReservationTransferState)
+                  .HasConversion<int>()
+                  .IsRequired();
+
+            entity.HasOne(e => e.Reservation)
+                  .WithMany(r => r.Transfers)
+                  .HasForeignKey(e => e.ReservationId);
+        });
+
+        modelBuilder.Entity<ReservationAdditionalCost>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+
+            entity.Property(e => e.Quantity)
+                  .IsRequired();
+
+            entity.Property(e => e.AgreedPrice)
+                    .HasColumnType("decimal(18,2)");
+
+            entity.HasOne(e => e.Reservation)
+                  .WithMany(r => r.AdditionalCosts)
+                  .HasForeignKey(e => e.ReservationId);
+
+            entity.HasOne(e => e.AdditionalCost)
+                  .WithMany()
+                  .HasForeignKey(e => e.AdditionalCostId)
+                  .OnDelete(DeleteBehavior.Restrict);
+        });
+
+        modelBuilder.Entity<ReservationSelectedTransportOption>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+
+            entity.Property(e => e.Quantity)
+                  .IsRequired();
+
+            entity.Property(e => e.AgreedPrice)
+                  .HasColumnType("decimal(18,2)")
+                  .IsRequired();
+
+            entity.HasOne(e => e.Reservation)
+                  .WithMany(r => r.SelectedTransportOptions)
+                  .HasForeignKey(e => e.ReservationId);
+
+            entity.HasOne(e => e.SelectedTransportOption)
+                  .WithMany()
+                  .HasForeignKey(e => e.SelectedTransportOptionId)
+                  .OnDelete(DeleteBehavior.Restrict);
+        });
 
         modelBuilder.ApplyConfigurationsFromAssembly(assembly: Assembly.GetExecutingAssembly());
     }
