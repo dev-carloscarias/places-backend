@@ -114,6 +114,7 @@ public class SiteRepository : Repository<Site>, ISiteRepository
             .Where(sto => sto.SiteId == id)
             .Select(sto => new
             {
+                Id = sto.Id,
                 sto.TransportOptionId,
                 sto.Price,
                 TransportOptionName = sto.TransportOption.Name,
@@ -189,6 +190,7 @@ public class SiteRepository : Repository<Site>, ISiteRepository
                     : null,
                 SelectedTransportOptions = transportOptionsData.Select(to => new SelectedTransportOption
                 {
+                    Id = to.Id,
                     TransportOptionId = to.TransportOptionId,
                     Price = to.Price,
                     TransportOption = new TransportOption

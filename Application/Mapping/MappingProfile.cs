@@ -167,7 +167,7 @@ public class MappingProfile : Profile
             .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => src.ReservationState))
             .ForMember(dest => dest.TotalAdults, opt => opt.MapFrom(src => src.TotalAdults))
             .ForMember(dest => dest.TotalChildren, opt => opt.MapFrom(src => src.TotalChildren))
-            .ForMember(dest => dest., opt => opt.MapFrom(src => src.TotalChildren))
+            //.ForMember(dest => dest., opt => opt.MapFrom(src => src.TotalChildren))
             
             .ReverseMap();
     }
