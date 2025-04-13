@@ -27,24 +27,24 @@ namespace Places.Application.Services
             var site = await _siteRepository.GetByIdAsync(reservationDTO.SiteId);
             if (site == null)
             {
-                throw new BadRequestException(LanguageConst.IdNotFound);
+                throw new BadRequestException("Sitio no encontrado");
             }
 
             if (reservationDTO.ReservationDate <= DateTime.Now)
             {
                 // TODO respuesta si la reserva es de una fecha pasada
-                throw new BadRequestException(LanguageConst.IdNotFound);
+                throw new BadRequestException("No puedes reservar en una fecha pasada");
             }
 
             if (reservationDTO.TotalAdults == 0 && reservationDTO.TotalChildren == 0)
             {
                 // TODO respuesta si no tiene al menos una persona invitada
-                throw new BadRequestException(LanguageConst.IdNotFound);
+                throw new BadRequestException("Tienes que añadir al menos a un adulto o un menor");
             }
             if (reservationDTO.SpecialPackageId != null && reservationDTO.SpecialPackageId != 0 && (reservationDTO.SpecialPackageQuantity == null || reservationDTO.SpecialPackageQuantity <= 0))
             {
                 // TODO si manda paquete especial pero sin la cantidad
-                throw new BadRequestException(LanguageConst.IdNotFound);
+                throw new BadRequestException("Se debe añadir la cantidad de paquetes especiales");
             }
 
             var reservationDateIsNotAvailableOnSechedules = site.Availabilities.
@@ -56,13 +56,22 @@ namespace Places.Application.Services
             if (bloquedDays.Count > 0)
             {
 
-                var bloquedDaysDates = bloquedDays.Select(d => DateTime.ParseExact(d, "yyyy-MM-ddd", CultureInfo.InvariantCulture)).ToList();
+                var bloquedDaysDates = bloquedDays.Select(d => DateTime.ParseExact(d, "yyyy-MM-dd", CultureInfo.InvariantCulture)).ToList();
                 reservationDateIsBloqued = bloquedDaysDates.Any(c => c.Date == reservationDTO.ReservationDate.Date);
             }
+
             if (reservationDateIsNotAvailableOnSechedules || reservationDateIsBloqued)
             {
                 // TODO respuesta si no est� disponible la fecha
-                throw new BadRequestException(LanguageConst.IdNotFound);
+                throw new BadRequestException("Fecha no disponible");
+            }
+            var capacity = site.Capacity;
+            var reservas = await _reservationRepository.FindAllAsync(c => c.IsActive && c.SiteId == site.Id
+            && c.ReservationDate.Date == reservationDTO.ReservationDate.Date);
+            var totalReservado = reservas.Sum(c => (c.TotalAdults + c.TotalChildren));
+            if(capacity <= (totalReservado +  reservationDTO.TotalChildren + reservationDTO.TotalAdults))
+            {
+                throw new BadRequestException("Lo sentimos hemos llegado a la maxima capacidad");
             }
 
             Reservation reservation = new Reservation
@@ -90,12 +99,13 @@ namespace Places.Application.Services
                     if (cost == null)
                     {
                         // TODO error si el costo enviado no existe
-                        throw new BadRequestException(LanguageConst.IdNotFound);
+                        throw new BadRequestException("El costo adicional no existe");
                     }
                     additionalCostsList.Add(new ReservationAdditionalCost
                     {
                         AdditionalCostId = a.AdditionalCostId,
                         AgreedPrice = cost.Price,
+                        Quantity = a.Quantity,
                     });
                 }
                 reservation.AdditionalCosts = additionalCostsList;
@@ -110,7 +120,7 @@ namespace Places.Application.Services
                     if (cost == null)
                     {
                         // TODO error si el costo enviado no existe
-                        throw new BadRequestException(LanguageConst.IdNotFound);
+                        throw new BadRequestException("El transporte adicional no existe");
                     }
                     transportOptionList.Add(new ReservationSelectedTransportOption
                     {
@@ -131,9 +141,19 @@ namespace Places.Application.Services
 
             var newReservation = await _reservationRepository.AddAsync(reservation);
 
+            var siteDto = _mapper.Map<SiteDto>(site);
 
-            var createdReservation = _mapper.Map<CreatedReservationDto>(site);
+            var createdReservation = _mapper.Map<CreatedReservationDto>(newReservation);
+            // createdReservation.Site = siteDto;
             return createdReservation;
+        }
+
+        public async Task<CreatedReservationDto> GetReservationById(int reservationId)
+        {
+            var reservation = await _reservationRepository.GetById(reservationId);
+            if (reservation != null)
+                return _mapper.Map<CreatedReservationDto>(reservation);
+            throw new BadRequestException("Reservación no encontrada");
         }
     }
 }

@@ -4,6 +4,7 @@ namespace Places.Application.Dtos.Reservation.Created
 {
     public class CreatedReservationDto
     {
+        public int ReservationId { get; set; }
         public SiteDto Site { get; set; } = null!;
         public SpecialPackageDto? SpecialPackage { get; set; }
         public DateTime ReservationDate { get; set; }

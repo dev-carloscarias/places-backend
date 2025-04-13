@@ -85,6 +85,7 @@ public class SiteRepository : Repository<Site>, ISiteRepository
                 .Select(s => s.AdditionalCosts
                     .Select(ac => new
                     {
+                        ac.Id,
                         ac.Price,
                         ac.Name
                     })
@@ -97,6 +98,7 @@ public class SiteRepository : Repository<Site>, ISiteRepository
                 .Where(s => s.Id == id && s.SpecialPackage != null)
                 .Select(s => new
                 {
+                    s.Id,
                     s.SpecialPackage.PackageName,
                     s.SpecialPackage.Price,
                     PackageItems = s.SpecialPackage.PackageItems
@@ -114,7 +116,7 @@ public class SiteRepository : Repository<Site>, ISiteRepository
             .Where(sto => sto.SiteId == id)
             .Select(sto => new
             {
-                Id = sto.Id,
+                sto.Id,
                 sto.TransportOptionId,
                 sto.Price,
                 TransportOptionName = sto.TransportOption.Name,
@@ -171,6 +173,7 @@ public class SiteRepository : Repository<Site>, ISiteRepository
                 AdditionalCosts = additionalCostsData != null
                     ? additionalCostsData.Select(ac => new AdditionalCost
                     {
+                        Id = ac.Id,
                         Price = ac.Price,
                         Name = ac.Name
                     }).ToList()
@@ -178,6 +181,7 @@ public class SiteRepository : Repository<Site>, ISiteRepository
                 SpecialPackage = specialPackageData != null
                     ? new SpecialPackage
                     {
+                        Id = specialPackageData.Id,
                         PackageName = specialPackageData.PackageName,
                         Price = specialPackageData.Price,
                         PackageItems = specialPackageData.PackageItems

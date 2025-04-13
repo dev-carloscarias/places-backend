@@ -21,5 +21,10 @@ namespace Places.Api.Controllers
         {
             return Ok(await _reservationService.CreateReservation(createReservationDTO));
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            return Ok(await _reservationService.GetReservationById(id));
+        }
     }
 }

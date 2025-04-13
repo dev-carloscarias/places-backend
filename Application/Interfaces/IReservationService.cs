@@ -10,5 +10,6 @@ namespace Places.Application.Interfaces
     public interface IReservationService
     {
         public Task<CreatedReservationDto> CreateReservation(CreateReservationDTO reservationDTO);
+        public Task<CreatedReservationDto> GetReservationById(int reservationId);
     }
 }

@@ -1,4 +1,5 @@
-﻿using Places.Application.Dtos.Reservation.Created;
+﻿using Places.Application.Dtos.Reservation.Create;
+using Places.Application.Dtos.Reservation.Created;
 
 namespace Places.Application.Mapping;
 
@@ -161,6 +162,7 @@ public class MappingProfile : Profile
 
         // Mapeo reservaciones
         CreateMap<Reservation, CreatedReservationDto>()
+            .ForMember(dest => dest.ReservationId, opt => opt.MapFrom(src => src.Id))
             .ForMember(dest => dest.SpecialPackageId, opt => opt.MapFrom(src => src.SpecialPackageId))
             .ForMember(dest => dest.SpecialPackageQuantity, opt => opt.MapFrom(src => src.SpecialPackageQuantity))
             .ForMember(dest => dest.ReservationDate, opt => opt.MapFrom(src => src.ReservationDate))
@@ -169,6 +171,24 @@ public class MappingProfile : Profile
             .ForMember(dest => dest.TotalChildren, opt => opt.MapFrom(src => src.TotalChildren))
             //.ForMember(dest => dest., opt => opt.MapFrom(src => src.TotalChildren))
             
+            .ReverseMap();
+        CreateMap<ReservationAdditionalCost, CreatedReservationAdditionalCost>()
+            .ForMember(dest => dest.AdditionalCostId, opt => opt.MapFrom(src => src.Id))
+            .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
+            .ForMember(dest => dest.AdditionalCost, opt => opt.MapFrom(src => src.AdditionalCost))
+            .ReverseMap();
+        CreateMap<ReservationAdditionalCost, ReservationAdditionalCostDto>()
+            .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
+            .ForMember(dest => dest.AdditionalCostId, opt => opt.MapFrom(src => src.AdditionalCostId));
+
+        CreateMap<ReservationAdditionalCost, CreatedReservationAdditionalCost>()
+            .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
+            .ForMember(dest => dest.AdditionalCostId, opt => opt.MapFrom(src => src.AdditionalCostId));
+        ;
+        CreateMap<ReservationSelectedTransportOption, CreatedReservationTransportOption>()
+            .ForMember(dest => dest.SelectedTransportOptionId, opt => opt.MapFrom(src => src.Id))
+            .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
+            .ForMember(dest => dest.SelectedTransportOption, opt => opt.MapFrom(src => src.SelectedTransportOption))
             .ReverseMap();
     }
 
