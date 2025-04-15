@@ -14,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.AddSerilog(builder.Configuration);
 builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
 
-// Configura el puerto dinámicamente para Azure
+// Configura el puerto dinÃ¡micamente para Azure
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080"; // Usa el puerto de Azure o 8080 como respaldo
 builder.WebHost.ConfigureKestrel(options =>
 {
@@ -107,7 +107,7 @@ builder.Services.AddSwaggerGen(options =>
 // Configura SignalR
 builder.Services.AddSignalR();
 
-// Configura autenticación con Facebook y Google (comenta si no lo usas)
+// Configura autenticaciÃ³n con Facebook y Google (comenta si no lo usas)
 builder.Services.AddAuthentication()
     .AddFacebook(fb =>
     {
@@ -161,9 +161,9 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
-        builder.WithOrigins("https://nice-pond-01f64d51e.5.azurestaticapps.net")
+        builder.SetIsOriginAllowed(_ => true) // Permite cualquier origen
                .AllowAnyMethod()
-               .AllowAnyHeader() // Permite cualquier encabezado, incluyendo X_LANGUAGE
+               .AllowAnyHeader()
                .AllowCredentials());
 });
 
@@ -173,7 +173,7 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
     options.KnownProxies.Add(IPAddress.Parse("127.0.0.1"));
 });
 
-// Habilita logging detallado para depuración
+// Habilita logging detallado para depuraciÃ³n
 builder.Services.AddLogging(logging =>
 {
     logging.AddConsole();
@@ -186,7 +186,7 @@ app.UseForwardedHeaders();
 app.UseHttpLogging();
 app.UseMiddleware<GlobalValuesMiddleware>();
 
-// Maneja solicitudes OPTIONS explícitamente para evitar errores CORS
+// Maneja solicitudes OPTIONS explÃ­citamente para evitar errores CORS
 app.Use(async (context, next) =>
 {
     if (context.Request.Method == "OPTIONS")
@@ -195,7 +195,7 @@ app.Use(async (context, next) =>
         context.Response.Headers.Add("Access-Control-Allow-Origin", context.Request.Headers["Origin"]);
         context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
         // Incluye X_LANGUAGE y otros encabezados personalizados
-        context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization, X_LANGUAGE");
+        context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization, X_LANGUAGE, X_CURRENCY");
         context.Response.Headers.Add("Access-Control-Allow-Credentials", "true");
         context.Response.Headers.Add("Access-Control-Max-Age", "86400");
         return;
