@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Places.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using Places.Infrastructure.Data;
 namespace Places.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250411042212_ReservationRemoveUser")]
+    partial class ReservationRemoveUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -385,51 +388,51 @@ namespace Places.Infrastructure.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4343), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7864), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "África",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4371), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7888), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4374), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7890), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "América",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4375), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7890), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4377), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7892), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Asia",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4377), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7893), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4379), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7894), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Europa",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4380), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7895), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4382), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7896), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Oceanía",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 548, DateTimeKind.Unspecified).AddTicks(4383), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 767, DateTimeKind.Unspecified).AddTicks(7897), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         });
                 });
@@ -1051,50 +1054,6 @@ namespace Places.Infrastructure.Data.Migrations
                     b.ToTable("ReservationAdditionalCosts");
                 });
 
-            modelBuilder.Entity("Places.Domain.Entities.ReservationSelectedTransportOption", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("AgreedPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<DateTimeOffset>("CreatedAt")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<int>("CreatedBy")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ReservationId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SelectedTransportOptionId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTimeOffset>("UpdatedAt")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<int>("UpdatedBy")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ReservationId");
-
-                    b.HasIndex("SelectedTransportOptionId");
-
-                    b.ToTable("ReservationSelectedTransportOptions");
-                });
-
             modelBuilder.Entity("Places.Domain.Entities.ReservationTransfer", b =>
                 {
                     b.Property<int>("Id")
@@ -1139,6 +1098,50 @@ namespace Places.Infrastructure.Data.Migrations
                     b.ToTable("ReservationTransfers");
                 });
 
+            modelBuilder.Entity("Places.Domain.Entities.ReservationTransportOption", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("AgreedPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTimeOffset>("CreatedAt")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReservationId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SelectedTransportOptionId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTimeOffset>("UpdatedAt")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("UpdatedBy")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReservationId");
+
+                    b.HasIndex("SelectedTransportOptionId");
+
+                    b.ToTable("ReservationTransportOptions");
+                });
+
             modelBuilder.Entity("Places.Domain.Entities.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -1175,31 +1178,31 @@ namespace Places.Infrastructure.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 549, DateTimeKind.Unspecified).AddTicks(1367), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(1482), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Super Administrator",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 549, DateTimeKind.Unspecified).AddTicks(1385), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(1495), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 549, DateTimeKind.Unspecified).AddTicks(1388), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(1497), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Regular User",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 549, DateTimeKind.Unspecified).AddTicks(1389), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(1498), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 549, DateTimeKind.Unspecified).AddTicks(1391), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(1499), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Administrator",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 549, DateTimeKind.Unspecified).AddTicks(1392), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(1500), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         });
                 });
@@ -1871,41 +1874,41 @@ namespace Places.Infrastructure.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 550, DateTimeKind.Unspecified).AddTicks(5745), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(8151), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Email",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 550, DateTimeKind.Unspecified).AddTicks(5765), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(8163), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 550, DateTimeKind.Unspecified).AddTicks(5768), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(8165), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Facebook",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 550, DateTimeKind.Unspecified).AddTicks(5769), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(8166), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 550, DateTimeKind.Unspecified).AddTicks(5770), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(8168), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Google",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 550, DateTimeKind.Unspecified).AddTicks(5771), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(8168), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 550, DateTimeKind.Unspecified).AddTicks(5773), new TimeSpan(0, -6, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(8170), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Apple",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 11, 8, 16, 0, 550, DateTimeKind.Unspecified).AddTicks(5773), new TimeSpan(0, -6, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 10, 22, 22, 11, 768, DateTimeKind.Unspecified).AddTicks(8170), new TimeSpan(0, -6, 0, 0, 0)),
                             UpdatedBy = 0
                         });
                 });
@@ -2173,10 +2176,21 @@ namespace Places.Infrastructure.Data.Migrations
                     b.Navigation("Reservation");
                 });
 
-            modelBuilder.Entity("Places.Domain.Entities.ReservationSelectedTransportOption", b =>
+            modelBuilder.Entity("Places.Domain.Entities.ReservationTransfer", b =>
                 {
                     b.HasOne("Places.Domain.Entities.Reservation", "Reservation")
-                        .WithMany("SelectedTransportOptions")
+                        .WithMany("Transfers")
+                        .HasForeignKey("ReservationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Reservation");
+                });
+
+            modelBuilder.Entity("Places.Domain.Entities.ReservationTransportOption", b =>
+                {
+                    b.HasOne("Places.Domain.Entities.Reservation", "Reservation")
+                        .WithMany("TransportOptions")
                         .HasForeignKey("ReservationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -2190,17 +2204,6 @@ namespace Places.Infrastructure.Data.Migrations
                     b.Navigation("Reservation");
 
                     b.Navigation("SelectedTransportOption");
-                });
-
-            modelBuilder.Entity("Places.Domain.Entities.ReservationTransfer", b =>
-                {
-                    b.HasOne("Places.Domain.Entities.Reservation", "Reservation")
-                        .WithMany("Transfers")
-                        .HasForeignKey("ReservationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Reservation");
                 });
 
             modelBuilder.Entity("Places.Domain.Entities.SelectedDate", b =>
@@ -2402,9 +2405,9 @@ namespace Places.Infrastructure.Data.Migrations
                 {
                     b.Navigation("AdditionalCosts");
 
-                    b.Navigation("SelectedTransportOptions");
-
                     b.Navigation("Transfers");
+
+                    b.Navigation("TransportOptions");
                 });
 
             modelBuilder.Entity("Places.Domain.Entities.Screen", b =>
