@@ -65,7 +65,13 @@ public class UserService : IUserService
 
         if (!string.IsNullOrEmpty(model.ProfilePicture))
         {
-            model.ProfilePicture = await _dataService.UploadFile($"{model.Id}/{Guid.NewGuid().ToString()}.png", model.ProfilePicture);
+            try
+            {
+                model.ProfilePicture = await _dataService.UploadFile($"{model.Id}/{Guid.NewGuid().ToString()}.png", model.ProfilePicture);
+            }catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         if (original is not null)

@@ -17,6 +17,7 @@ public class TranslationService : ITranslationService
 
     public async Task<TranslationResponse> TranslateTextAsync(TranslationRequest request)
     {
+         return new TranslationResponse { TranslatedText =  request.Text };
         try
         {
             var translatedText = await _azureTranslationClient.TranslateAsync(request.SourceLanguage, request.TargetLanguage, request.Text);
