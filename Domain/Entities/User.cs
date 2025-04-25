@@ -64,4 +64,6 @@ public class User : EntityBase
     public virtual Role Role { get; set; } = null!;
 
     public virtual Country Country { get; set; } = null!;
+    public string? PhotoVerification { get; set; }
+
 }

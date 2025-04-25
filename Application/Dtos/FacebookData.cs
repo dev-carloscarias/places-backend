@@ -1,26 +1,16 @@
 ﻿namespace Places.Application.Dtos;
 
-public class FacebookData
+public class FacebookDebugTokenData
 {
-    [JsonProperty("id")]
-    public string Id { get; set; } = string.Empty;
-
-    [JsonProperty("name")]
-    public string Name { get; set; } = string.Empty;
-
-    [JsonProperty("email")]
-    public string Email { get; set; } = string.Empty;
-
-    [JsonProperty("first_name")]
-    public string FirstName { get; set; } = string.Empty;
-
-    [JsonProperty("last_name")]
-    public string LastName { get; set; } = string.Empty;
-
-    [JsonProperty("picture")]
-    public Picture Picture { get; set; } = null!;
+    public string app_id { get; set; }
+    public string type { get; set; }
+    public string application { get; set; }
+    public long data_access_expires_at { get; set; }
+    public long expires_at { get; set; }
+    public bool is_valid { get; set; }
+    public List<string> scopes { get; set; }
+    public string user_id { get; set; }
 }
-
 public class Picture
 {
     [JsonProperty("data")]
@@ -42,14 +32,31 @@ public class Data
     public int Width { get; set; }
 }
 
-public class FacebookToken
+public class FacebookCredentialDto
 {
-    [JsonProperty("access_token")]
-    public string AccessToken { get; set; } = string.Empty;
+    public string accessToken { get; set; }
+}
 
-    [JsonProperty("token_type")]
-    public string TokenType { get; set; } = string.Empty;
+public class FacebookDebugTokenResponse
+{
+    public FacebookDebugTokenData data { get; set; }
+}
 
-    [JsonProperty("expires_in")]
-    public int ExpiresIn { get; set; }
+public class FacebookUserInfo
+{
+    public string id { get; set; }
+    public string name { get; set; }
+    public string email { get; set; }
+    public Picture picture { get; set; }
+
+    public class Picture
+    {
+        public PictureData data { get; set; }
+    }
+
+    public class PictureData
+    {
+        public string url { get; set; }
+        public bool is_silhouette { get; set; }
+    }
 }
