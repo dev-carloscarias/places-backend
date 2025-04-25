@@ -1,72 +1,83 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Google.Apis.Auth;
+
 
 namespace Places.Api.Controllers;
-
 [Route("signin-google")]
 [ApiController]
 public class SignInGoogleController : ControllerBase
 {
-    public SignInGoogleController(IConfiguration configuration)
+    private readonly IUserRepository _userRepository;
+    private readonly IAuthenticationService _authenticationService;
+
+    public SignInGoogleController(
+    IUserRepository userRepository,
+    IAuthenticationService authenticationService,
+    IConfiguration configuration
+    )
     {
+        _userRepository = userRepository;
+        _authenticationService = authenticationService;
         this.configuration = configuration;
     }
-
-    private const string callbackScheme = "myapp";
-
     private readonly IConfiguration configuration;
 
-    [HttpGet]
-    public async Task Get()
+    public class GoogleCredentialDto
     {
-        var kvp = HttpContext.Request.Query.FirstOrDefault(d => d.Key == "code");
-
-        GoogleRequestToken requestToken = new GoogleRequestToken
-        {
-            ClientId = configuration["AuthenticatonProviders:GoogleClientId"] ?? string.Empty,
-            ClientSecret = configuration["AuthenticatonProviders:GoogleClientSecret"] ?? string.Empty,
-            Code = kvp.Value,
-            GrantType = "authorization_code",
-            RedirectUri = $"{Request.Scheme}://{Request.Host}/signin-google"
-        };
-
-        var request = JsonConvert.SerializeObject(requestToken);
-        var content = new StringContent(
-            request,
-            Encoding.UTF8,
-            "application/json");
-
-        HttpClient client = new HttpClient();
-        client.BaseAddress = new System.Uri("https://oauth2.googleapis.com");
-        var response = await client.PostAsync($"token", content);
-        string data = await response.Content.ReadAsStringAsync();
-
-        GoogleToken googleToken = JsonConvert.DeserializeObject<GoogleToken>(data);
-
-        client = new HttpClient();
-        client.BaseAddress = new System.Uri("https://www.googleapis.com/oauth2/v2/userinfo");
-        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(googleToken.TokenType, googleToken.AccessToken);
-        response = await client.GetAsync("");
-        data = await response.Content.ReadAsStringAsync();
-
-        GoogleData googleData = JsonConvert.DeserializeObject<GoogleData>(data);
-
-        ProviderResponseDto providerResponse = new ProviderResponseDto
-        {
-            Id = googleData.Id,
-            Name = googleData.Name,
-            Email = googleData.Email,
-            Picture = googleData.Picture,
-            Provider = UserTypeId.Google
-        };
-
-        // Build the result url
-        var url = callbackScheme + "://#" + string.Join(
-            "&",
-            $"data={WebUtility.UrlEncode(JsonConvert.SerializeObject(providerResponse))}"
-            );
-
-        // Redirect to final url
-        Request.HttpContext.Response.Redirect(url);
+        public string Credential { get; set; }
     }
+
+
+    [HttpPost("login")]
+    public async Task<IActionResult> LoginWithGoogle([FromBody] GoogleCredentialDto dto)
+    {
+        try
+        {
+            var settings = new GoogleJsonWebSignature.ValidationSettings()
+            {
+                Audience = new[] { configuration["AuthenticatonProviders:GoogleClientId"] ?? string.Empty }
+            };
+
+            var payload = await GoogleJsonWebSignature.ValidateAsync(dto.Credential, settings);
+            if (payload == null)
+            {
+                return BadRequest("Token de Google no válido.");
+            }
+
+            var user = await _userRepository.FindByEmailAsync(payload.Email);
+
+            if (user == null)
+            {
+                var newUser = new User
+                {
+                    Email = payload.Email,
+                    FirstName = payload.GivenName,
+                    LastName = payload.FamilyName,
+                    RoleId = 2,
+                    CountryId = 80,
+                    UserTypeId = 2,
+                    ProfilePicture = payload.Picture,
+
+                    // Campos mínimos necesarios
+                    Salt = "temporalSalt",
+                    HashedPassword = "temporalHash",
+                    PlatformId = "platform-x",
+                    Telephone = "00000000",
+                    EmailCodeValidation = "0000",
+                    TelephoneCodeValidation = "0000"
+                };
+
+
+                user = await _userRepository.AddAsync(newUser);
+            }
+
+            var token = _authenticationService.GenerateJwtToken(user);
+
+            return Ok(new { token = token });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest($"Error: {ex.Message}");
+        }
+    }
+
 }

@@ -51,5 +51,6 @@ public class UserDto
     public string Address { get; set; } = string.Empty;
     public string CorporateEmail { get; set; } = string.Empty;
     public string AboutMe { get; set; } = string.Empty;
-    public List<HobbieDto> Hobbies { get; set; } = new List<HobbieDto>(); 
+    public List<HobbieDto> Hobbies { get; set; } = new List<HobbieDto>();
+    public string? PhotoVerification { get; set; } = string.Empty;
 }
