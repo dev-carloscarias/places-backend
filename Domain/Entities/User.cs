@@ -12,23 +12,23 @@ public class User : EntityBase
 
     public DateTimeOffset? RegistrationDate { get; set; }
 
-    public string Salt { get; set; } = null!;
+    public string? Salt { get; set; } = null!;
 
-    public string HashedPassword { get; set; } = null!;
+    public string? HashedPassword { get; set; } = null!;
 
-    public bool MustChangePassword { get; set; }
+    public bool MustChangePassword { get; set; } = false;
 
-    public string PlatformId { get; set; } = null!;
+    public string? PlatformId { get; set; } = null!;
 
-    public int UserTypeId { get; set; }
+    public int UserTypeId { get; set; } = 1;
 
-    public int RoleId { get; set; }
+    public int RoleId { get; set; } = 2;
 
-    public int CountryId { get; set; }
+    public int CountryId { get; set; } = 80;
 
-    public bool HasProperties { get; set; }
+    public bool HasProperties { get; set; } = false;
 
-    public string ProfilePicture { get; set; } = null!;
+    public string? ProfilePicture { get; set; } = null!;
     public string? DocumentoId { get; set; }
 
     public string? DocumentoIdType { get; set; }
@@ -37,13 +37,13 @@ public class User : EntityBase
     public string? LegalRepresentation { get; set; }
     public string? LegalRepresentationType { get; set; }
 
-    public string Telephone { get; set; } = null!;
+    public string? Telephone { get; set; } = null!;
 
-    public bool HasEmailValidated { get; set; }
+    public bool HasEmailValidated { get; set; } = false;
 
     public string EmailCodeValidation { get; set; } = null!;
 
-    public bool HasTelephoneValidated { get; set; }
+    public bool HasTelephoneValidated { get; set; } = false;
 
     public string TelephoneCodeValidation { get; set; } = null!;
 
@@ -53,10 +53,10 @@ public class User : EntityBase
 
     public bool IsPendingToResolve { get; set; } = false;
 
-    public string RejectReason { get; set; } = string.Empty;
-    public string Address { get; set; } = string.Empty;
-    public string CorporateEmail { get; set; } = string.Empty;
-    public string AboutMe { get; set; } = string.Empty;
+    public string? RejectReason { get; set; } = string.Empty;
+    public string? Address { get; set; } = string.Empty;
+    public string? CorporateEmail { get; set; } = string.Empty;
+    public string? AboutMe { get; set; } = string.Empty;
     public ICollection<Hobbie> Hobbies { get; set; } = new List<Hobbie>();
 
     public virtual UserType UserType { get; set; } = null!;

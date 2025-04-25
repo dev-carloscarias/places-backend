@@ -38,6 +38,8 @@ public static class ModulesExtension
         services.AddScoped<IDataFileService, DataFileService>();
         services.AddScoped<IChatService, ChatService>();
 
+        services.AddScoped<IReservationService, ReservationService>();
+
         services.Configure<GlobalValues>(options =>
         {
             options.CurrencyId = 138;
@@ -82,6 +84,7 @@ public static class ModulesExtension
         services.AddScoped<IChatMessageRepository, ChatMessageRepository>();
         services.AddScoped<IUserChatMessageRepository, UserChatMessageRepository>();
         services.AddScoped<INotificationsRepository, NotificationsRepository>();
+        services.AddScoped<IReservationRepository, ReservationRespository>();
 
         return services;
     }

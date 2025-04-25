@@ -247,6 +247,7 @@ public class SiteService : ISiteService
     public async Task<Site> GetByIdandLanguage(int id, string userLanguage)
     {
         var current = await _siteRepository.GetById(id);
+        return current;
         var currentLanguage = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
         if (current is not null)
         {

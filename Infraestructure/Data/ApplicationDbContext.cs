@@ -272,6 +272,8 @@ public class ApplicationDbContext : DbContext
                   .WithMany()
                   .HasForeignKey(e => e.SelectedTransportOptionId)
                   .OnDelete(DeleteBehavior.Restrict);
+<<<<<<< HEAD
+=======
             
 
         });
@@ -280,6 +282,7 @@ public class ApplicationDbContext : DbContext
 
             entity.Property(e => e.PhotoVerification)
                   .HasColumnName("PhotoVerification");
+>>>>>>> main
         });
 
         modelBuilder.ApplyConfigurationsFromAssembly(assembly: Assembly.GetExecutingAssembly());
