@@ -203,14 +203,14 @@ public class SiteService : ISiteService
         var site = await _siteRepository.UpdateAsync(model);
         var languages = await _languageService.GetAll();
         var currentLanguage = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
-        foreach (var language in languages.Select(d => d.LanguageCode))
-        {
-            var resultTranslate = await _translationService.TranslateTextAsync(new TranslationRequest { SourceLanguage = currentLanguage, TargetLanguage = language, Text = model.Title });
-            _ = _translateService.Create(new Translate { SiteId = site.Id, IsActive = true, LanguageCode = language, Translation = resultTranslate.TranslatedText, FieldName = "Title" });
+        // foreach (var language in languages.Select(d => d.LanguageCode))
+        // {
+        //     var resultTranslate = await _translationService.TranslateTextAsync(new TranslationRequest { SourceLanguage = currentLanguage, TargetLanguage = language, Text = model.Title });
+        //     _ = _translateService.Create(new Translate { SiteId = site.Id, IsActive = true, LanguageCode = language, Translation = resultTranslate.TranslatedText, FieldName = "Title" });
 
-            resultTranslate = await _translationService.TranslateTextAsync(new TranslationRequest { SourceLanguage = currentLanguage, TargetLanguage = language, Text = model.Description });
-            await _translateService.Create(new Translate { SiteId = site.Id, IsActive = true, LanguageCode = language, Translation = resultTranslate.TranslatedText, FieldName = "Description" });
-        }
+        //     resultTranslate = await _translationService.TranslateTextAsync(new TranslationRequest { SourceLanguage = currentLanguage, TargetLanguage = language, Text = model.Description });
+        //     await _translateService.Create(new Translate { SiteId = site.Id, IsActive = true, LanguageCode = language, Translation = resultTranslate.TranslatedText, FieldName = "Description" });
+        // }
 
         var country = (await _countryRepository.FindAsync(c => c.Id == model.CountryId && !c.IsActive)).FirstOrDefault();
         if (country != null)

@@ -65,7 +65,13 @@ public class UserService : IUserService
 
         if (!string.IsNullOrEmpty(model.ProfilePicture))
         {
-            model.ProfilePicture = await _dataService.UploadFile($"{model.Id}/{Guid.NewGuid().ToString()}.png", model.ProfilePicture);
+            try
+            {
+                model.ProfilePicture = await _dataService.UploadFile($"{model.Id}/{Guid.NewGuid().ToString()}.png", model.ProfilePicture);
+            }catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         if (original is not null)
@@ -138,6 +144,10 @@ public class UserService : IUserService
             user.RegistrationDate = DateTimeOffset.Now;
             user.IsOwnerApproved = false;
             user.IsPendingToResolve = true;
+            user.FirstName = owner.FirstName;
+            user.LastName = owner.LastName;
+            user.Email = owner.Email;
+            user.Telephone = owner.Telephone;
 
             foreach (var file in owner.DataFiles)
             {
@@ -160,7 +170,7 @@ public class UserService : IUserService
                 switch (file.DataFileType)
                 {
                     case DataFileType.Profile: // Foto de Perfil
-                        user.ProfilePicture = filePath;
+                        user.PhotoVerification = filePath;
                         break;
                     case  DataFileType.PersonalId: // Documento de Identificación
                         user.DocumentoId = filePath;

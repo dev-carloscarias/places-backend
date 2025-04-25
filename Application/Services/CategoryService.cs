@@ -40,11 +40,11 @@ public class CategoryService : ICategoryService
         var category = await _categoryRepository.AddAsync(model);
         var languages = await _languageService.GetAll();
         var currentLanguage = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
-        foreach (var language in languages.Select(d => d.LanguageCode))
-        {
-            var resultTranslate = await _translationService.TranslateTextAsync(new TranslationRequest { SourceLanguage = currentLanguage, TargetLanguage = language, Text = model.Name });
-            await _translateService.Create(new Translate { CategoryId = category.Id, IsActive = true, LanguageCode = language, Translation = resultTranslate.TranslatedText });
-        }
+        // foreach (var language in languages.Select(d => d.LanguageCode))
+        // {
+        //     var resultTranslate = await _translationService.TranslateTextAsync(new TranslationRequest { SourceLanguage = currentLanguage, TargetLanguage = language, Text = model.Name });
+        //     await _translateService.Create(new Translate { CategoryId = category.Id, IsActive = true, LanguageCode = language, Translation = resultTranslate.TranslatedText });
+        // }
         return category;
     }
 

@@ -27,9 +27,9 @@ public class SmsService : ISmsService
         {
             return SendMessage($"{string.Format(LanguageConst.SMSVerificationMessage, appName)} {user.TelephoneCodeValidation}", $"{user.Telephone}");
         }
-        catch
+        catch(Exception e)
         {
-            // An error can't stop regular flow
+            Console.WriteLine(e.ToString());
         }
         return string.Empty;
     }

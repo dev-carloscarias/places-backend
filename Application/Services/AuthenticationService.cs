@@ -121,7 +121,8 @@ public class AuthenticationService : IAuthenticationService
         user.Telephone = $"+{createdUser.Country.CountryCode}{user.Telephone}";
 
         await _emailService.SendWelcomeEmailAsync(user, string.Empty, string.Empty);
-        _smsService.SendVerificationMessage(user);
+        await _emailService.SendCodeVerificationResult(user.Email, "Tu codigo de verificacion es: "+ user.TelephoneCodeValidation );
+       //_smsService.SendVerificationMessage(user);
 
         return createdUser;
     }

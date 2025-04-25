@@ -12,13 +12,30 @@ public class DataService : IDataService
         _configuration = configuration;
     }
 
-    public async Task<string> UploadFile(string container, string content)
+    public async Task<string> UploadFile(string blobName, string base64)
     {
-        BlobContainerClient blobContainerClient = new BlobContainerClient(_configuration["ConnectionStrings:BlobConnection"], _configuration["AppSettings:ContainerName"]);
-        BlobClient blobClient = blobContainerClient.GetBlobClient(container);
-        _ = await blobClient.UploadAsync(BinaryData.FromBytes(Convert.FromBase64String(content)), overwrite: true);
+        // 0️⃣  Validación de configuración
+        var conn = _configuration.GetConnectionString("BlobConnection");
+        var containerName = _configuration["AppSettings:ContainerName"]?
+                            .Trim().ToLowerInvariant();
 
-        return $"{blobContainerClient.Uri.AbsoluteUri.ToString()}/{container}";
+        if (string.IsNullOrWhiteSpace(conn) || string.IsNullOrWhiteSpace(containerName))
+            throw new InvalidOperationException("Config: conexión o contenedor nulo.");
+
+        // 1️⃣  Cliente de servicio y contenedor
+        var serviceClient = new BlobServiceClient(conn);
+        var container = serviceClient.GetBlobContainerClient(containerName);
+
+        // 2️⃣  Crea el contenedor solo si no existe
+        await container.CreateIfNotExistsAsync();   // si existe, devuelve null
+
+        // 3️⃣  Sube el blob
+        var blobClient = container.GetBlobClient(blobName);
+        await blobClient.UploadAsync(
+            BinaryData.FromBytes(Convert.FromBase64String(base64)),
+            overwrite: true);
+
+        return $"{container.Uri}/{blobName}";
     }
 
     public async Task<string> UploadBlobFile(string path, byte[] content)
