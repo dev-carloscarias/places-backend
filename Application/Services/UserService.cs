@@ -148,6 +148,7 @@ public class UserService : IUserService
             user.LastName = owner.LastName;
             user.Email = owner.Email;
             user.Telephone = owner.Telephone;
+            user.Address = owner.Address;
 
             foreach (var file in owner.DataFiles)
             {

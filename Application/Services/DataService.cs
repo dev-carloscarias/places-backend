@@ -1,4 +1,5 @@
 ﻿using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
 using Microsoft.Extensions.Configuration;
 
 namespace Places.Application.Services;
@@ -35,7 +36,24 @@ public class DataService : IDataService
             BinaryData.FromBytes(Convert.FromBase64String(base64)),
             overwrite: true);
 
+       
+        var contentType = GetContentType(blobName); 
+                                                    
+        var uploadOptions = new BlobUploadOptions
+        {
+            HttpHeaders = new BlobHttpHeaders
+            {
+                ContentType = contentType,
+                ContentDisposition = "inline"
+            }
+        };
+
+        await blobClient.UploadAsync(
+            BinaryData.FromBytes(Convert.FromBase64String(base64)),
+            uploadOptions);
+
         return $"{container.Uri}/{blobName}";
+
     }
 
     public async Task<string> UploadBlobFile(string path, byte[] content)
@@ -46,5 +64,19 @@ public class DataService : IDataService
         await blobClient.UploadAsync(ms, overwrite: true);
 
         return $"{blobContainerClient.Uri.AbsoluteUri}/{path}";
+    }
+
+    private string GetContentType(string fileName)
+    {
+        var extension = Path.GetExtension(fileName).ToLowerInvariant();
+
+        return extension switch
+        {
+            ".pdf" => "application/pdf",
+            ".jpg" => "image/jpeg",
+            ".jpeg" => "image/jpeg",
+            ".png" => "image/png",
+            _ => "application/octet-stream" // Default si no sabemos
+        };
     }
 }
