@@ -385,91 +385,51 @@ namespace Places.Infrastructure.Data.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1842), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "África",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1872), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4086), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "África",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4122), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 2,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1875), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "América",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1876), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4125), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "América",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4127), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 3,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1878), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Asia",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1879), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4130), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Asia",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4132), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 4,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1880), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Europa",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1881), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4134), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Europa",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4136), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 5,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1883), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Oceanía",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(1883), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4138), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Oceanía",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 612, DateTimeKind.Unspecified).AddTicks(4140), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         });
                 });
@@ -1215,55 +1175,31 @@ namespace Places.Infrastructure.Data.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(9620), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Super Administrator",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(9636), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 613, DateTimeKind.Unspecified).AddTicks(7565), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Super Administrator",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 613, DateTimeKind.Unspecified).AddTicks(7602), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 2,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(9639), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Regular User",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(9640), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 613, DateTimeKind.Unspecified).AddTicks(7606), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Regular User",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 613, DateTimeKind.Unspecified).AddTicks(7607), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 3,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(9641), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Administrator",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 520, DateTimeKind.Unspecified).AddTicks(9642), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 613, DateTimeKind.Unspecified).AddTicks(7610), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Administrator",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 613, DateTimeKind.Unspecified).AddTicks(7613), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         });
                 });
@@ -1929,73 +1865,41 @@ namespace Places.Infrastructure.Data.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 522, DateTimeKind.Unspecified).AddTicks(4718), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Email",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 522, DateTimeKind.Unspecified).AddTicks(4741), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 616, DateTimeKind.Unspecified).AddTicks(5073), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Email",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 616, DateTimeKind.Unspecified).AddTicks(5117), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 2,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 522, DateTimeKind.Unspecified).AddTicks(4744), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Facebook",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 522, DateTimeKind.Unspecified).AddTicks(4745), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 616, DateTimeKind.Unspecified).AddTicks(5124), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Facebook",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 616, DateTimeKind.Unspecified).AddTicks(5126), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 3,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 522, DateTimeKind.Unspecified).AddTicks(4746), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Google",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 522, DateTimeKind.Unspecified).AddTicks(4747), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 616, DateTimeKind.Unspecified).AddTicks(5129), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Google",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 616, DateTimeKind.Unspecified).AddTicks(5131), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         },
                         new
                         {
                             Id = 4,
-<<<<<<< HEAD
-                            CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 522, DateTimeKind.Unspecified).AddTicks(4749), new TimeSpan(0, -6, 0, 0, 0)),
-                            CreatedBy = 0,
-                            IsActive = true,
-                            Name = "Apple",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 16, 17, 7, 40, 522, DateTimeKind.Unspecified).AddTicks(4750), new TimeSpan(0, -6, 0, 0, 0)),
-=======
                             CreatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 616, DateTimeKind.Unspecified).AddTicks(5136), new TimeSpan(0, -6, 0, 0, 0)),
                             CreatedBy = 0,
                             IsActive = true,
                             Name = "Apple",
                             UpdatedAt = new DateTimeOffset(new DateTime(2025, 4, 24, 10, 46, 42, 616, DateTimeKind.Unspecified).AddTicks(5138), new TimeSpan(0, -6, 0, 0, 0)),
->>>>>>> main
                             UpdatedBy = 0
                         });
                 });
