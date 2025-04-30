@@ -66,6 +66,7 @@ public class EmailService : IEmailService
 
     private async Task<EmailResponse> SendEmailAsync(string email, string subject, string message, string cc = "", string bcc = "")
     {
+
         if (string.IsNullOrEmpty(email))
             return new EmailResponse { StatusCode = System.Net.HttpStatusCode.NoContent };
 
