@@ -51,7 +51,7 @@ public class SignInGoogleController : ControllerBase
                 {
                     Email = payload.Email,
                     FirstName = payload.GivenName,
-                    LastName = payload.FamilyName,
+                    LastName = payload.FamilyName ?? " ",
                     RoleId = 2,
                     CountryId = 80,
                     UserTypeId = 2,
