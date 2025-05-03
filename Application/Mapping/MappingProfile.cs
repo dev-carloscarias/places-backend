@@ -1,5 +1,7 @@
-﻿using Places.Application.Dtos.Reservation.Create;
+﻿using Places.Application.Dtos.Recurrente.WebHook;
+using Places.Application.Dtos.Reservation.Create;
 using Places.Application.Dtos.Reservation.Created;
+using Places.Application.Dtos.Reservation.Payment;
 
 namespace Places.Application.Mapping;
 
@@ -170,7 +172,9 @@ public class MappingProfile : Profile
             .ForMember(dest => dest.TotalAdults, opt => opt.MapFrom(src => src.TotalAdults))
             .ForMember(dest => dest.TotalChildren, opt => opt.MapFrom(src => src.TotalChildren))
             //.ForMember(dest => dest., opt => opt.MapFrom(src => src.TotalChildren))
-            
+            .ForMember(dest => dest.PaymentUrl, opt => opt.MapFrom(src => src.CreditCardPaymentUrl))
+            .ForMember(dest => dest.TotalAmmount, opt => opt.MapFrom(src => src.TotalAmmount))
+            .ForMember(dest => dest.Commision, opt => opt.MapFrom(src => src.Commision))
             .ReverseMap();
         CreateMap<ReservationAdditionalCost, CreatedReservationAdditionalCost>()
             .ForMember(dest => dest.AdditionalCostId, opt => opt.MapFrom(src => src.Id))
@@ -184,12 +188,19 @@ public class MappingProfile : Profile
         CreateMap<ReservationAdditionalCost, CreatedReservationAdditionalCost>()
             .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
             .ForMember(dest => dest.AdditionalCostId, opt => opt.MapFrom(src => src.AdditionalCostId));
-        ;
+
         CreateMap<ReservationSelectedTransportOption, CreatedReservationTransportOption>()
             .ForMember(dest => dest.SelectedTransportOptionId, opt => opt.MapFrom(src => src.Id))
             .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
             .ForMember(dest => dest.SelectedTransportOption, opt => opt.MapFrom(src => src.SelectedTransportOption))
             .ReverseMap();
+
+        CreateMap<RecurrentePaymentNotificationDto, CreditCardReservationPayment>()
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Checkout.Id))
+            .ForMember(dest => dest.Currency, opt => opt.MapFrom(src => src.Currency))
+            .ForMember(dest => dest.ProcessedBy, opt => opt.MapFrom(src => "RECURRENTE"))
+            .ForMember(dest => dest.Ammount, opt => opt.MapFrom(src => src.AmountInCents / 100m));
+
     }
 
     private static List<string> ConvertSitePolicies(string? sitePolicies)

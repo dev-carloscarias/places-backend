@@ -1,5 +1,5 @@
-
-using Azure.Storage.Blobs.Models;
+using Places.Domain.Define;
+using Places.Domain.Exceptions;
 
 namespace Places.Infrastructure.Repositories
 {
@@ -11,12 +11,32 @@ namespace Places.Infrastructure.Repositories
             _appDbContext = appDbContext;
         }
 
-        public override async Task<Reservation> GetById(int id)
+        public async Task<Reservation?> FindByCreditCardPaymentId(string creditCardPaymentId)
         {
             return await _appDbContext.Reservations
-                .Include(r => r.Site)
-                .ThenInclude(s => s.SpecialPackage)
-                .FirstOrDefaultAsync(c => c.Id == id && c.IsActive);
+                .FirstOrDefaultAsync(c => c.CreditCardPaymentId == creditCardPaymentId);
+        }
+
+        public async Task ProcessPayment(int reservationId, ReservationCreditCardPayment payment)
+        {
+            using (var transaction = await _appDbContext.Database.BeginTransactionAsync())
+            {
+                try
+                {
+                    var reservation = (await _appDbContext.Reservations.FindAsync(reservationId))!;
+                    reservation.ReservationState = ReservationState.Approved;
+                    reservation.PaymentDate = DateTime.Now;
+                    await _appDbContext.SaveChangesAsync();
+                    await _appDbContext.ReservationCreditCardPayments.AddAsync(payment);
+                    await _appDbContext.SaveChangesAsync();
+                    await transaction.CommitAsync();
+                }
+                catch (Exception)
+                {
+                    await transaction.RollbackAsync();
+                    throw new BadRequestException();
+                }
+            }
         }
     }
 }

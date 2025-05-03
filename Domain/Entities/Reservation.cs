@@ -14,8 +14,14 @@ public class Reservation : EntityBase
     public virtual ICollection<ReservationTransfer> Transfers { get; set; } = [];
     public virtual ICollection<ReservationAdditionalCost> AdditionalCosts { get; set; } = [];
     public virtual ICollection<ReservationSelectedTransportOption> SelectedTransportOptions { get; set; } = [];
+    public virtual ICollection<ReservationCreditCardPayment> ReservationCreditCardPayments { get; set; } = [];
     public int? SpecialPackageId { get; set; }
     public int? SpecialPackageQuantity { get; set; }
     public decimal? SpecialPackageAgreedPrice { get; set; }
     public virtual SpecialPackage? SpecialPackage { get; set; } = null!;
+    public string CreditCardPaymentId { get; set; } = string.Empty;
+    public string CreditCardPaymentUrl { get; set; } = string.Empty;
+    public decimal TotalAmmount { get; set; }
+    public decimal Commision { get; set; }
+    public DateTime? PaymentDate { get; set; }
 }

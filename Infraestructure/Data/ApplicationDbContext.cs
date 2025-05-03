@@ -58,6 +58,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<ReservationTransfer> ReservationTransfers { get; set; }
     public DbSet<ReservationAdditionalCost> ReservationAdditionalCosts { get; set; }
     public DbSet<ReservationSelectedTransportOption> ReservationSelectedTransportOptions { get; set; }
+    public DbSet<ReservationCreditCardPayment> ReservationCreditCardPayments { get; set; }
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -271,10 +272,7 @@ public class ApplicationDbContext : DbContext
             entity.HasOne(e => e.SelectedTransportOption)
                   .WithMany()
                   .HasForeignKey(e => e.SelectedTransportOptionId)
-                  .OnDelete(DeleteBehavior.Restrict);
-<<<<<<< HEAD
-=======
-            
+                  .OnDelete(DeleteBehavior.Restrict); 
 
         });
         modelBuilder.Entity<User>(entity =>
@@ -282,7 +280,6 @@ public class ApplicationDbContext : DbContext
 
             entity.Property(e => e.PhotoVerification)
                   .HasColumnName("PhotoVerification");
->>>>>>> main
         });
 
         modelBuilder.ApplyConfigurationsFromAssembly(assembly: Assembly.GetExecutingAssembly());

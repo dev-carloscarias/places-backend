@@ -103,7 +103,7 @@ namespace Places.Api.Controllers
             public string LastName { get; set; }
         }
 
-        public SeparateName SepararNombre(string nombreCompleto)
+        private SeparateName SepararNombre(string nombreCompleto)
         {
             if (string.IsNullOrWhiteSpace(nombreCompleto))
                 return new SeparateName { FirstName = "", LastName = "" };

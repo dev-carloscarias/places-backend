@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using Places.Application.Dtos.Reservation.Availability;
 using Places.Application.Dtos.Reservation.Create;
 
 namespace Places.Api.Controllers
 {
-    [ApiController]
     [Route("api/v1/[controller]")]
+    [ApiController]
     public class ReservationsController : ControllerBase
     {
         private readonly IReservationService _reservationService;
@@ -26,5 +22,14 @@ namespace Places.Api.Controllers
         {
             return Ok(await _reservationService.GetReservationById(id));
         }
+
+        [HttpPost]
+        [Route("verifyAvailability")]
+        public async Task<IActionResult> VerifyAvailability([FromBody] VerifySiteAvailabilityDto request)
+        {
+            return Ok(await _reservationService.VerifyAvailability(request));
+
+        }
+
     }
 }
