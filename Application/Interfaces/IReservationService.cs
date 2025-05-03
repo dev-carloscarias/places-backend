@@ -1,6 +1,7 @@
 using Places.Application.Dtos.Reservation.Availability;
 using Places.Application.Dtos.Reservation.Create;
 using Places.Application.Dtos.Reservation.Created;
+using Places.Application.Dtos.Reservation.List;
 using Places.Application.Dtos.Reservation.Payment;
 
 namespace Places.Application.Interfaces
@@ -10,6 +11,9 @@ namespace Places.Application.Interfaces
         public Task<CreatedReservationDto> CreateReservation(CreateReservationDTO reservationDTO);
         public Task<CreatedReservationDto> GetReservationById(int reservationId);
         public Task<AvailabilityResponse> VerifyAvailability(VerifySiteAvailabilityDto request);
-        public Task ProccessPayment(CreditCardReservationPayment payment);
+        public Task ProccessPayment(ReservationPaymentDto payment);
+        public Task ProccessPendingPayment(ReservationPaymentDto payment);
+        public Task ProccessFailedPayment(ReservationPaymentDto payment);
+        Task<List<ReservationListItem>> GetAllReservations();
     }
 }

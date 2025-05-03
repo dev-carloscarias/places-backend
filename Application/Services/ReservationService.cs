@@ -1,15 +1,10 @@
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Places.Application.Dtos.Reservation.Availability;
 using Places.Application.Dtos.Reservation.Create;
 using Places.Application.Dtos.Reservation.Created;
+using Places.Application.Dtos.Reservation.List;
 using Places.Application.Dtos.Reservation.Payment;
-using Places.Domain.Entities;
-using Places.Domain.Interfaces.Repositories;
 
 namespace Places.Application.Services
 {
@@ -154,8 +149,8 @@ namespace Places.Application.Services
 
             var creditCardReservationPayment = new CreateCreditCardReservationPayment
             {
-                SuccessUrl = "http://localhost:4200/reservation-details/" + newReservation.Id.ToString(),
-                CancelUrl = "http://localhost:4200/reservation-details/" + newReservation.Id.ToString(),
+                SuccessUrl = "http://localhost:4200/user-menu/reservaciones",
+                CancelUrl = "http://localhost:4200/user-menu/reservaciones",
                 Currency = "GTQ",
                 Name = "Reservación " + site.Title,
                 Quantity = 1,
@@ -255,16 +250,18 @@ namespace Places.Application.Services
             return response;
         }
 
-        public async Task ProccessPayment(CreditCardReservationPayment paymentRequest)
+        public async Task ProccessPayment(ReservationPaymentDto paymentRequest)
         {
             var reservation = await _reservationRepository.FindByCreditCardPaymentId(paymentRequest.Id);
-            if (reservation == null) {
+            if (reservation == null)
+            {
                 _logger.LogError("Pago recibido id " + paymentRequest.Id + " pero no fue encontrada la reservación asociada a ese pago");
                 throw new BadRequestException("Reservación no encontrada");
             }
-            if(reservation.ReservationState == ReservationState.PendingPayment)
+            if (reservation.ReservationState == ReservationState.PendingPayment
+                || reservation.ReservationState == ReservationState.PendingPayment)
             {
-                var payment = new ReservationCreditCardPayment
+                var payment = new ReservationPayment
                 {
                     ReservationId = reservation.Id,
                     ProcessedBy = paymentRequest.ProcessedBy,
@@ -274,6 +271,36 @@ namespace Places.Application.Services
                 };
                 await _reservationRepository.ProcessPayment(reservation.Id, payment);
             }
+        }
+
+        public async Task<List<ReservationListItem>> GetAllReservations()
+        {
+            var currentUserId = (await _currentUserService.GetCurrentUserIdAsync())?.Id ?? 0;
+            var list = await _reservationRepository.FindAllByUserId(currentUserId);
+            var ll = _mapper.Map<List<ReservationListItem>>(list);
+            return ll;
+        }
+
+        public async Task ProccessPendingPayment(ReservationPaymentDto paymentRequest)
+        {
+            var reservation = await _reservationRepository.FindByCreditCardPaymentId(paymentRequest.Id);
+            if (reservation == null)
+            {
+                _logger.LogError("Pago pendiente recibido id " + paymentRequest.Id + " pero no fue encontrada la reservación asociada a ese pago");
+                throw new BadRequestException("Reservación no encontrada");
+            }
+            await _reservationRepository.ProcessPendingPayment(reservation.Id);
+        }
+
+        public async Task ProccessFailedPayment(ReservationPaymentDto paymentRequest)
+        {
+            var reservation = await _reservationRepository.FindByCreditCardPaymentId(paymentRequest.Id);
+            if (reservation == null)
+            {
+                _logger.LogError("Pago fallido recibido id " + paymentRequest.Id + " pero no fue encontrada la reservación asociada a ese pago");
+                throw new BadRequestException("Reservación no encontrada");
+            }
+            await _reservationRepository.ProcessPendingPayment(reservation.Id);
         }
     }
 }

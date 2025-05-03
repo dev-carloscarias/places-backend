@@ -31,5 +31,12 @@ namespace Places.Api.Controllers
 
         }
 
+        [HttpGet]
+        [Route("list")]
+        public async Task<IActionResult> GetAllReservations()
+        {
+            return Ok(await _reservationService.GetAllReservations());
+        }
+
     }
 }

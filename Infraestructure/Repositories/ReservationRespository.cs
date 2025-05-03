@@ -17,7 +17,7 @@ namespace Places.Infrastructure.Repositories
                 .FirstOrDefaultAsync(c => c.CreditCardPaymentId == creditCardPaymentId);
         }
 
-        public async Task ProcessPayment(int reservationId, ReservationCreditCardPayment payment)
+        public async Task ProcessPayment(int reservationId, ReservationPayment payment)
         {
             using (var transaction = await _appDbContext.Database.BeginTransactionAsync())
             {
@@ -27,7 +27,7 @@ namespace Places.Infrastructure.Repositories
                     reservation.ReservationState = ReservationState.Approved;
                     reservation.PaymentDate = DateTime.Now;
                     await _appDbContext.SaveChangesAsync();
-                    await _appDbContext.ReservationCreditCardPayments.AddAsync(payment);
+                    await _appDbContext.ReservationPayments.AddAsync(payment);
                     await _appDbContext.SaveChangesAsync();
                     await transaction.CommitAsync();
                 }
@@ -37,6 +37,66 @@ namespace Places.Infrastructure.Repositories
                     throw new BadRequestException();
                 }
             }
+        }
+
+        public async Task ProcessPendingPayment(int reservationId)
+        {
+            using (var transaction = await _appDbContext.Database.BeginTransactionAsync())
+            {
+                try
+                {
+                    var reservation = (await _appDbContext.Reservations.FindAsync(reservationId))!;
+                    reservation.ReservationState = ReservationState.ProcessingPayment;
+                    await _appDbContext.SaveChangesAsync();
+                    await transaction.CommitAsync();
+                }
+                catch (Exception)
+                {
+                    await transaction.RollbackAsync();
+                    throw new BadRequestException();
+                }
+            }
+        }
+        public async Task ProcessFailedPayment(int reservationId)
+        {
+            using (var transaction = await _appDbContext.Database.BeginTransactionAsync())
+            {
+                try
+                {
+                    var reservation = (await _appDbContext.Reservations.FindAsync(reservationId))!;
+                    reservation.ReservationState = ReservationState.Failed;
+                    await _appDbContext.SaveChangesAsync();
+                    await transaction.CommitAsync();
+                }
+                catch (Exception)
+                {
+                    await transaction.RollbackAsync();
+                    throw new BadRequestException();
+                }
+            }
+        }
+
+        public async Task<List<Reservation>> FindAllByUserId(int userId)
+        {
+            return await _appDbContext.Reservations
+                .Include(r => r.Site)
+                .ThenInclude(r => r!.User)
+                .Include(c => c.AdditionalCosts)
+                .ThenInclude(c => c.AdditionalCost)
+                .Include(s => s.SelectedTransportOptions)
+                .ThenInclude(vv => vv.SelectedTransportOption)
+                .ThenInclude(v => v.TransportOption)
+                .Include(p => p.SpecialPackage)
+                .Where(c => c.CreatedBy == userId)
+                .OrderByDescending(c => c.ReservationDate)
+                .ToListAsync();
+        }
+        public async override Task<Reservation> GetById(int id)
+        {
+            return await _appDbContext.Reservations
+                .Include(c => c.AdditionalCosts)
+                .Include(s => s.SelectedTransportOptions)
+                .FirstOrDefaultAsync(c => c.Id == id);
         }
     }
 }

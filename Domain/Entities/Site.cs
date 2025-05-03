@@ -50,4 +50,5 @@ public class Site : EntityBase
 
     public ICollection<Availability> Availabilities { get; set; } = [];
     public ICollection<SelectedTransportOption> SelectedTransportOptions { get; set; } = new List<SelectedTransportOption>();
+    public ICollection<Reservation> Reservations { get; set; } = [];
 }

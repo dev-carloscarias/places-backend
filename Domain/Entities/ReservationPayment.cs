@@ -1,6 +1,6 @@
 ﻿namespace Places.Domain.Entities
 {
-    public class ReservationCreditCardPayment : EntityBase
+    public class ReservationPayment : EntityBase
     {
         public string ProcessedBy { get; set; } = string.Empty;
         public string Currency { get; set; } = string.Empty;

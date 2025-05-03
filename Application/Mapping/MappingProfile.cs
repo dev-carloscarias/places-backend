@@ -1,6 +1,7 @@
 ﻿using Places.Application.Dtos.Recurrente.WebHook;
 using Places.Application.Dtos.Reservation.Create;
 using Places.Application.Dtos.Reservation.Created;
+using Places.Application.Dtos.Reservation.List;
 using Places.Application.Dtos.Reservation.Payment;
 
 namespace Places.Application.Mapping;
@@ -195,11 +196,30 @@ public class MappingProfile : Profile
             .ForMember(dest => dest.SelectedTransportOption, opt => opt.MapFrom(src => src.SelectedTransportOption))
             .ReverseMap();
 
-        CreateMap<RecurrentePaymentNotificationDto, CreditCardReservationPayment>()
+        CreateMap<RecurrentePaymentNotificationDto, ReservationPaymentDto>()
             .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Checkout.Id))
             .ForMember(dest => dest.Currency, opt => opt.MapFrom(src => src.Currency))
             .ForMember(dest => dest.ProcessedBy, opt => opt.MapFrom(src => "RECURRENTE"))
             .ForMember(dest => dest.Ammount, opt => opt.MapFrom(src => src.AmountInCents / 100m));
+
+        CreateMap<Reservation, ReservationListItem>()
+            .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.TotalAmmount + src.Commision))
+            .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Site!.Title))
+            .ForMember(dest => dest.Location, opt => opt.MapFrom(src => src.Site!.NewRegionName))
+            .ForMember(dest => dest.HostName, opt => opt.MapFrom(src => src.Site!.User.FirstName))
+            .ForMember(dest => dest.HostPhoto, opt => opt.MapFrom(src => src.Site!.User.ProfilePicture))
+            .ForMember(dest => dest.SitePhoto, opt => opt.MapFrom(src => src.Site!.DataFiles!.FirstOrDefault()!.Path))
+            .ForMember(dest => dest.ArrivalDate, opt => opt.MapFrom(src => src.ReservationDate.ToString("yyyy-MM-dd")))
+            .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => EnumHelper.GetEnumDescription(src.ReservationState) ))
+            .ForMember(dest => dest.Details, opt => opt.MapFrom(src => new Details
+            {
+                Basic = "Básico",
+                Adults = src.TotalAdults,
+                Children = src.TotalChildren,
+                Vehicles = src.SelectedTransportOptions.Count(),
+                Services = src.AdditionalCosts.Select(s => s.Quantity + " " + s.AdditionalCost.Name).ToList(),
+                Package = src.SpecialPackage != null ? src.SpecialPackageQuantity + " " + src.SpecialPackage.PackageName : string.Empty
+            }));
 
     }
 

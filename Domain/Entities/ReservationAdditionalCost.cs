@@ -8,6 +8,6 @@ namespace Places.Domain.Entities
         public int AdditionalCostId { get; set; }
         public virtual AdditionalCost AdditionalCost { get; set; } = null!;
         public int ReservationId { get; set; }
-        public Reservation Reservation { get; set; } = null!;
+        public virtual Reservation Reservation { get; set; } = null!;
     }
 }
