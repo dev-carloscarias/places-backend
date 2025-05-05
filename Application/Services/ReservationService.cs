@@ -1,4 +1,5 @@
 using System.Globalization;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Places.Application.Dtos.Reservation.Availability;
 using Places.Application.Dtos.Reservation.Create;
@@ -16,12 +17,14 @@ namespace Places.Application.Services
         private readonly IMapper _mapper;
         private readonly ICreditCardPayment _creditCardPaymentService;
         private readonly ILogger _logger;
+        private readonly string _environmentUrl;
         public ReservationService(IReservationRepository reservationRepository,
             ISiteRepository siteRepository,
             ICurrentUserService currentUserService,
             IMapper mapper,
             ICreditCardPayment creditCardPaymentService,
-            ILogger<ReservationService> logger
+            ILogger<ReservationService> logger,
+            IConfiguration configuration
             )
         {
             _reservationRepository = reservationRepository;
@@ -30,6 +33,7 @@ namespace Places.Application.Services
             _mapper = mapper;
             _creditCardPaymentService = creditCardPaymentService;
             _logger = logger;
+            _environmentUrl = configuration.GetRequiredSection("Recurrente:environmentUrl").Value!;
         }
         public async Task<CreatedReservationDto> CreateReservation(CreateReservationDTO reservationDTO)
         {
@@ -149,8 +153,8 @@ namespace Places.Application.Services
 
             var creditCardReservationPayment = new CreateCreditCardReservationPayment
             {
-                SuccessUrl = "http://localhost:4200/user-menu/reservaciones",
-                CancelUrl = "http://localhost:4200/user-menu/reservaciones",
+                SuccessUrl = _environmentUrl +  "/user-menu/reservaciones",
+                CancelUrl = _environmentUrl + "/user-menu/reservaciones",
                 Currency = "GTQ",
                 Name = "Reservación " + site.Title,
                 Quantity = 1,

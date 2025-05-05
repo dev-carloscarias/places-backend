@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Text.Json;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Places.Application.Dtos.CreditCardPayment;
 using Places.Application.Dtos.Recurrente.Request;
@@ -12,16 +13,19 @@ namespace Places.Infrastructure.Services
     {
         private readonly HttpClient _httpClient;
         private readonly ILogger<RecurrenteService> _logger;
-        public RecurrenteService(ILogger<RecurrenteService> logger)
+        private readonly string _xPublicKey;
+        private readonly string _xSecretKey;
+        public RecurrenteService(ILogger<RecurrenteService> logger, IConfiguration configuration)
         {
             _httpClient = new HttpClient();
             _logger = logger;
+            _xPublicKey = configuration.GetRequiredSection("Recurrente:xPublicKey").Value!;
+            _xSecretKey = configuration.GetRequiredSection("Recurrente:xSecretKey").Value!;
+
         }
         public async Task<CreditCardResponseHandler> ProcessCreditCardPayment(CreateCreditCardReservationPayment creditCardPayment)
         {
             string url = "https://app.recurrente.com/api/checkouts/";
-            string xPublicKey = "pk_live_YL0fodyEQ0dvrH2Q2C9Bb4AsOFjDsjOUQpJP7abeWVddYSPo6WPNd3yGq";
-            string xSecretKey = "sk_live_GKJTkz68GE9tXmeuS72IZ9LZmMgTCn3OCoavuyY8RsjETH3odHZf28Yzb";
 
             var recurrenteCreateCheckoutRequest = new CreateCheckoutDto
             {
@@ -46,8 +50,8 @@ namespace Places.Infrastructure.Services
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             _httpClient.DefaultRequestHeaders.Clear();
-            _httpClient.DefaultRequestHeaders.Add("X-PUBLIC-KEY", xPublicKey);
-            _httpClient.DefaultRequestHeaders.Add("X-SECRET-KEY", xSecretKey);
+            _httpClient.DefaultRequestHeaders.Add("X-PUBLIC-KEY", _xPublicKey);
+            _httpClient.DefaultRequestHeaders.Add("X-SECRET-KEY", _xSecretKey);
 
             var response = await _httpClient.PostAsync(url, content);
 
