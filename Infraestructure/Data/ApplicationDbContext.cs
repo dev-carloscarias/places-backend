@@ -281,6 +281,7 @@ public class ApplicationDbContext : DbContext
                   .WithMany()
                   .HasForeignKey(e => e.SelectedTransportOptionId)
                   .OnDelete(DeleteBehavior.Restrict);
+            
 
         });
         modelBuilder.Entity<User>(entity =>
