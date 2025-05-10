@@ -33,5 +33,10 @@ public class SiteConfiguration : IEntityTypeConfiguration<Site>
 
         builder.Property(e => e.Longitude)
             .HasColumnType("float(10,7)");
+
+        builder.HasMany(r => r.Reservations)
+            .WithOne(r => r.Site)
+            .HasForeignKey(r => r.SiteId)
+            .OnDelete(DeleteBehavior.Restrict); 
     }
 }

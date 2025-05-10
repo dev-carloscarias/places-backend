@@ -58,6 +58,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<ReservationTransfer> ReservationTransfers { get; set; }
     public DbSet<ReservationAdditionalCost> ReservationAdditionalCosts { get; set; }
     public DbSet<ReservationSelectedTransportOption> ReservationSelectedTransportOptions { get; set; }
+    public DbSet<ReservationPayment> ReservationPayments { get; set; }
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -189,36 +190,44 @@ public class ApplicationDbContext : DbContext
             entity.HasKey(c => c.Id);
 
             entity.Property(a => a.AdultAgreedPrice)
-            .HasColumnType("decimal(18,2)");
+                .HasColumnType("decimal(18,2)");
 
             entity.Property(a => a.ChildAgreedPrice)
-            .HasColumnType("decimal(18,2)");
+                .HasColumnType("decimal(18,2)");
 
             entity.HasOne(e => e.Site)
-            .WithMany()
-            .HasForeignKey(e => e.SiteId)
-            .OnDelete(DeleteBehavior.Restrict);
+                .WithMany(e => e.Reservations)
+                .HasForeignKey(e => e.SiteId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             entity.HasOne(e => e.SpecialPackage)
-          .WithMany()
-          .HasForeignKey(e => e.SpecialPackageId)
-          .OnDelete(DeleteBehavior.Restrict);
+                  .WithMany(s => s.Reservations)
+                  .HasForeignKey(e => e.SpecialPackageId)
+                  .OnDelete(DeleteBehavior.Restrict);
 
             entity.HasMany(e => e.Transfers)
-                  .WithOne()
+                  .WithOne(r => r.Reservation)
                   .HasForeignKey(t => t.ReservationId)
                   .OnDelete(DeleteBehavior.Cascade);
 
             entity.HasMany(e => e.AdditionalCosts)
-                  .WithOne()
+                  .WithOne(r => r.Reservation)
                   .HasForeignKey(t => t.ReservationId)
                   .OnDelete(DeleteBehavior.Cascade);
 
             entity.HasMany(e => e.SelectedTransportOptions)
-                  .WithOne()
+                  .WithOne(r => r.Reservation)
                   .HasForeignKey(t => t.ReservationId)
                   .OnDelete(DeleteBehavior.Cascade);
         });
+        modelBuilder.Entity<ReservationAdditionalCost>(entity =>
+        {
+            entity.HasOne(c => c.Reservation)
+                 .WithMany(c => c.AdditionalCosts)
+                .HasForeignKey(c => c.ReservationId)
+                .OnDelete(DeleteBehavior.Cascade);
+        });
+
 
         modelBuilder.Entity<ReservationTransfer>(entity =>
         {
@@ -281,7 +290,12 @@ public class ApplicationDbContext : DbContext
             entity.Property(e => e.PhotoVerification)
                   .HasColumnName("PhotoVerification");
         });
-
+        modelBuilder.Entity<SpecialPackage>(entity =>
+        {
+            entity.HasMany(s => s.Reservations)
+                .WithOne(s => s.SpecialPackage)
+                .HasForeignKey(s => s.SpecialPackageId);
+        });
         modelBuilder.ApplyConfigurationsFromAssembly(assembly: Assembly.GetExecutingAssembly());
     }
 }

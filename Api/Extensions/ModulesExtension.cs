@@ -38,6 +38,11 @@ public static class ModulesExtension
         services.AddScoped<IDataFileService, DataFileService>();
         services.AddScoped<IChatService, ChatService>();
 
+        services.AddScoped<IReservationService, ReservationService>();
+
+        services.AddScoped<ICreditCardPayment, RecurrenteService>();
+        services.AddScoped<IRecurrenteWebHookProcessorService, RecurrenteWebHookProcessorService>();
+
         services.Configure<GlobalValues>(options =>
         {
             options.CurrencyId = 138;
@@ -51,7 +56,7 @@ public static class ModulesExtension
         services.Configure<AzureTranslationSettings>(configuration.GetSection("AzureTranslationSettings"));
 
         services.AddSignalR();
-        
+
 
         return services;
     }
@@ -82,6 +87,7 @@ public static class ModulesExtension
         services.AddScoped<IChatMessageRepository, ChatMessageRepository>();
         services.AddScoped<IUserChatMessageRepository, UserChatMessageRepository>();
         services.AddScoped<INotificationsRepository, NotificationsRepository>();
+        services.AddScoped<IReservationRepository, ReservationRespository>();
 
         return services;
     }

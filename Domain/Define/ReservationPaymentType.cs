@@ -1,8 +1,12 @@
+using System.ComponentModel;
+
 namespace Places.Domain.Define
 {
     public enum ReservationPaymentType
     {
-        Neonet = 1,
+        [Description("Credit Card")]
+        CreditCard = 1,
+        [Description("Transfer")]
         Transfer = 2,
     }
 }

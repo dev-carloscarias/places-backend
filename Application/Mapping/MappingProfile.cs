@@ -1,4 +1,10 @@
-﻿namespace Places.Application.Mapping;
+﻿using Places.Application.Dtos.Recurrente.WebHook;
+using Places.Application.Dtos.Reservation.Create;
+using Places.Application.Dtos.Reservation.Created;
+using Places.Application.Dtos.Reservation.List;
+using Places.Application.Dtos.Reservation.Payment;
+
+namespace Places.Application.Mapping;
 
 public class MappingProfile : Profile
 {
@@ -156,6 +162,65 @@ public class MappingProfile : Profile
            .ForMember(dest => dest.Content, opt => opt.MapFrom(src => src.Content))
            .ForMember(dest => dest.SentAt, opt => opt.MapFrom(src => src.SentAt))
            .ReverseMap();
+
+        // Mapeo reservaciones
+        CreateMap<Reservation, CreatedReservationDto>()
+            .ForMember(dest => dest.ReservationId, opt => opt.MapFrom(src => src.Id))
+            .ForMember(dest => dest.SpecialPackageId, opt => opt.MapFrom(src => src.SpecialPackageId))
+            .ForMember(dest => dest.SpecialPackageQuantity, opt => opt.MapFrom(src => src.SpecialPackageQuantity))
+            .ForMember(dest => dest.ReservationDate, opt => opt.MapFrom(src => src.ReservationDate))
+            .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => src.ReservationState))
+            .ForMember(dest => dest.TotalAdults, opt => opt.MapFrom(src => src.TotalAdults))
+            .ForMember(dest => dest.TotalChildren, opt => opt.MapFrom(src => src.TotalChildren))
+            //.ForMember(dest => dest., opt => opt.MapFrom(src => src.TotalChildren))
+            .ForMember(dest => dest.PaymentUrl, opt => opt.MapFrom(src => src.CreditCardPaymentUrl))
+            .ForMember(dest => dest.TotalAmmount, opt => opt.MapFrom(src => src.TotalAmmount))
+            .ForMember(dest => dest.Commision, opt => opt.MapFrom(src => src.Commision))
+            .ReverseMap();
+        CreateMap<ReservationAdditionalCost, CreatedReservationAdditionalCost>()
+            .ForMember(dest => dest.AdditionalCostId, opt => opt.MapFrom(src => src.Id))
+            .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
+            .ForMember(dest => dest.AdditionalCost, opt => opt.MapFrom(src => src.AdditionalCost))
+            .ReverseMap();
+        CreateMap<ReservationAdditionalCost, ReservationAdditionalCostDto>()
+            .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
+            .ForMember(dest => dest.AdditionalCostId, opt => opt.MapFrom(src => src.AdditionalCostId));
+
+        CreateMap<ReservationAdditionalCost, CreatedReservationAdditionalCost>()
+            .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
+            .ForMember(dest => dest.AdditionalCostId, opt => opt.MapFrom(src => src.AdditionalCostId));
+
+        CreateMap<ReservationSelectedTransportOption, CreatedReservationTransportOption>()
+            .ForMember(dest => dest.SelectedTransportOptionId, opt => opt.MapFrom(src => src.Id))
+            .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
+            .ForMember(dest => dest.SelectedTransportOption, opt => opt.MapFrom(src => src.SelectedTransportOption))
+            .ReverseMap();
+
+        CreateMap<RecurrentePaymentNotificationDto, ReservationPaymentDto>()
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Checkout.Id))
+            .ForMember(dest => dest.Currency, opt => opt.MapFrom(src => src.Currency))
+            .ForMember(dest => dest.ProcessedBy, opt => opt.MapFrom(src => "RECURRENTE"))
+            .ForMember(dest => dest.Ammount, opt => opt.MapFrom(src => src.AmountInCents / 100m));
+
+        CreateMap<Reservation, ReservationListItem>()
+            .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.TotalAmmount + src.Commision))
+            .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Site!.Title))
+            .ForMember(dest => dest.Location, opt => opt.MapFrom(src => src.Site!.NewRegionName))
+            .ForMember(dest => dest.HostName, opt => opt.MapFrom(src => src.Site!.User.FirstName))
+            .ForMember(dest => dest.HostPhoto, opt => opt.MapFrom(src => src.Site!.User.ProfilePicture))
+            .ForMember(dest => dest.SitePhoto, opt => opt.MapFrom(src => src.Site!.DataFiles!.FirstOrDefault()!.Path))
+            .ForMember(dest => dest.ArrivalDate, opt => opt.MapFrom(src => src.ReservationDate.ToString("yyyy-MM-dd")))
+            .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => EnumHelper.GetEnumDescription(src.ReservationState) ))
+            .ForMember(dest => dest.Details, opt => opt.MapFrom(src => new Details
+            {
+                Basic = "Básico",
+                Adults = src.TotalAdults,
+                Children = src.TotalChildren,
+                Vehicles = src.SelectedTransportOptions.Count(),
+                Services = src.AdditionalCosts.Select(s => s.Quantity + " " + s.AdditionalCost.Name).ToList(),
+                Package = src.SpecialPackage != null ? src.SpecialPackageQuantity + " " + src.SpecialPackage.PackageName : string.Empty
+            }));
+
     }
 
     private static List<string> ConvertSitePolicies(string? sitePolicies)

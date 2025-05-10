@@ -15,5 +15,6 @@ public class SpecialPackage : EntityBase
     public decimal Price { get; set; }
 
     public virtual Site Site { get; set; } = null!;
+    public virtual ICollection<Reservation> Reservations { get; set; } = [];
 
 }
