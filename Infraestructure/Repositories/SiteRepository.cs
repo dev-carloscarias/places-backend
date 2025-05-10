@@ -98,7 +98,7 @@ public class SiteRepository : Repository<Site>, ISiteRepository
                 .Where(s => s.Id == id && s.SpecialPackage != null)
                 .Select(s => new
                 {
-                    s.Id,
+                    s.SpecialPackage.Id,
                     s.SpecialPackage.PackageName,
                     s.SpecialPackage.Price,
                     PackageItems = s.SpecialPackage.PackageItems

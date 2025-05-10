@@ -135,15 +135,15 @@ namespace Places.Application.Services
 
             if (reservationDTO.SpecialPackageId != null)
             {
-                reservation.SpecialPackageId = reservation.SpecialPackageId;
+                reservation.SpecialPackageId = reservationDTO.SpecialPackageId;
                 reservation.SpecialPackageQuantity = reservationDTO.SpecialPackageQuantity;
                 reservation.SpecialPackageAgreedPrice = site.SpecialPackage.Price;
             }
             decimal totalAmmountPeople = (reservation.TotalAdults * reservation.AdultAgreedPrice) + (reservation.TotalChildren * reservation.ChildAgreedPrice);
             decimal totalAmmountAdditionals = reservation.AdditionalCosts.Sum(c => c.Quantity * c.AgreedPrice);
             decimal totalAmmountVehicles = reservation.SelectedTransportOptions.Sum(c => c.Quantity * c.AgreedPrice);
-            decimal totalAmmountSpecialPackage = reservation.SpecialPackageId == null ? 0 : (reservation.SpecialPackageQuantity ?? 0 * reservation.SpecialPackageAgreedPrice ?? 0);
-            decimal totalAmmount = totalAmmountPeople + totalAmmountAdditionals + totalAmmountVehicles
+            decimal totalAmmountSpecialPackage = reservation.SpecialPackageId == null ? 0 : (decimal)(reservation.SpecialPackageQuantity * reservation.SpecialPackageAgreedPrice)!;
+           decimal totalAmmount = totalAmmountPeople + totalAmmountAdditionals + totalAmmountVehicles
                 + totalAmmountSpecialPackage;
             var commision = totalAmmount * (decimal)0.16;
             reservation.TotalAmmount = totalAmmount;
@@ -167,6 +167,8 @@ namespace Places.Application.Services
 
             if (response == null || !response.Success)
             {
+                newReservation.IsActive = false;
+                await _reservationRepository.UpdateAsync(newReservation);
                 throw new BadRequestException("Ocurrió un error al generar el metodo de pago");
             }
 

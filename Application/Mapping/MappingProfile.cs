@@ -210,7 +210,9 @@ public class MappingProfile : Profile
             .ForMember(dest => dest.HostPhoto, opt => opt.MapFrom(src => src.Site!.User.ProfilePicture))
             .ForMember(dest => dest.SitePhoto, opt => opt.MapFrom(src => src.Site!.DataFiles!.FirstOrDefault()!.Path))
             .ForMember(dest => dest.ArrivalDate, opt => opt.MapFrom(src => src.ReservationDate.ToString("yyyy-MM-dd")))
-            .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => EnumHelper.GetEnumDescription(src.ReservationState) ))
+            .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => EnumHelper.GetEnumDescription(src.ReservationState)))
+            .ForMember(dest => dest.ReservationStateValue, opt => opt.MapFrom(src => src.ReservationState))
+            .ForMember(dest => dest.PaymentUrl, opt => opt.MapFrom(src => src.CreditCardPaymentUrl))
             .ForMember(dest => dest.Details, opt => opt.MapFrom(src => new Details
             {
                 Basic = "Básico",
