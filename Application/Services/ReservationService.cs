@@ -233,7 +233,7 @@ namespace Places.Application.Services
             var reservas = await _reservationRepository.FindAllAsync(c => c.IsActive && c.SiteId == site.Id
             && c.ReservationDate.Date == request.ReservationDate.Date && c.ReservationState == ReservationState.Approved);
             var totalReservado = reservas.Sum(c => (c.TotalAdults + c.TotalChildren));
-            if (capacity <= (totalReservado + request.TotalChildren + request.TotalAdults))
+            if (capacity > 0 && capacity <= (totalReservado + request.TotalChildren + request.TotalAdults))
             {
                 return new AvailabilityResponse
                 {
