@@ -35,7 +35,7 @@ public class Repository<T> : IRepository<T> where T : EntityBase
          return await _applicationDbContext.Set<T>()
         .AsNoTracking()
         .Where(predicate)
-        .OrderBy(x => x.Id) 
+        .OrderByDescending(x => x.Id) 
         .Skip((pageNumber - 1) * pageSize)
         .Take(pageSize)
         .Select(selector)

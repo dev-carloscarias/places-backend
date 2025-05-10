@@ -46,4 +46,12 @@ public class NotificationsRepository : Repository<Notification>, INotificationsR
         await _dbContext.SaveChangesAsync();
     }
 
+    public async Task MakeReadAll(int userId)
+    {
+        await _dbContext.Notifications
+            .Where(n => n.UserId == userId && !n.IsRead)
+            .ExecuteUpdateAsync(setters => setters
+            .SetProperty(n => n.IsRead, true));
+    }
+
 }

@@ -15,4 +15,5 @@ public interface INotificationsService
     Task<Notification> CreateNotification(Notification notification);
 
     Task UpdateNotification(Notification notification);
+    Task MakeReadAll(int userId);
 }
