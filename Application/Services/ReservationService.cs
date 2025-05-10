@@ -6,6 +6,7 @@ using Places.Application.Dtos.Reservation.Create;
 using Places.Application.Dtos.Reservation.Created;
 using Places.Application.Dtos.Reservation.List;
 using Places.Application.Dtos.Reservation.Payment;
+using Places.Domain.Entities;
 
 namespace Places.Application.Services
 {
@@ -143,8 +144,8 @@ namespace Places.Application.Services
             decimal totalAmmountAdditionals = reservation.AdditionalCosts.Sum(c => c.Quantity * c.AgreedPrice);
             decimal totalAmmountVehicles = reservation.SelectedTransportOptions.Sum(c => c.Quantity * c.AgreedPrice);
             decimal totalAmmountSpecialPackage = reservation.SpecialPackageId == null ? 0 : (decimal)(reservation.SpecialPackageQuantity * reservation.SpecialPackageAgreedPrice)!;
-           decimal totalAmmount = totalAmmountPeople + totalAmmountAdditionals + totalAmmountVehicles
-                + totalAmmountSpecialPackage;
+            decimal totalAmmount = totalAmmountPeople + totalAmmountAdditionals + totalAmmountVehicles
+                 + totalAmmountSpecialPackage;
             var commision = totalAmmount * (decimal)0.16;
             reservation.TotalAmmount = totalAmmount;
             reservation.Commision = commision;
@@ -153,7 +154,7 @@ namespace Places.Application.Services
 
             var creditCardReservationPayment = new CreateCreditCardReservationPayment
             {
-                SuccessUrl = _environmentUrl +  "/user-menu/reservaciones",
+                SuccessUrl = _environmentUrl + "/user-menu/reservaciones",
                 CancelUrl = _environmentUrl + "/user-menu/reservaciones",
                 Currency = "GTQ",
                 Name = "Reservación " + site.Title,
@@ -279,10 +280,11 @@ namespace Places.Application.Services
             }
         }
 
-        public async Task<List<ReservationListItem>> GetAllReservations()
+        public async Task<List<ReservationListItem>> GetUserReservations()
         {
             var currentUserId = (await _currentUserService.GetCurrentUserIdAsync())?.Id ?? 0;
-            var list = await _reservationRepository.FindAllByUserId(currentUserId);
+            var list = await _reservationRepository
+                .FindByPredicate(c => c.CreatedBy == currentUserId && c.IsActive);
             var ll = _mapper.Map<List<ReservationListItem>>(list);
             return ll;
         }
@@ -307,6 +309,35 @@ namespace Places.Application.Services
                 throw new BadRequestException("Reservación no encontrada");
             }
             await _reservationRepository.ProcessPendingPayment(reservation.Id);
+        }
+
+        public async Task<List<ReservationListItem>> GetSiteReservations(int siteId)
+        {
+            var currentUserId = (await _currentUserService.GetCurrentUserIdAsync())?.Id ?? 0;
+            var site = await _siteRepository.GetByIdAsync(siteId);
+            if (site != null && site.CreatedBy != currentUserId)
+            {
+                throw new BadRequestException("No tienes permisos para ver las reservaciones de este sitio");
+            }
+            var list = await _reservationRepository
+                .FindByPredicate(c => c.SiteId == siteId && c.IsActive && c.ReservationState == ReservationState.Approved);
+            var mappedList = _mapper.Map<List<ReservationListItem>>(list);
+            return mappedList;
+        }
+
+        public async Task<List<ReservationListItem>> GetAllApprovedReservations()
+        {
+            var roleId = (await _currentUserService.GetCurrentUserIdAsync())?.RoleId ?? -1;
+            //
+            if (roleId != 1)
+            {
+                throw new BadRequestException("No tienes permisos para ver las reservaciones");
+            }
+
+            var list = await _reservationRepository
+                .FindByPredicate(c => c.IsActive && c.ReservationState == ReservationState.Approved);
+            var mappedList = _mapper.Map<List<ReservationListItem>>(list);
+            return mappedList;
         }
     }
 }
