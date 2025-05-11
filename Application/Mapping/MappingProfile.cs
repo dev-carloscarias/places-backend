@@ -166,13 +166,18 @@ public class MappingProfile : Profile
         // Mapeo reservaciones
         CreateMap<Reservation, CreatedReservationDto>()
             .ForMember(dest => dest.ReservationId, opt => opt.MapFrom(src => src.Id))
+            .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Site!.Title))
+            .ForMember(dest => dest.SitePhoto, opt => opt.MapFrom(src => src.Site!.DataFiles!.FirstOrDefault()!.Path))
+            .ForMember(dest => dest.Location, opt => opt.MapFrom(src => src.Site!.NewRegionName))
+            .ForMember(dest => dest.HostName, opt => opt.MapFrom(src => src.Site!.User.FirstName))
+            .ForMember(dest => dest.HostPhoto, opt => opt.MapFrom(src => src.Site!.User.ProfilePicture))
             .ForMember(dest => dest.SpecialPackageId, opt => opt.MapFrom(src => src.SpecialPackageId))
+            .ForMember(dest => dest.SpecialPackageName, opt => opt.MapFrom(src => src.SpecialPackage!.PackageName))
             .ForMember(dest => dest.SpecialPackageQuantity, opt => opt.MapFrom(src => src.SpecialPackageQuantity))
             .ForMember(dest => dest.ReservationDate, opt => opt.MapFrom(src => src.ReservationDate))
             .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => src.ReservationState))
             .ForMember(dest => dest.TotalAdults, opt => opt.MapFrom(src => src.TotalAdults))
             .ForMember(dest => dest.TotalChildren, opt => opt.MapFrom(src => src.TotalChildren))
-            //.ForMember(dest => dest., opt => opt.MapFrom(src => src.TotalChildren))
             .ForMember(dest => dest.PaymentUrl, opt => opt.MapFrom(src => src.CreditCardPaymentUrl))
             .ForMember(dest => dest.TotalAmmount, opt => opt.MapFrom(src => src.TotalAmmount))
             .ForMember(dest => dest.Commision, opt => opt.MapFrom(src => src.Commision))
@@ -210,7 +215,9 @@ public class MappingProfile : Profile
             .ForMember(dest => dest.HostPhoto, opt => opt.MapFrom(src => src.Site!.User.ProfilePicture))
             .ForMember(dest => dest.SitePhoto, opt => opt.MapFrom(src => src.Site!.DataFiles!.FirstOrDefault()!.Path))
             .ForMember(dest => dest.ArrivalDate, opt => opt.MapFrom(src => src.ReservationDate.ToString("yyyy-MM-dd")))
-            .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => EnumHelper.GetEnumDescription(src.ReservationState) ))
+            .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => EnumHelper.GetEnumDescription(src.ReservationState)))
+            .ForMember(dest => dest.ReservationStateValue, opt => opt.MapFrom(src => src.ReservationState))
+            .ForMember(dest => dest.PaymentUrl, opt => opt.MapFrom(src => src.CreditCardPaymentUrl))
             .ForMember(dest => dest.Details, opt => opt.MapFrom(src => new Details
             {
                 Basic = "Básico",

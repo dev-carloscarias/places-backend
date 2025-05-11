@@ -11,7 +11,9 @@
         public string SitePhoto { get; set; } = string.Empty;
         public string ArrivalDate { get; set; } = string.Empty;
         public decimal Price { get; set; }
+        public int ReservationStateValue { get; set; }
         public string ReservationState { get; set; } = string.Empty;
+        public string PaymentUrl { get; set; } = string.Empty;
         public Details Details { get; set; } = null!;
     }
 

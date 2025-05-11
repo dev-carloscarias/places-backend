@@ -76,9 +76,10 @@ namespace Places.Infrastructure.Repositories
             }
         }
 
-        public async Task<List<Reservation>> FindAllByUserId(int userId)
+        public async Task<List<Reservation>> FindByPredicate(Expression<Func<Reservation, bool>> predicate)
         {
             return await _appDbContext.Reservations
+                .AsNoTracking()
                 .Include(r => r.Site)
                 .ThenInclude(r => r!.User)
                 .Include(c => c.AdditionalCosts)
@@ -87,8 +88,9 @@ namespace Places.Infrastructure.Repositories
                 .ThenInclude(vv => vv.SelectedTransportOption)
                 .ThenInclude(v => v.TransportOption)
                 .Include(p => p.SpecialPackage)
-                .Where(c => c.CreatedBy == userId)
+                .Where(predicate)
                 .OrderByDescending(c => c.ReservationDate)
+                .AsSplitQuery()
                 .ToListAsync();
         }
         public async override Task<Reservation> GetById(int id)

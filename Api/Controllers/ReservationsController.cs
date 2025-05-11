@@ -5,6 +5,7 @@ namespace Places.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
+    [Authorize]
     public class ReservationsController : ControllerBase
     {
         private readonly IReservationService _reservationService;
@@ -33,10 +34,22 @@ namespace Places.Api.Controllers
 
         [HttpGet]
         [Route("list")]
-        public async Task<IActionResult> GetAllReservations()
+        public async Task<IActionResult> GetUserReservations()
         {
-            return Ok(await _reservationService.GetAllReservations());
+            return Ok(await _reservationService.GetUserReservations());
         }
 
+        [HttpGet]
+        [Route("owner/{siteId}")]
+        public async Task<IActionResult> GetReservationsBySite(int siteId)
+        {
+            return Ok(await _reservationService.GetSiteReservations(siteId));
+        }
+        [HttpGet]
+        [Route("admin")]
+        public async Task<IActionResult> GetAllApprovedReservations()
+        {
+            return Ok(await _reservationService.GetAllApprovedReservations());
+        }
     }
 }
