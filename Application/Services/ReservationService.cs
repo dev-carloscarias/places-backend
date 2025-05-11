@@ -339,5 +339,26 @@ namespace Places.Application.Services
             var mappedList = _mapper.Map<List<ReservationListItem>>(list);
             return mappedList;
         }
+
+        public async Task DeleteReservation(int id)
+        {
+            var currentUser = (await _currentUserService.GetCurrentUserIdAsync())?.Id ?? -1;
+            var reservation = await _reservationRepository.GetByIdAsync(id);
+            if (reservation == null)
+            {
+                throw new BadRequestException("Reservación no encontrada");
+            }
+            if (reservation.CreatedBy != currentUser)
+            {
+                throw new BadRequestException("No tienes permisos para eliminar esta reservación");
+            }
+            if (reservation.ReservationState == ReservationState.Approved)
+            {
+                throw new BadRequestException("No puedes eliminar una reservación pagada");
+            }
+            reservation.IsActive = false;
+            reservation.UpdatedAt = DateTime.Now;
+            await _reservationRepository.UpdateAsync(reservation);
+        }
     }
 }

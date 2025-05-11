@@ -51,5 +51,12 @@ namespace Places.Api.Controllers
         {
             return Ok(await _reservationService.GetAllApprovedReservations());
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteReservation(int id)
+        {
+            await _reservationService.DeleteReservation(id);
+            return Ok();
+        }
+
     }
 }

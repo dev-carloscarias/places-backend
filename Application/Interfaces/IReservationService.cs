@@ -17,5 +17,6 @@ namespace Places.Application.Interfaces
         Task<List<ReservationListItem>> GetUserReservations();
         Task<List<ReservationListItem>> GetSiteReservations(int siteId);
         Task<List<ReservationListItem>> GetAllApprovedReservations();
+        Task DeleteReservation(int id);
     }
 }
