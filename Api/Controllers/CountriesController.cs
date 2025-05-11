@@ -40,6 +40,38 @@ public class CountriesController : ControllerBase
         return Ok(_mapper.Map<List<CountryDto>>(itemsResult));
     }
 
+
+
+    // GET: api/Countries
+    [HttpGet]
+    [AllowAnonymous]
+    [Route("GetCountriesOnSites")]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<CountryDto>))]
+    [ProducesResponseType(typeof(ErrorDetails), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ErrorDetails), StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(ErrorDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ErrorDetails), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> GetCountriesOnSites(int continentId)
+    {
+        List<Domain.Entities.Country> itemsResult;
+
+        itemsResult = (await _countryService.GetCountriesOnSites(continentId) as List<Domain.Entities.Country>)!;
+        foreach (var country in itemsResult)
+        {
+            var countryFlag = helper.GetCountryEmojiFlag(country.Iso2.ToString().ToUpper());
+            Console.WriteLine(countryFlag);
+        }
+
+        return Ok(_mapper.Map<List<CountryDto>>(itemsResult));
+    }
+
+
+
+
+
+
+
+
     // GET: api/Countries
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<CountryDto>))]

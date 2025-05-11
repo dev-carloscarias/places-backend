@@ -1,4 +1,6 @@
-﻿namespace Places.Application.Services;
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace Places.Application.Services;
 
 public class CountryService : ICountryService
 {
@@ -14,6 +16,8 @@ public class CountryService : ICountryService
         _localizationService = localizationService;
         _translateRepository = translateRepository;
     }
+
+    
 
     public async Task<Country> Create(Country model)
     {
@@ -39,6 +43,10 @@ public class CountryService : ICountryService
         throw new NotFoundException(LanguageConst.IdNotFound);
     }
 
+    public async Task<IEnumerable<Country>> GetCountriesOnSites(int continentId)
+    {
+        return await _countryRepository.GetCountriesOnSites(continentId);
+    }
     public async Task<IEnumerable<Country>> GetAllActive(int? continentId)
     {
         var countries = new List<Country>();

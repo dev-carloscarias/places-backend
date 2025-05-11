@@ -9,4 +9,5 @@ public interface INotificationsRepository : IRepository<Notification>
 {
     Task<IEnumerable<Notification>> GetNotificationsbyUserId(int id);
     Task UpdateAsync(Notification notification);
+    Task MakeReadAll(int userId);
 }
