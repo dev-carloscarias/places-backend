@@ -189,9 +189,9 @@ namespace Places.Application.Services
 
         public async Task<CreatedReservationDto> GetReservationById(int reservationId)
         {
-            var reservation = await _reservationRepository.GetById(reservationId);
-            if (reservation != null)
-                return _mapper.Map<CreatedReservationDto>(reservation);
+            var reservations = await _reservationRepository.FindByPredicate(c => c.Id == reservationId);
+            if (reservations != null && reservations.Count > 0)
+                return _mapper.Map<CreatedReservationDto>(reservations.FirstOrDefault());
             throw new BadRequestException("Reservación no encontrada");
         }
 
