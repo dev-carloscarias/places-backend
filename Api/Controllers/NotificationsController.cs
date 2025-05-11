@@ -53,6 +53,17 @@ namespace Places.Api.Controllers
             await _notificationsService.UpdateNotification(notification);
             return Ok();
         }
+
+
+
+        [HttpPut("{userId}/readAll")]
+        public async Task<IActionResult> MarkAsReadAll(int userId)
+        {
+            await _notificationsService.MakeReadAll(userId);
+            return Ok();
+        }
+
+
     }
 
 }

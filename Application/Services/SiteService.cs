@@ -429,29 +429,35 @@ public class SiteService : ISiteService
 
             }
         }
-
         var sites = await _siteRepository
-        .FindAllEficientAsync(x => x.IsActive
-                    && (countryId == -1 || x.CountryId == countryId)
-                    && (categoryId == -1 || x.CategoryId == categoryId)
-                    && (stateId == -1 || x.RegionId == stateId)
-                    && !x.IsPendingToApprove
-                    && x.IsSiteApproved,
-                x => new Site
-                {
-                    Id = x.Id,
-                    Title = x.Title,
-                    Description = x.Description,
-                    CountryId = x.CountryId,
-                    CurrencyId = x.CurrencyId,
-                    TotalPrice = x.TotalPrice,
-                    UserId = x.UserId,
-                    DataFiles = x.DataFiles
+    .FindAllEficientAsync(
+        x => x.IsActive
+            && (countryId == -1 || x.CountryId == countryId)
+            && (categoryId == -1 || x.CategoryId == categoryId)
+            && (stateId == -1 || x.RegionId == stateId)
+            && !x.IsPendingToApprove
+            && x.IsSiteApproved,
+        x => new Site
+        {
+            Id = x.Id,
+            Title = x.Title,
+            Description = x.Description,
+            CountryId = x.CountryId,
+            CurrencyId = x.CurrencyId,
+            TotalPrice = x.TotalPrice,
+            UserId = x.UserId,
+            RegionId = x.RegionId,
+            NewRegionName = x.Region.Name,
+            AdultPrice = x.AdultPrice,
+            ChildPrice = x.ChildPrice,
+            DataFiles = x.DataFiles
                     .OrderBy(df => df.FileOrder)
                     .ToList(),
-                    RegionId = x.RegionId
-                },pageNumber,pageSize);
-         
+        },
+
+        pageNumber,
+        pageSize);
+
         var code = _localizationService.GetLanguage();
 
         foreach (var site in sites)
@@ -459,7 +465,7 @@ public class SiteService : ISiteService
             var currentLanguage = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
             var titleTranslated = await _translationService.TranslateTextAsync(new TranslationRequest { SourceLanguage = currentLanguage, TargetLanguage = language, Text = site.Title });
             site.Title = titleTranslated.TranslatedText;
-            
+
             site.AdultPrice = await _currencyConversion.Convert(site.CurrencyId, _globalValuesAccessor.GetCurrency(), site.AdultPrice);
             site.TransportationPrice = await _currencyConversion.Convert(site.CurrencyId, _globalValuesAccessor.GetCurrency(), site.TransportationPrice);
             site.ChildPrice = await _currencyConversion.Convert(site.CurrencyId, _globalValuesAccessor.GetCurrency(), site.ChildPrice);
@@ -477,8 +483,8 @@ public class SiteService : ISiteService
         };
 
         _cache.Set(cacheKey, sites, cacheOptions);
-
         return sites;
+
     }
 
     public async Task<IEnumerable<Site>> GetAllBySearch(string language, string nombre)

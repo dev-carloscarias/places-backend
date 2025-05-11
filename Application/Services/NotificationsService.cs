@@ -32,4 +32,9 @@ public class NotificationsService : INotificationsService
     {
        await _notificationsRepository.UpdateAsync(notification);
     }
+
+    public async Task MakeReadAll(int userId)
+    {
+        await _notificationsRepository.MakeReadAll(userId);
+    }
 }

@@ -50,5 +50,8 @@ public class Site : EntityBase
 
     public ICollection<Availability> Availabilities { get; set; } = [];
     public ICollection<SelectedTransportOption> SelectedTransportOptions { get; set; } = new List<SelectedTransportOption>();
+
+    public virtual Region Region { get; set; } = null!;
     public ICollection<Reservation> Reservations { get; set; } = [];
+
 }
