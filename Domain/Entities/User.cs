@@ -65,5 +65,6 @@ public class User : EntityBase
 
     public virtual Country Country { get; set; } = null!;
     public string? PhotoVerification { get; set; }
+    public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
 
 }

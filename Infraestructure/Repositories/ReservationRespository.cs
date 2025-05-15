@@ -80,6 +80,7 @@ namespace Places.Infrastructure.Repositories
         {
             return await _appDbContext.Reservations
                 .AsNoTracking()
+                .Include(c => c.CreatedByUser)
                 .Include(r => r.Site)
                 .ThenInclude(r => r!.User)
                 .Include(c => c.AdditionalCosts)

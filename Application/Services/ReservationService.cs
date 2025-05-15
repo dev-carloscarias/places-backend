@@ -280,12 +280,12 @@ namespace Places.Application.Services
             }
         }
 
-        public async Task<List<ReservationListItem>> GetUserReservations()
+        public async Task<List<CreatedReservationDto>> GetUserReservations()
         {
             var currentUserId = (await _currentUserService.GetCurrentUserIdAsync())?.Id ?? 0;
             var list = await _reservationRepository
                 .FindByPredicate(c => c.CreatedBy == currentUserId && c.IsActive);
-            var ll = _mapper.Map<List<ReservationListItem>>(list);
+            var ll = _mapper.Map<List<CreatedReservationDto>>(list);
             return ll;
         }
 
@@ -311,7 +311,7 @@ namespace Places.Application.Services
             await _reservationRepository.ProcessPendingPayment(reservation.Id);
         }
 
-        public async Task<List<ReservationListItem>> GetSiteReservations(int siteId)
+        public async Task<List<CreatedReservationDto>> GetSiteReservations(int siteId)
         {
             var currentUserId = (await _currentUserService.GetCurrentUserIdAsync())?.Id ?? 0;
             var site = await _siteRepository.GetByIdAsync(siteId);
@@ -321,11 +321,11 @@ namespace Places.Application.Services
             }
             var list = await _reservationRepository
                 .FindByPredicate(c => c.SiteId == siteId && c.IsActive && c.ReservationState == ReservationState.Approved);
-            var mappedList = _mapper.Map<List<ReservationListItem>>(list);
+            var mappedList = _mapper.Map<List<CreatedReservationDto>>(list);
             return mappedList;
         }
 
-        public async Task<List<ReservationListItem>> GetAllApprovedReservations()
+        public async Task<List<CreatedReservationDto>> GetAllApprovedReservations()
         {
             var roleId = (await _currentUserService.GetCurrentUserIdAsync())?.RoleId ?? -1;
             //
@@ -336,7 +336,7 @@ namespace Places.Application.Services
 
             var list = await _reservationRepository
                 .FindByPredicate(c => c.IsActive && c.ReservationState == ReservationState.Approved);
-            var mappedList = _mapper.Map<List<ReservationListItem>>(list);
+            var mappedList = _mapper.Map<List<CreatedReservationDto>>(list);
             return mappedList;
         }
 
