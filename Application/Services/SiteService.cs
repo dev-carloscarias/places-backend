@@ -486,42 +486,16 @@ public class SiteService : ISiteService
         return sites;
 
     }
-
     public async Task<IEnumerable<Site>> GetAllBySearch(string language, string nombre)
     {
         string cacheKey = $"Sites_{nombre}";
         if (_cache.TryGetValue(cacheKey, out IEnumerable<Site> cachedSites))
         {
-            if (cachedSites != null)
-            {
-                return cachedSites;
-
-            }
+            return cachedSites ?? Enumerable.Empty<Site>();
         }
 
-        var sites = await _siteRepository
-        .FindAllEficientWithoutPageAsync(x => x.IsActive
-                    && !x.IsPendingToApprove
-                    && x.IsSiteApproved,
-                x => new Site
-                {
-                    Id = x.Id,
-                    Title = x.Title,
-                    DataFiles = x.DataFiles
-                    .Where(df => df.FileOrder == x.DataFiles.Min(d => d.FileOrder))
-                    .Select(df => new DataFile
-                    {
-                        Path = df.Path,
-                        FileOrder = df.FileOrder
-                    })
-                    .Take(1)
-                    .ToList()
-                });
+        var sites = await _siteRepository.FindSiteByTitle(nombre);
 
-        if (!string.IsNullOrEmpty(nombre))
-        {
-            sites = sites.Where(s => s.Title != null && s.Title.Contains(nombre, StringComparison.OrdinalIgnoreCase)).ToList();
-        }
         var cacheOptions = new MemoryCacheEntryOptions
         {
             AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10),
@@ -532,6 +506,51 @@ public class SiteService : ISiteService
 
         return sites;
     }
+    //public async Task<IEnumerable<Site>> GetAllBySearch(string language, string nombre)
+    //{
+    //    string cacheKey = $"Sites_{nombre}";
+    //    if (_cache.TryGetValue(cacheKey, out IEnumerable<Site> cachedSites))
+    //    {
+    //        if (cachedSites != null)
+    //        {
+    //            return cachedSites;
+
+    //        }
+    //    }
+
+    //    var sites = await _siteRepository
+    //    .FindAllEficientWithoutPageAsync(x => x.IsActive
+    //                && !x.IsPendingToApprove
+    //                && x.IsSiteApproved,
+    //            x => new Site
+    //            {
+    //                Id = x.Id,
+    //                Title = x.Title,
+    //                DataFiles = x.DataFiles
+    //                .Where(df => df.FileOrder == x.DataFiles.Min(d => d.FileOrder))
+    //                .Select(df => new DataFile
+    //                {
+    //                    Path = df.Path,
+    //                    FileOrder = df.FileOrder
+    //                })
+    //                .Take(1)
+    //                .ToList()
+    //            });
+
+    //    if (!string.IsNullOrEmpty(nombre))
+    //    {
+    //        sites = sites.Where(s => s.Title != null && s.Title.Contains(nombre, StringComparison.OrdinalIgnoreCase)).ToList();
+    //    }
+    //    var cacheOptions = new MemoryCacheEntryOptions
+    //    {
+    //        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10),
+    //        SlidingExpiration = TimeSpan.FromMinutes(5)
+    //    };
+
+    //    _cache.Set(cacheKey, sites, cacheOptions);
+
+    //    return sites;
+    //}
 
     public async Task<IEnumerable<Site>> GetAllbyManage()
     {
