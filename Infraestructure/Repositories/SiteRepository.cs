@@ -457,4 +457,37 @@ public class SiteRepository : Repository<Site>, ISiteRepository
         return true;
     }
 
+    public async Task<IEnumerable<Site>> FindSiteByTitle(string titlePrefix, int limit = 6)
+    {
+        var prefix = titlePrefix?.ToLower() ?? string.Empty;
+
+        return await _context.Sites
+            .AsNoTracking()
+            .Where(x =>
+                x.IsActive &&
+                !x.IsPendingToApprove &&
+                x.IsSiteApproved &&
+                EF.Functions.Like(x.Title.ToLower(), prefix + "%"))
+            .OrderBy(x => x.Id)
+            .Select(x => new Site
+            {
+                Id = x.Id,
+                Title = x.Title,
+                DataFiles = x.DataFiles
+                    .Where(df => df.FileOrder == x.DataFiles.Min(d => d.FileOrder))
+                    .Select(df => new DataFile
+                    {
+                        Path = df.Path,
+                        FileOrder = df.FileOrder
+                    })
+                    .Take(1)
+                    .ToList()
+            })
+            .Take(limit)
+            .ToListAsync();
+    }
+
+
+
+
 }
