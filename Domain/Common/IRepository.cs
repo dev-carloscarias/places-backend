@@ -11,6 +11,7 @@ public interface IRepository<T> where T : EntityBase
     public Task<T> GetById(int id);
     public Task<IEnumerable<T>> GetPendingToApprove();
     public Task<IEnumerable<Site>> GetSitesbyOwner(int userId);
+
     public Task<IEnumerable<Site>> GetAllbyManage();
     public Task DeletePermanentlyAsync(int id);
     public Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate);
