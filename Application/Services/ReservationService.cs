@@ -1,12 +1,18 @@
 using System.Globalization;
+using System.Linq;
+using System.Text;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Places.Application.Dtos;
 using Places.Application.Dtos.Reservation.Availability;
 using Places.Application.Dtos.Reservation.Create;
 using Places.Application.Dtos.Reservation.Created;
 using Places.Application.Dtos.Reservation.List;
 using Places.Application.Dtos.Reservation.Payment;
+using Places.Application.Interfaces;
 using Places.Domain.Entities;
+using Places.Domain.Interfaces.Repositories;
 
 namespace Places.Application.Services
 {
@@ -19,13 +25,21 @@ namespace Places.Application.Services
         private readonly ICreditCardPayment _creditCardPaymentService;
         private readonly ILogger _logger;
         private readonly string _environmentUrl;
+        private readonly IEmailService _emailService;
+        private readonly IHubContext<NotificationHub> _notificationHubContext;
+        private readonly IUserRepository _userRepository;
+        private readonly INotificationsService _notificationsService;
         public ReservationService(IReservationRepository reservationRepository,
             ISiteRepository siteRepository,
             ICurrentUserService currentUserService,
             IMapper mapper,
             ICreditCardPayment creditCardPaymentService,
             ILogger<ReservationService> logger,
-            IConfiguration configuration
+            IConfiguration configuration,
+            IEmailService emailService,
+            IHubContext<NotificationHub> notificationHubContext,
+            IUserRepository userRepository,
+            INotificationsService notificationsService
             )
         {
             _reservationRepository = reservationRepository;
@@ -35,6 +49,10 @@ namespace Places.Application.Services
             _creditCardPaymentService = creditCardPaymentService;
             _logger = logger;
             _environmentUrl = configuration.GetRequiredSection("Recurrente:environmentUrl").Value!;
+            _emailService = emailService;
+            _notificationHubContext = notificationHubContext;
+            _userRepository = userRepository;
+            _notificationsService = notificationsService;
         }
         public async Task<CreatedReservationDto> CreateReservation(CreateReservationDTO reservationDTO)
         {
@@ -265,6 +283,8 @@ namespace Places.Application.Services
                 _logger.LogError("Pago recibido id " + paymentRequest.Id + " pero no fue encontrada la reservación asociada a ese pago");
                 throw new BadRequestException("Reservación no encontrada");
             }
+
+
             if (reservation.ReservationState == ReservationState.PendingPayment
                 || reservation.ReservationState == ReservationState.PendingPayment)
             {
@@ -277,6 +297,93 @@ namespace Places.Application.Services
                     Ammount = paymentRequest.Ammount
                 };
                 await _reservationRepository.ProcessPayment(reservation.Id, payment);
+
+                var site = reservation.Site!;
+                var reservationUser = reservation.CreatedByUser;
+                string ownerEmail = site.User.Email!;
+                var owner = await _userRepository.GetByIdAsync(site.UserId);
+                int ownerId = owner.Id;
+                string userEmail = reservationUser.Email;
+                int userId = reservation.CreatedBy;
+
+                var ownerEmailMessage = new StringBuilder().
+                    Append($"¡Felicidades! Tu sitio {site.Title} ha sido reservado.")
+                    .Append("\n")
+                    .Append("Sitio reservado por:")
+                    .Append(reservationUser.FirstName + " " + reservationUser.LastName)
+                    .Append("\n")
+                    .Append($"Total reserva: {reservation.TotalAmmount} GTQ")
+                    .Append("\n")
+                    .Append($"Fecha de reserva: {reservation.ReservationDate.ToString("YY/MM/dd")}")
+                    .Append("\n")
+                    .Append($"Total adultos: {reservation.TotalAdults}")
+                    .Append("\n")
+                    .Append($"Total niños: {reservation.TotalChildren}")
+                    .Append("\n")
+                    .Append($"Paquete especial: {(
+                        reservation?.SpecialPackageId != null ?
+                        reservation.SpecialPackageQuantity.ToString() + " " + reservation.SpecialPackage!.PackageName
+                        : "No adquirido")}")
+                    .Append("\n")
+                    .Append($"Costo adicional: {(
+                        reservation!.AdditionalCosts.Count() > 0 ?
+                        string.Join(",", reservation.AdditionalCosts.Select((c) => c.Quantity + " - " + c.AdditionalCost.Name).ToList())
+                        : "No adquirido"
+                        )}")
+                    .Append("\n")
+                    .Append($"Transportes: {(
+                    reservation.SelectedTransportOptions.Count() > 0 ?
+                    string.Join(",", reservation.SelectedTransportOptions.Select((c) => c.Quantity + " - " + c.SelectedTransportOption!.TransportOption.Name).ToList()) :
+                    "No adquirido"
+                    )}")
+                    .Append("\n")
+                    .ToString();
+
+                var userMessage = new StringBuilder()
+                    .Append($"¡Felicidades! Tu reservación ha sido confirmada.").ToString();
+                var res1 = await _emailService.SendOwnerReservationReceived(ownerEmail, ownerEmailMessage);
+                var res2 = await _emailService.SendUserReservationApproved(userEmail, userMessage);
+
+                var ownerNotificationMessage = "¡Felicidades! Tu sitio " + site.Title + " ha sido reservado por " +
+                    reservationUser.FirstName + " " + reservationUser.LastName + ".";
+
+                var userReservationNotification = new Notification
+                {
+                    UserId = reservationUser.Id,
+                    profilePhoto = site.DataFiles
+                      .OrderBy(df => df.FileOrder)
+                      .Select(df => df.Path)
+                      .FirstOrDefault(),
+                    Message = userMessage,
+                    Timestamp = DateTime.UtcNow
+                };
+                var userReservationconnectionId = ConnectionMapping.GetConnectionId(reservationUser.Id);
+                if (!string.IsNullOrEmpty(userReservationconnectionId))
+                {
+                    await _notificationHubContext.Clients.Client(userReservationconnectionId)
+                        .SendAsync("ReceiveNotification", userReservationNotification);
+                }
+                await _notificationsService.CreateNotification(userReservationNotification);
+
+                var ownerNotification = new Notification
+                {
+                    UserId = ownerId,
+                    profilePhoto = site.DataFiles
+                      .OrderBy(df => df.FileOrder)
+                      .Select(df => df.Path)
+                      .FirstOrDefault(),
+                    Message = ownerNotificationMessage,
+                    Timestamp = DateTime.UtcNow
+                };
+                var ownerConnectionId = ConnectionMapping.GetConnectionId(site.UserId);
+                if (!string.IsNullOrEmpty(ownerConnectionId))
+                {
+                    await _notificationHubContext.Clients.Client(ownerConnectionId)
+                        .SendAsync("ReceiveNotification", ownerNotification);
+                }
+                await _notificationsService.CreateNotification(ownerNotification);
+
+
             }
         }
 

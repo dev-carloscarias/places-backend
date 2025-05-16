@@ -58,7 +58,14 @@ public class EmailService : IEmailService
         return await SendEmailAsync(mail, "Codigo de Verificación", message);
     }
 
-
+    public async Task<EmailResponse> SendUserReservationApproved(string email, string message)
+    {
+        return await SendEmailAsync(email, "Tu reserva ha sido confirmada", message);
+    }
+    public async Task<EmailResponse> SendOwnerReservationReceived(string email, string message)
+    {
+        return await SendEmailAsync(email, "Tu sitio ha sido reservado", message);
+    }
     private async Task<EmailResponse> SendEmailAsync(string email, string subject, string message)
     {
         return await SendEmailAsync(email, subject, message, "", "");

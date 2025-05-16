@@ -14,6 +14,17 @@ namespace Places.Infrastructure.Repositories
         public async Task<Reservation?> FindByCreditCardPaymentId(string creditCardPaymentId)
         {
             return await _appDbContext.Reservations
+                .AsNoTracking()
+                .Include(r => r.Site)
+                .ThenInclude(s => s.User)
+                .Include(r => r.SpecialPackage)
+                .Include(r => r.SelectedTransportOptions)
+                .ThenInclude(r => r.SelectedTransportOption)
+                .ThenInclude(r => r.TransportOption)
+                .Include(r => r.AdditionalCosts)
+                .ThenInclude(r => r.AdditionalCost)
+                .Include(r => r.CreatedByUser)
+                .AsSplitQuery()
                 .FirstOrDefaultAsync(c => c.CreditCardPaymentId == creditCardPaymentId);
         }
 
