@@ -24,4 +24,5 @@ public class Reservation : EntityBase
     public decimal TotalAmmount { get; set; }
     public decimal Commision { get; set; }
     public DateTime? PaymentDate { get; set; }
+    public virtual User CreatedByUser { get; set; } = null!;
 }

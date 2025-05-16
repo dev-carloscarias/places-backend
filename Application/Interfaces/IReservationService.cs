@@ -14,9 +14,9 @@ namespace Places.Application.Interfaces
         public Task ProccessPayment(ReservationPaymentDto payment);
         public Task ProccessPendingPayment(ReservationPaymentDto payment);
         public Task ProccessFailedPayment(ReservationPaymentDto payment);
-        Task<List<ReservationListItem>> GetUserReservations();
-        Task<List<ReservationListItem>> GetSiteReservations(int siteId);
-        Task<List<ReservationListItem>> GetAllApprovedReservations();
+        Task<List<CreatedReservationDto>> GetUserReservations();
+        Task<List<CreatedReservationDto>> GetSiteReservations(int siteId);
+        Task<List<CreatedReservationDto>> GetAllApprovedReservations();
         Task DeleteReservation(int id);
     }
 }

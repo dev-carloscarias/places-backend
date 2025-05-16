@@ -176,12 +176,18 @@ public class MappingProfile : Profile
             .ForMember(dest => dest.SpecialPackageQuantity, opt => opt.MapFrom(src => src.SpecialPackageQuantity))
             .ForMember(dest => dest.ReservationDate, opt => opt.MapFrom(src => src.ReservationDate))
             .ForMember(dest => dest.ReservationState, opt => opt.MapFrom(src => src.ReservationState))
+            .ForMember(dest => dest.ReservationStateName, opt => opt.MapFrom(src => EnumHelper.GetEnumDescription(src.ReservationState)))
             .ForMember(dest => dest.TotalAdults, opt => opt.MapFrom(src => src.TotalAdults))
             .ForMember(dest => dest.TotalChildren, opt => opt.MapFrom(src => src.TotalChildren))
             .ForMember(dest => dest.PaymentUrl, opt => opt.MapFrom(src => src.CreditCardPaymentUrl))
             .ForMember(dest => dest.TotalAmmount, opt => opt.MapFrom(src => src.TotalAmmount))
             .ForMember(dest => dest.Commision, opt => opt.MapFrom(src => src.Commision))
+            .ForMember(dest => dest.CreatedDate, opt => opt.MapFrom(src => src.CreatedAt.DateTime))
+            .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.CreatedByUser.FirstName + " " + src.CreatedByUser.LastName))
+            .ForMember(dest => dest.UserEmail, opt => opt.MapFrom(src => src.CreatedByUser.Email))
+            .ForMember(dest => dest.UserPhone, opt => opt.MapFrom(src => src.CreatedByUser.Telephone))
             .ReverseMap();
+
         CreateMap<ReservationAdditionalCost, CreatedReservationAdditionalCost>()
             .ForMember(dest => dest.AdditionalCostId, opt => opt.MapFrom(src => src.Id))
             .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
