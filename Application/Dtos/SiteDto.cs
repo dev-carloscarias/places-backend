@@ -31,6 +31,7 @@ public class SiteDto
 
     public List<string> SitePolicies { get; set; } = new List<string>();
     public DateTimeOffset CreatedAt { get; set; }
+    public DateTimeOffset UpdatedAt { get; set; }
     public List<AmenityBySiteDto> Amenities { get; set; } = new List<AmenityBySiteDto>();
     public List<AmenityDto> AmenitiesDto { get; set; } = new List<AmenityDto>();
     public List<DataFileDto> Photos { get; set; }

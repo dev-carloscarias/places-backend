@@ -5,7 +5,7 @@ namespace Places.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class ReservationsController : ControllerBase
     {
         private readonly IReservationService _reservationService;

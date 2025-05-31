@@ -45,6 +45,8 @@ public class SiteRepository : Repository<Site>, ISiteRepository
                     s.SelectedDates,
                     s.SelectedTransportOptions,
                     s.SitePolicies,
+                    s.CreatedAt,
+                    s.UpdatedAt,
                     Photos = s.DataFiles
                         .Select(df => new
                         {
