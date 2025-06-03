@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 using Places.Application.Dtos;
 using Places.Application.Dtos.Site;
+using Places.Domain.Entities;
 using Places.Infrastructure.Data;
 
 namespace Places.Infrastructure.Repositories;
@@ -17,201 +19,92 @@ public class SiteRepository : Repository<Site>, ISiteRepository
     {
         try
         {
-            // Consulta principal: obtiene datos básicos del sitio, incluyendo fotos y amenidades
-            var siteData = await _context.Sites
+            // Consulta optimizada usando Include con AsSplitQuery para evitar cartesian explosion
+            var site = await _context.Sites
+                .AsSplitQuery() // Divide la consulta en múltiples queries para evitar cartesian explosion
                 .AsNoTracking()
-                .Where(s => s.Id == id)
-                .Select(s => new
-                {
-                    s.Id,
-                    s.Title,
-                    s.IsPublic,
-                    s.Description,
-                    s.CountryId,
-                    s.CurrencyId,
-                    s.TotalPrice,
-                    s.Latitude,
-                    s.Longitude,
-                    s.UserId,
-                    s.CategoryId,
-                    s.Capacity,
-                    s.IsSiteApproved,
-                    s.IsPendingToApprove,
-                    s.AdultPrice,
-                    s.ChildPrice,
-                    s.TransportationPrice,
-                    s.Availabilities,
-                    s.RegionId,
-                    s.SelectedDates,
-                    s.SelectedTransportOptions,
-                    s.SitePolicies,
-                    s.CreatedAt,
-                    s.UpdatedAt,
-                    Photos = s.DataFiles
-                        .Select(df => new
-                        {
-                            df.Id,
-                            df.Path,
-                            df.FileOrder
-                        })
-                        .OrderBy(df => df.FileOrder)
-                        .ToList(),
-                    Amenities = s.AmenityBySites
-                        .Select(ab => new
-                        {
-                            ab.Amenity.Id,
-                            ab.Amenity.Name,
-                            Files = ab.Amenity.Files
-                                .Select(f => new
-                                {
-                                    f.Path,
-                                    f.FileOrder
-                                })
-                                .OrderBy(f => f.FileOrder)
-                                .ToList(),
-                            ab.Description
-                        })
-                        .ToList()
-                })
-                .FirstOrDefaultAsync();
+                .Include(s => s.DataFiles.OrderBy(df => df.FileOrder))
+                .Include(s => s.AmenityBySites)
+                    .ThenInclude(ab => ab.Amenity)
+                    .ThenInclude(a => a.Files.OrderBy(f => f.FileOrder))
+                .Include(s => s.AdditionalCosts)
+                .Include(s => s.SpecialPackage)
+                    .ThenInclude(sp => sp.PackageItems)
+                .Include(s => s.SelectedTransportOptions)
+                    .ThenInclude(sto => sto.TransportOption)
+                .Include(s => s.Availabilities)
+                .FirstOrDefaultAsync(s => s.Id == id);
 
-            if (siteData == null)
+            if (site == null)
             {
                 return null;
             }
 
-            // Segunda consulta: AdditionalCosts
-            var additionalCostsData = await _context.Sites
-                .AsNoTracking()
-                .Where(s => s.Id == id)
-                .Select(s => s.AdditionalCosts
-                    .Select(ac => new
-                    {
-                        ac.Id,
-                        ac.Price,
-                        ac.Name
-                    })
-                    .ToList())
-                .FirstOrDefaultAsync();
+            // Aplicar ordenamiento y limpieza de datos duplicados si es necesario
+            site.DataFiles = site.DataFiles
+                .DistinctBy(df => df.Id)
+                .OrderBy(df => df.FileOrder)
+                .ToList();
 
-            // Tercera consulta: SpecialPackage (si existe)
-            var specialPackageData = await _context.Sites
-                .AsNoTracking()
-                .Where(s => s.Id == id && s.SpecialPackage != null)
-                .Select(s => new
-                {
-                    s.SpecialPackage.Id,
-                    s.SpecialPackage.PackageName,
-                    s.SpecialPackage.Price,
-                    PackageItems = s.SpecialPackage.PackageItems
-                        .Select(pi => new
-                        {
-                            pi.ItemName
-                        })
-                        .ToList()
-                })
-                .FirstOrDefaultAsync();
+            site.AmenityBySites = site.AmenityBySites
+                .DistinctBy(ab => ab.AmenityId)
+                .ToList();
 
-            // Cuarta consulta: Transporte
-            var transportOptionsData = await _context.SelectedTransportOptions
-            .AsNoTracking()
-            .Where(sto => sto.SiteId == id)
-            .Select(sto => new
+            // Asegurar ordenamiento de archivos de amenidades
+            foreach (var amenityBySite in site.AmenityBySites)
             {
-                sto.Id,
-                sto.TransportOptionId,
-                sto.Price,
-                TransportOptionName = sto.TransportOption.Name,
-                TransportOptionImageUrl = sto.TransportOption.ImageUrl
-            })
-            .ToListAsync();
+                if (amenityBySite.Amenity?.Files != null)
+                {
+                    amenityBySite.Amenity.Files = amenityBySite.Amenity.Files
+                        .DistinctBy(f => f.Id)
+                        .OrderBy(f => f.FileOrder)
+                        .ToList();
+                }
+            }
 
-            // Combinar todos los datos en el objeto Site final
-
-            var site = new Site
-            {
-                Id = siteData.Id,
-                Title = siteData.Title,
-                IsPublic = siteData.IsPublic,
-                Description = siteData.Description,
-                CountryId = siteData.CountryId,
-                CurrencyId = siteData.CurrencyId,
-                TotalPrice = siteData.TotalPrice,
-                Latitude = siteData.Latitude,
-                Longitude = siteData.Longitude,
-                UserId = siteData.UserId,
-                CategoryId = siteData.CategoryId,
-                Capacity = siteData.Capacity,
-                IsSiteApproved = siteData.IsSiteApproved,
-                IsPendingToApprove = siteData.IsPendingToApprove,
-                AdultPrice = siteData.AdultPrice,
-                ChildPrice = siteData.ChildPrice,
-                TransportationPrice = siteData.TransportationPrice,
-                Availabilities = siteData.Availabilities,
-                RegionId = siteData.RegionId,
-                SelectedDates = siteData.SelectedDates,
-                SitePolicies = siteData.SitePolicies,
-                DataFiles = siteData.Photos.Select(p => new DataFile
-                {
-                    Id = p.Id,
-                    Path = p.Path,
-                    FileOrder = p.FileOrder
-                }).ToList(),
-                AmenityBySites = siteData.Amenities.Select(a => new AmenityBySite
-                {
-                    Amenity = new Amenity
-                    {
-                        Id = a.Id,
-                        Name = a.Name,
-                        Files = a.Files.Select(f => new DataFile
-                        {
-                            Path = f.Path,
-                            FileOrder = f.FileOrder
-                        }).ToList()
-                    },
-                    Id = a.Id,
-                    Description = a.Description
-                }).ToList(),
-                AdditionalCosts = additionalCostsData != null
-                    ? additionalCostsData.Select(ac => new AdditionalCost
-                    {
-                        Id = ac.Id,
-                        Price = ac.Price,
-                        Name = ac.Name
-                    }).ToList()
-                    : new List<AdditionalCost>(),
-                SpecialPackage = specialPackageData != null
-                    ? new SpecialPackage
-                    {
-                        Id = specialPackageData.Id,
-                        PackageName = specialPackageData.PackageName,
-                        Price = specialPackageData.Price,
-                        PackageItems = specialPackageData.PackageItems
-                            .Select(pi => new PackageItem
-                            {
-                                ItemName = pi.ItemName
-                            })
-                            .ToList()
-                    }
-                    : null,
-                SelectedTransportOptions = transportOptionsData.Select(to => new SelectedTransportOption
-                {
-                    Id = to.Id,
-                    TransportOptionId = to.TransportOptionId,
-                    Price = to.Price,
-                    TransportOption = new TransportOption
-                    {
-                        Name = to.TransportOptionName,
-                        ImageUrl = to.TransportOptionImageUrl
-                    }
-                }).ToList()
-            };
+            site.SelectedTransportOptions = site.SelectedTransportOptions
+                .DistinctBy(st => st.TransportOptionId)
+                .ToList();
 
             return site;
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex.Message);
+            // Log el error específico para mejor debugging
+            Console.WriteLine($"Error en GetById para SiteId {id}: {ex.Message}");
+            Console.WriteLine($"StackTrace: {ex.StackTrace}");
+            return null;
+        }
+    }
+
+    /// <summary>
+    /// Método optimizado para obtener datos básicos del sitio con menos relaciones
+    /// Usar cuando no necesites todas las relaciones completas
+    /// </summary>
+    public async Task<Site> GetByIdLightweight(int id)
+    {
+        try
+        {
+            var site = await _context.Sites
+                .AsNoTracking()
+                .Include(s => s.DataFiles.OrderBy(df => df.FileOrder))
+                .Include(s => s.AdditionalCosts)
+                .Include(s => s.SpecialPackage)
+                .FirstOrDefaultAsync(s => s.Id == id);
+
+            if (site?.DataFiles != null)
+            {
+                site.DataFiles = site.DataFiles
+                    .DistinctBy(df => df.Id)
+                    .OrderBy(df => df.FileOrder)
+                    .ToList();
+            }
+
+            return site;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en GetByIdLightweight para SiteId {id}: {ex.Message}");
             return null;
         }
     }
