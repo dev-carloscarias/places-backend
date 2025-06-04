@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Places.Domain.Entities;
-using SendGrid.Helpers.Mail;
+using Places.Application.Interfaces;
+using Places.Application.Services;
 using Twilio.TwiML.Messaging;
 using Twilio.TwiML.Voice;
 
