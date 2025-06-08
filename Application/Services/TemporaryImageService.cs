@@ -58,13 +58,10 @@ public class TemporaryImageService : ITemporaryImageService
         var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".bmp" }; // formatos permitidos
         const int maxWidth = 1920;
         const int maxHeight = 1080;
-        const long maxFileSizeInBytes = 2 * 1024 * 1024; // 2 MB límite para imagen sin comprimir
 
         foreach (var file in formCollection.Files)
         {
-            if (file.Length == 0 || file.Length > 20 * 1024 * 1024) // rechaza archivos vacíos o >20 MB
-                continue;
-
+ 
             var extension = Path.GetExtension(file.FileName).ToLowerInvariant();
             if (!allowedExtensions.Contains(extension))
                 continue;
@@ -78,7 +75,7 @@ public class TemporaryImageService : ITemporaryImageService
                 {
                     x.AutoOrient();
 
-                    // Redimensionar si la imagen es muy grande
+                    // Redimensionar si es más grande que el tamaño objetivo
                     if (image.Width > maxWidth || image.Height > maxHeight)
                     {
                         x.Resize(new ResizeOptions
@@ -89,12 +86,10 @@ public class TemporaryImageService : ITemporaryImageService
                     }
                 });
 
-                // Elegir calidad basada en tamaño original
-                int quality = file.Length > maxFileSizeInBytes ? 70 : 80;
-
+                // Compresión WebP con buena calidad visual
                 var encoder = new WebpEncoder
                 {
-                    Quality = quality
+                    Quality = 80 // Puedes subir a 85 o bajar a 70 si deseas más compresión
                 };
 
                 using var outputStream = new MemoryStream();
@@ -107,7 +102,6 @@ public class TemporaryImageService : ITemporaryImageService
                 var fileOrderStr = formCollection["fileOrder"].ToString();
                 var dataFileTypeStr = formCollection["dataFileType"].ToString();
 
-                // Subir a blob con extensión .webp
                 var filePath = await _dataService.UploadBlobFile($"Sites/{Guid.NewGuid()}/{Guid.NewGuid()}.webp", fileBytes);
 
                 int.TryParse(fileOrderStr, out int fileOrder);
@@ -121,7 +115,7 @@ public class TemporaryImageService : ITemporaryImageService
                     Section = section,
                     FileOrder = fileOrder,
                     DataFileType = dataFileType,
-                    DataTypeExtension = DataTypeExtension.Webp, // Asumiendo que tienes este enum
+                    DataTypeExtension = DataTypeExtension.Webp,
                     CreatedAt = DateTimeOffset.Now,
                     SessionId = sessionId,
                 };
@@ -131,55 +125,11 @@ public class TemporaryImageService : ITemporaryImageService
             }
             catch (Exception ex)
             {
-                // Log o manejar error si la imagen está corrupta o no se pudo procesar
                 Console.WriteLine($"Error procesando archivo {file.FileName}: {ex.Message}");
             }
         }
+
         return uploadedImages;
-
-        //var uploadedImages = new List<TemporaryImage>();
-
-        //var files = formCollection.Files;
-
-        //foreach (var file in files)
-        //{
-        //    if (file.Length > 0)
-        //    {
-        //        using var ms = new MemoryStream();
-        //        await file.CopyToAsync(ms);
-        //        var fileBytes = ms.ToArray();
-
-        //        var description = formCollection["description"].ToString();
-        //        var section = formCollection["section"].ToString();
-        //        var fileOrderStr = formCollection["fileOrder"].ToString();
-        //        var dataFileTypeStr = formCollection["dataFileType"].ToString();
-        //        var dataTypeExtensionStr = formCollection["dataTypeExtension"].ToString();
-
-        //        var filePath = await _dataService.UploadBlobFile($"Sites/{Guid.NewGuid()}/{Guid.NewGuid().ToString()}.{dataTypeExtensionStr}", fileBytes);
-
-        //        int.TryParse(fileOrderStr, out int fileOrder);
-        //        Enum.TryParse<DataFileType>(dataFileTypeStr, out var dataFileType);
-        //        Enum.TryParse<DataTypeExtension>(dataTypeExtensionStr, out var dataTypeExtension);
-
-        //        var temporaryImage = new TemporaryImage
-        //        {
-        //            UserId = userId,
-        //            Path = filePath,
-        //            Description = description,
-        //            Section = section,
-        //            FileOrder = fileOrder,
-        //            DataFileType = dataFileType,
-        //            DataTypeExtension = dataTypeExtension,
-        //            CreatedAt = DateTimeOffset.Now,
-        //            SessionId = sessionId,
-        //        };
-
-        //        await _temporaryImageRepository.AddAsync(temporaryImage);
-        //        uploadedImages.Add(temporaryImage);
-        //    }
-        //}
-
-        //return uploadedImages;
     }
 
 
