@@ -92,7 +92,7 @@ public class SitesController : ControllerBase
             {
                 var amenityDto = _mapper.Map<AmenityDto>(d.Amenity);
                 amenityDto.Description = d.Description;
-                amenityDto.Id = d.Id;
+                amenityDto.Id = d.AmenityId;
                 item.AmenitiesDto.Add(amenityDto);
             });
             return Ok(item);
