@@ -5,6 +5,8 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 using System.Net;
 using Microsoft.AspNetCore.Http;
+using FirebaseAdmin;
+using Google.Apis.Auth.OAuth2;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +49,18 @@ builder.Services.AddAuthentication(x =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
     };
 });
+
+var firebaseCredentialsPath = builder.Configuration["Firebase:CredentialsPath"];
+
+if (!FirebaseApp.DefaultInstance?.Name?.Any() ?? true)
+{
+    FirebaseApp.Create(new AppOptions
+    {
+        Credential = GoogleCredential.FromFile(firebaseCredentialsPath)
+    });
+}
+
+
 
 // Add the DB Context
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

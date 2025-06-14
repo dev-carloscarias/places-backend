@@ -5,33 +5,29 @@ using Newtonsoft.Json.Linq;
 
 
 namespace Places.Api.Controllers;
-[Route("signin-google")]
+[Route("login-firebase")]
 [ApiController]
-public class SignInGoogleController : ControllerBase
+
+    
+public class LoginFirebase : ControllerBase
 {
     private readonly IUserRepository _userRepository;
     private readonly IAuthenticationService _authenticationService;
 
-    public SignInGoogleController(
-    IUserRepository userRepository,
-    IAuthenticationService authenticationService,
-    IConfiguration configuration
-    )
-    {
+    public LoginFirebase(
+        IUserRepository userRepository,
+        IAuthenticationService authenticationService
+    ) {
         _userRepository = userRepository;
         _authenticationService = authenticationService;
-        this.configuration = configuration;
     }
-    private readonly IConfiguration configuration;
-
-    public class GoogleCredentialDto
+    public class LoginFirebaseDto
     {
         public string Credential { get; set; }
     }
 
-
     [HttpPost("login")]
-    public async Task<IActionResult> LoginWithGoogle([FromBody] GoogleCredentialDto dto)
+    public async Task<IActionResult> loginWithFirebase([FromBody] LoginFirebaseDto dto)
     {
         try
         {
@@ -44,6 +40,7 @@ public class SignInGoogleController : ControllerBase
 
             if (string.IsNullOrEmpty(email))
                 return BadRequest("No se pudo extraer el email del token.");
+
 
             // Buscar usuario en base de datos
             var user = await _userRepository.FindByEmailAsync(email);
@@ -74,6 +71,7 @@ public class SignInGoogleController : ControllerBase
             // Generar JWT
             var jwtToken = _authenticationService.GenerateJwtToken(user);
 
+
             return Ok(new { token = jwtToken });
         }
         catch (FirebaseAuthException ex)
@@ -84,6 +82,10 @@ public class SignInGoogleController : ControllerBase
         {
             return StatusCode(500, "Error interno: " + ex.Message);
         }
+
     }
 
+
+
 }
+
