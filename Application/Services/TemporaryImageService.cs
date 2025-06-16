@@ -55,7 +55,7 @@ public class TemporaryImageService : ITemporaryImageService
     public async Task<List<TemporaryImage>> AddTemporaryImages(int userId, int sessionId, IFormCollection formCollection)
     {
         var uploadedImages = new List<TemporaryImage>();
-        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".bmp" }; // formatos permitidos
+        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif", ".webp" }; // formatos permitidos
         const int maxWidth = 1920;
         const int maxHeight = 1080;
 
@@ -89,7 +89,7 @@ public class TemporaryImageService : ITemporaryImageService
                 // Compresión WebP con buena calidad visual
                 var encoder = new WebpEncoder
                 {
-                    Quality = 80 // Puedes subir a 85 o bajar a 70 si deseas más compresión
+                    Quality = 80 
                 };
 
                 using var outputStream = new MemoryStream();
