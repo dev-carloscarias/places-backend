@@ -600,7 +600,15 @@ public class SiteService : ISiteService
         site.CurrencyId = featuresDto.CurrencyId;
         site.IsPublic = featuresDto.IsPublic;
         site.CategoryId = featuresDto.CategoryId;
-        site.Capacity = featuresDto.Capacity ?? site.Capacity;
+        if (featuresDto.Capacity != null)
+        {
+            site.Capacity = featuresDto.Capacity ?? site.Capacity;
+        }
+        else
+        {
+            site.Capacity = 0;
+        }
+        
         site.SitePolicies = string.Join(",", featuresDto.SitePolicies);
        
         
@@ -613,77 +621,207 @@ public class SiteService : ISiteService
         var site = await _siteRepository.GetByIdAsync(siteId);
         if (site == null) throw new KeyNotFoundException("Site not found");
 
+        // Actualizar precios básicos
         site.AdultPrice = pricesDto.AdultPrice;
         site.ChildPrice = pricesDto.ChildPrice;
 
-        // Actualizar costos adicionales
-        site.AdditionalCosts.Clear();
-        foreach (var additionalCostDto in pricesDto.AdditionalCosts)
-        {
-            site.AdditionalCosts.Add(new AdditionalCost
-            {
-                Name = additionalCostDto.Name,
-                Price = additionalCostDto.Price
-            });
-        }
+        // Actualizar costos adicionales de forma segura
+        await UpdateAdditionalCostsSafely(site, pricesDto.AdditionalCosts, siteId);
 
-        // Actualizar opciones de transporte seleccionadas
-        var existingTransportOptions = site.SelectedTransportOptions.ToList();
-        foreach (var existingOption in site.SelectedTransportOptions.ToList())
-        {
-            var matchingOption = pricesDto.TransportOptions
-                .FirstOrDefault(to => to.Id == existingOption.TransportOptionId);
+        // Actualizar opciones de transporte (vehículos) de forma segura
+        await UpdateTransportOptionsSafely(site, pricesDto.TransportOptions, siteId);
 
-            if (matchingOption == null || !matchingOption.Selected)
-            {
-                site.SelectedTransportOptions.Remove(existingOption);
-            }
-        }
-        foreach (var transportOptionDto in pricesDto.TransportOptions)
-        {
-            var existingOption = site.SelectedTransportOptions
-                .FirstOrDefault(to => to.TransportOptionId == transportOptionDto.Id);
+        // Actualizar paquete especial de forma segura
+        await UpdateSpecialPackageSafely(site, pricesDto.SpecialPackage, siteId);
 
-            if (existingOption != null)
-            {
-                existingOption.Price = transportOptionDto.Price;
-            }
-            else if (transportOptionDto.Selected)
-            {
-                site.SelectedTransportOptions.Add(new SelectedTransportOption
-                {
-                    TransportOptionId = transportOptionDto.Id,
-                    Price = transportOptionDto.Price
-                });
-            }
-        }
-
-        // Actualizar el paquete especial
-        if (pricesDto.SpecialPackage != null)
-        {
-            site.SpecialPackage = new SpecialPackage
-            {
-                PackageName = pricesDto.SpecialPackage.Name,
-                Price = pricesDto.SpecialPackage.Price,
-                PackageItems = pricesDto.SpecialPackage.Includes
-                    .Select(include => new PackageItem { ItemName = include })
-                    .ToList()
-            };
-        }
-        else
-        {
-            site.SpecialPackage = null;
-        }
-
-        site.TotalPrice = (decimal)(site.AdultPrice + site.ChildPrice + site.AdditionalCosts.Sum(ac => ac.Price) +
-                          site.SelectedTransportOptions.Sum(to => to.Price));
+        // Calcular precio total correctamente
+        CalculateTotalPrice(site);
 
         site.UpdatedAt = DateTimeOffset.Now;
 
         // Guardar los cambios en la base de datos
         await _siteRepository.UpdateAsync(site);
-
+      
         return site;
+    }
+
+    private async Task UpdateAdditionalCostsSafely(Site site, List<Places.Application.Dtos.Site.AdditionalCostDto> additionalCostsDto, int siteId)
+    {
+        // Actualizar o agregar nuevos additional costs usando el nombre como identificador
+        foreach (var additionalCostDto in additionalCostsDto)
+        {
+            var existingAdditionalCost = site.AdditionalCosts
+                .FirstOrDefault(ac => ac.Name.Equals(additionalCostDto.Name, StringComparison.OrdinalIgnoreCase));
+
+            if (existingAdditionalCost != null)
+            {
+                // Actualizar existing additional cost
+                existingAdditionalCost.Price = additionalCostDto.Price;
+                existingAdditionalCost.UpdatedAt = DateTimeOffset.Now;
+            }
+            else
+            {
+                // Agregar nuevo additional cost
+                site.AdditionalCosts.Add(new AdditionalCost
+                {
+                    Name = additionalCostDto.Name,
+                    Price = additionalCostDto.Price,
+                    SiteId = siteId,
+                    CreatedAt = DateTimeOffset.Now,
+                    UpdatedAt = DateTimeOffset.Now
+                });
+            }
+        }
+
+        // Remover additional costs que ya no están en la lista
+        var additionalCostsToRemove = site.AdditionalCosts
+            .Where(ac => !additionalCostsDto.Any(dto => dto.Name.Equals(ac.Name, StringComparison.OrdinalIgnoreCase)))
+            .ToList();
+
+        foreach (var costToRemove in additionalCostsToRemove)
+        {
+            site.AdditionalCosts.Remove(costToRemove);
+        }
+    }
+
+    private async Task UpdateTransportOptionsSafely(Site site, List<Places.Application.Dtos.Site.TransportOptionDto> transportOptionsDto, int siteId)
+    {
+        // Actualizar opciones de transporte seleccionadas
+        foreach (var transportOptionDto in transportOptionsDto)
+        {
+            var existingOption = site.SelectedTransportOptions
+                .FirstOrDefault(sto => sto.TransportOptionId == transportOptionDto.Id);
+
+            if (transportOptionDto.Selected)
+            {
+                if (existingOption != null)
+                {
+                    // Actualizar precio de la opción existente
+                    existingOption.Price = transportOptionDto.Price;
+                    existingOption.UpdatedAt = DateTimeOffset.Now;
+                }
+                else
+                {
+                    // Agregar nueva opción de transporte seleccionada
+                    site.SelectedTransportOptions.Add(new SelectedTransportOption
+                    {
+                        TransportOptionId = transportOptionDto.Id,
+                        Price = transportOptionDto.Price,
+                        SiteId = siteId,
+                        CreatedAt = DateTimeOffset.Now,
+                        UpdatedAt = DateTimeOffset.Now
+                    });
+                }
+            }
+            else
+            {
+                // Si no está seleccionada pero existe, removerla
+                if (existingOption != null)
+                {
+                    site.SelectedTransportOptions.Remove(existingOption);
+                }
+            }
+        }
+
+        // Remover opciones de transporte que ya no están disponibles en la lista
+        var transportOptionsToRemove = site.SelectedTransportOptions
+            .Where(sto => !transportOptionsDto.Any(dto => dto.Id == sto.TransportOptionId))
+            .ToList();
+
+        foreach (var optionToRemove in transportOptionsToRemove)
+        {
+            site.SelectedTransportOptions.Remove(optionToRemove);
+        }
+    }
+
+    private async Task UpdateSpecialPackageSafely(Site site, Places.Application.Dtos.Site.SpecialPackageDto? specialPackageDto, int siteId)
+    {
+        if (specialPackageDto != null)
+        {
+            if (site.SpecialPackage != null)
+            {
+                // Actualizar paquete especial existente
+                site.SpecialPackage.PackageName = specialPackageDto.Name;
+                site.SpecialPackage.Price = specialPackageDto.Price;
+                site.SpecialPackage.UpdatedAt = DateTimeOffset.Now;
+
+                // Actualizar PackageItems de forma segura
+                foreach (var includeItem in specialPackageDto.Includes)
+                {
+                    var existingItem = site.SpecialPackage.PackageItems
+                        .FirstOrDefault(pi => pi.ItemName.Equals(includeItem, StringComparison.OrdinalIgnoreCase));
+
+                    if (existingItem == null)
+                    {
+                        // Agregar nuevo package item
+                        site.SpecialPackage.PackageItems.Add(new PackageItem
+                        {
+                            ItemName = includeItem,
+                            SpecialPackageId = site.SpecialPackage.Id,
+                            CreatedAt = DateTimeOffset.Now,
+                            UpdatedAt = DateTimeOffset.Now
+                        });
+                    }
+                }
+
+                // Remover package items que ya no están en la lista
+                var itemsToRemove = site.SpecialPackage.PackageItems
+                    .Where(pi => !specialPackageDto.Includes.Any(include => 
+                        include.Equals(pi.ItemName, StringComparison.OrdinalIgnoreCase)))
+                    .ToList();
+
+                foreach (var itemToRemove in itemsToRemove)
+                {
+                    site.SpecialPackage.PackageItems.Remove(itemToRemove);
+                }
+            }
+            else
+            {
+                // Crear nuevo paquete especial
+                site.SpecialPackage = new SpecialPackage
+                {
+                    PackageName = specialPackageDto.Name,
+                    Price = specialPackageDto.Price,
+                    SiteId = siteId,
+                    CreatedAt = DateTimeOffset.Now,
+                    UpdatedAt = DateTimeOffset.Now,
+                    PackageItems = specialPackageDto.Includes
+                        .Select(include => new PackageItem 
+                        { 
+                            ItemName = include,
+                            CreatedAt = DateTimeOffset.Now,
+                            UpdatedAt = DateTimeOffset.Now
+                        })
+                        .ToList()
+                };
+            }
+        }
+        else
+        {
+            // Remover paquete especial si no se envía
+            if (site.SpecialPackage != null)
+            {
+                site.SpecialPackage = null;
+            }
+        }
+    }
+
+    private void CalculateTotalPrice(Site site)
+    {
+        // Precio base (adultos + niños)
+        var basePrice = site.AdultPrice + site.ChildPrice;
+        
+        // Costos adicionales
+        var additionalCostsTotal = site.AdditionalCosts?.Sum(ac => ac.Price) ?? 0;
+        
+        // Opciones de transporte (vehículos)
+        var transportOptionsTotal = site.SelectedTransportOptions?.Sum(to => to.Price ?? 0) ?? 0;
+        
+        // Paquete especial (opcional)
+        var specialPackagePrice = site.SpecialPackage?.Price ?? 0;
+        
+        // Calcular precio total
+        site.TotalPrice = basePrice + additionalCostsTotal + transportOptionsTotal + specialPackagePrice;
     }
 
     public async Task<Site> UpdateSchedule(int siteId, ScheduleDto scheduleDto)
